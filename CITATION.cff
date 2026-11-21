@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: If you use this work, please cite it as below.
 title: "The earliest start for a negative Mertens average"
-abstract: "Sharp weighted Mertens starting points and a certified census of 8,950 Yokoi fields"
+abstract: "Under field GRH, a tail bound certifies optimal weighted Mertens starts. The finite census covers 8,950 Yokoi fields."
 authors:
   - family-names: Crossley
     given-names: Lee
