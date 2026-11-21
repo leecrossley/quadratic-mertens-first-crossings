@@ -1,9 +1,11 @@
 # Checking the 152 brackets
 
 Put $G(z)=e^{z/4}\sum_{n\ge1}\chi_d(n)\exp(-\pi n^2e^z/d)$. Poisson summation for the primitive even quadratic character gives $G(-z)=G(z)$. This holds on $|\Im z|<\pi/2$ by analytic continuation. The Mellin integral for the completed Dirichlet function is
+
 $$
- \Lambda_\chi(s)=\int_{\mathbb R}G(x)e^{(s-1/2)x/2}\,dx.
+ \Lambda_\chi(s)=\int_{\mathbb R}G(x)e^{(s-1/2)x/2}\thinspace dx.
 $$
+
 On the critical line use $2G(x)\cos(tx/2)$ on the positive half-axis. At $s=1$ the integrands for $\Lambda_\chi(1)$ and $2\Lambda_\chi'(1)$ become $2G(x)\cosh(x/4)$ and $2xG(x)\sinh(x/4)$. For $s=2$ use $2G(x)\cosh(3x/4)$. Then $L(1)=\Lambda_\chi(1)/\sqrt d$ and $L(2)=\pi\Lambda_\chi(2)/d$. [Theta and Mellin formula for even quadratic characters](https://publi.math.unideb.hu/paper/1837/download/10_5486_PMD_2013_5670.pdf#page=2)
 
 Both verifiers truncate at $x=22$. At any real node $c=\pi e^x/d$ and the terms beyond $n=N$ cost at most $e^{-cN^2}/(2cN)$ by the Gaussian integral bound. Each verifier checks $cN^2>150$ and adds this enclosure at each node. For $x\ge22$ the absolute theta sum is at most $2e^{-c}$, since $c>4000$ there. All remaining real exponential and polynomial weights are bounded by $2(1+x)e^x\le e^{c/2}$. As $c\ge4000(1+x-22)$ this bounds the omitted integral and the trapezoidal tail, including their two-sided factors, by $10^{-100}$.
@@ -13,9 +15,11 @@ To differentiate on the critical line, replace the cosine by its first three der
 **Trapezoidal sum.** On the closed strip $|\Im z|\le1$ one has $|G(z)|\le d^2e^{-7|\Re z|/4}$. For $\Re z\ge0$ use $e^{-v}\le v^{-2}$, sum $n^{-4}$ and use $\cos1>1/2$. Evenness gives the other half. For $G$, $G(z)e^{3z/4}$, $G(z)e^{z/4}$ and $zG(z)e^{z/4}$ the integral of the absolute value along either edge is at most $100d^2$. Shifting the Fourier integral to an edge bounds its transform at angular frequency $\xi$ by $100d^2 e^{-|\xi|}$. Poisson summation with step $1/32$ thus costs at most $200d^2e^{32}/(e^{64\pi}-1)$ for all tested $|t|\le64$, evaluating the transform at $t/2$ or at zero as appropriate. This and the spatial cutoff fit in $10^{-48}$. The primary verifier computes successive Gaussian terms by their odd-difference ratios. [Trapezoidal implementation](theta.py)
 
 **Gaussian quadrature.** A separate program forms the quadratic character by listing nonzero squares, directly evaluates the Gaussian terms, and applies 64-point Gauss–Legendre quadrature to each unit interval of $[0,22]$. For a holomorphic integrand bounded by $K$ on the radius-one disks about the interval, the quadrature error on one interval is at most
+
 $$
  K/((2n+1){2n\choose n}^2).
 $$
+
 Indeed subtract the degree $2n-1$ Hermite interpolant with double contact at the Gaussian nodes. Its integral is exactly the quadrature sum. The derivative remainder and Cauchy's estimate give the bound using the squared norm of the monic shifted Legendre polynomial, $1/((2n+1){2n\choose n}^2)$. For real integrands this argument applies directly, and otherwise it applies to each component. The strip estimate gives $K=8d^2e^{32}$ for all theta, cosine and derivative evaluations in this program. The weights and nodes are themselves enclosures. This verifies every pair of opposite signs independently.
 
 The second program also evaluates the Laplace kernel (2) directly by 16-point Gaussian quadrature on 40 unit intervals. For $u>30$ the integrand is bounded by 5 on the same radius-one disks, by taking real parts of the denominators and bounding the exponential. The remaining tail costs at most $4e^{-40}$ in each component. For a zero bracket $[l,r]$ the derivative in $\lambda$ of the phase times kernel has absolute value at most $(u+3)/(1/4+l^2)$. The midpoint calculation includes this additional interval error. Both programs bound every unaccounted zero by subtracting certified mass from the full logarithmic derivative. The second one checks the signed witness at $d^{7/3}$. The continuum of earlier starts is checked by the first program. [Gaussian implementation](witness.py) · [Witness output](evidence/witness.txt)
