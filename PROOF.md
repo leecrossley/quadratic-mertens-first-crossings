@@ -1,6 +1,6 @@
 # What the split and inert prime inequalities can detect
 
-Put $L=\log(3d)$ and write $\Phi_H(t)=(\sin(Ht/2)/(Ht/2))^2$, with value 1 at zero. For an even primitive quadratic character $\chi_d$ write $\lambda$ for the ordinates of its nontrivial zeros, with multiplicity. Assume RH for $\zeta$ and the critical-line property for the Dirichlet functions used in each assertion. The construction itself requires just $\zeta$ and $L(s,\chi_5)$. For the final comparison of actual characters one also needs their quadratic twists. [Critical-line input](https://math.mit.edu/~drew/grh/)
+Put $L=\log(3d)$ and write $\Phi_H(t)=(\sin(Ht/2)/(Ht/2))^2$, with value 1 at zero. For an even primitive quadratic character $\chi_d$ write $\lambda$ for the ordinates of its nontrivial zeros, with multiplicity. Assume RH for $\zeta$ and the critical-line property for the Dirichlet functions used in each assertion. The construction itself requires just $\zeta$ and $L(s,\chi_5)$. For the final comparison of actual characters one also needs their quadratic twists. Alpöge's announced Dirichlet GRH theorem supplies this input. [Announcement](https://alpo.ge/remark.pdf) · [Independent formal checks](https://math.mit.edu/~drew/grh/)
 
 ## The scalar test in genuine fields
 
@@ -21,7 +21,7 @@ $$
 
 Indeed the full prime-power sum divided by $H$ is $(\log d)/(2H)-S_{d,H}(0)/2+O(1/H)$. Its squares contribute $1/4+O(\log(2+L)/H)$ by partial summation from Mertens' first theorem, with the missing ramified primes split at $p=L$. All higher powers together cost $O(1/H)$. The earlier necessary scalar test for a nonnegative average up to $e^{2H}$ is $P_{d,H}\le-1/2+\varepsilon$ once $H\ge A_\varepsilon L$ and $d$ is large. [Explicit formula and both prime tests](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/ef3e53c/results/signed-prime-tails/PRIME-TEST.md)
 
-If $L(s,\chi_d)$ vanishes at the centre, its central order $m$ is even by the functional equation and at least two. Then $S_{d,H}(0)\ge m$. If it has a pair at $\pm g$ with $0<g\le\pi/H$, then $S_{d,H}(0)\ge2\Phi_H(g)\ge8/\pi^2$ by the chord bound for sine on $[0,\pi/2]$. Hence for every sufficiently large $d$ in either case and every eligible $H\ge4L$,
+If $L(s,\chi_d)$ vanishes at the centre, its central order $m$ is even by the functional equation and at least two. Then $S_{d,H}(0)\ge m$. If it has a pair at $\pm g$ with $0\lt g\le\pi/H$, then $S_{d,H}(0)\ge2\Phi_H(g)\ge8/\pi^2$ by the chord bound for sine on $[0,\pi/2]$. Hence for every sufficiently large $d$ in either case and every eligible $H\ge4L$,
 
 $$
  P_{d,H}\le-\frac18-\frac4{\pi^2}+O\big(\log(2+L)/H\big)<-0.52 .
