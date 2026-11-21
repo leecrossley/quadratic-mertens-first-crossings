@@ -5,7 +5,7 @@ abstract: "Earliest successful decreasing averages in fields with a late first M
 authors:
   - family-names: Crossley
     given-names: Lee
-version: 1.0.1
+version: 1.0.2
 license: CC-BY-4.0
 repository-code: https://github.com/leecrossley/yokoi-mertens-late-starts
 type: software
