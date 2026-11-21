@@ -1,4 +1,8 @@
 """Prime windows and complete ordered tails for one late Yokoi field."""
+
+if not __debug__:
+    raise SystemExit("Run with assertions enabled.")
+
 from math import isqrt
 from flint import arb, ctx, fmpz
 from weighted import primes, prime_constants
