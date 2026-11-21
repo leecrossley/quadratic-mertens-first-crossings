@@ -9,7 +9,7 @@ Let $`d>1`$ be a positive fundamental discriminant, $`\chi=\chi_d`$ its real pri
  \qquad F_d(y)=\int_y^\infty B_d(t)\frac{y}{t^2}\,dt.
 ```
 
-Use RH for the ordinary zeta function and GRH for $`L(s,\chi)`$. The proof identifies where the zero-location hypotheses enter. The original first-crossing problem asks about the unaveraged product. [Johnston's Problem 8](https://arxiv.org/html/2407.03530v1) · [Dirichlet critical-line verification](https://math.mit.edu/~drew/grh/)
+Use RH for the ordinary zeta function and GRH for $`L(s,\chi)`$. The proof identifies where the zero-location hypotheses enter. The original first-crossing problem asks about the unaveraged product. Alpöge's announced Dirichlet GRH theorem supplies this input. [Johnston's Problem 8](https://arxiv.org/html/2407.03530v1) · [Announcement](https://alpo.ge/remark.pdf) · [Independent formal checks](https://math.mit.edu/~drew/grh/)
 
 For a squarefree integer $`q\ge1`$ remove every multiple of its prime factors. The Gaussian sum and the ordinary partial sum of the remaining character values are
 
