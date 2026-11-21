@@ -19,6 +19,11 @@ def main():
     version = subprocess.check_output(["lean", "--version"], text=True)
     if "4.33.1" not in version or "819816b2" not in version:
         raise SystemExit("Expected the pinned Lean 4.33.1 compiler.")
+    if not Path("Mathlib.lean").is_file():
+        raise SystemExit("Run from the pinned Mathlib checkout using lake env.")
+    revision = subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip()
+    if revision != "0df444a360eaa60ab8c11dca51a86af692955474":
+        raise SystemExit("Unexpected Mathlib revision: " + revision)
     expected = {"product_zero", "box_collision", "simultaneous_return", "polynomial_envelope",
                 "recurrence_exponent", "discriminant_envelope"}
     paths = [str(Path(p).resolve()) for p in os.environ["LEAN_PATH"].split(os.pathsep) if p]

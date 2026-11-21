@@ -81,7 +81,11 @@ def check_transfer(d, label):
         assert correction >= 0 and correction*scale < 48
         e = scale*(lp - arb.const_euler() - residue.log() - x.log().log())
         phi = (psi-x)/x.sqrt()
-        assert abs(e-phi) < 496 + 128*arb(d).log()
+        assert abs(e-phi) < 3
+        if d == 5 and twice_x == 7:
+            # No ideal enters before norm 4, so psi is zero throughout this interval.
+            assert phi < 0 and (phi + x.sqrt()).contains(0)
+            assert (e + scale*(arb.const_euler() + residue.log() + x.log().log())).contains(0)
 
 
 def worked_field():
@@ -110,7 +114,7 @@ def main():
     for d, label in ((5, 4), (8, 5), (12, 11), (13, 12), (17, 16), (29, 28), (37, 36)):
         check_constants(d, label)
         check_transfer(d, label)
-    print("35 nonintegral arguments: prime-power correction and signed transfer pass")
+    print("35 nonintegral arguments: scaled prime-power correction below 48, signed errors differ by less than 3")
     worked_field()
 
 

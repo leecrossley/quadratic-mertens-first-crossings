@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: If you use this work, please cite it as below.
 title: "How long can a prime product stay above its Mertens curve?"
-abstract: "A discriminant bound for the first prime-ideal Mertens crossing in every real quadratic field, including all of Yokoi’s family."
+abstract: "A discriminant bound for the first prime-ideal Mertens crossing under GRH for each real quadratic field, including all of Yokoi’s family."
 authors:
   - family-names: Crossley
     given-names: Lee

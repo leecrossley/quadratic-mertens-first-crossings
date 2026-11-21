@@ -4,13 +4,15 @@
 
 As more prime ideals enter a product, its value rises in jumps. Mertens' theorem predicts a smooth curve for its growth. Daniel R. Johnston asked how far you may have to go before that curve overtakes the product in a family of number fields. He posed the question during Ethan Lee's talk at the 2024 Comparative Prime Number Theory Symposium. [Problem 8, pp. 4–5](https://arxiv.org/pdf/2407.03530#page=4)
 
-**For every real quadratic field of discriminant $d$, the curve overtakes the product before**
+The bound for a field of discriminant $d$ assumes GRH for its Dedekind zeta function $\zeta(s)L(s,\chi_d)$. Alpöge's announced Dirichlet GRH theorem supplies this hypothesis for both factors. [Announcement](https://alpo.ge/remark.pdf) [Formal verification](https://math.mit.edu/~drew/grh/)
+
+**For every real quadratic field of discriminant $d$, the product is strictly below the curve at some point before**
 
 $$
 U(d)=2^{\thinspace2^{\thinspace d^{30000}}}.
 $$
 
-For $K=\mathbb Q(\sqrt d)$ of fundamental discriminant $d$, the product is $P_K(x)=\prod_{N\mathfrak p\le x}(1-1/N\mathfrak p)^{-1}$ and the curve is $e^{\gamma_E}\kappa_K\log x$, where $\kappa_K$ is the residue of the Dedekind zeta function at 1. The proof gives a point of strict inequality $P_K(x)<e^{\gamma_E}\kappa_K\log x$ before the cutoff. The same formula covers every member of Yokoi's family, including arbitrarily late first crossings. The choice of Yokoi's family was ours. Johnston asked for a family in general. [Proof](PROOF.md) · [Original problem](https://arxiv.org/pdf/2407.03530#page=5)
+For $K=\mathbb Q(\sqrt d)$ of fundamental discriminant $d$, the product is $P_K(x)=\prod_{N\mathfrak p\le x}(1-1/N\mathfrak p)^{-1}$ and the curve is $e^{\gamma_E}\kappa_K\log x$, where $\kappa_K$ is the residue of the Dedekind zeta function at 1. For the first crossing we take the infimum over $x\ge2$ of points of strict negative error, counting ideals at their norm. If the error is already negative at 2 the infimum is 2. Equality at an interior boundary can be followed immediately by negative values. The proof gives a point of strict inequality $P_K(x)<e^{\gamma_E}\kappa_K\log x$ with $e^2<x<U(d)$, beyond the first ideal norm (at most 4). The same formula covers every member of Yokoi's family, including arbitrarily late first crossings. The choice of Yokoi's family was ours. Johnston asked for a family in general. [Proof](PROOF.md) [Original problem](https://arxiv.org/pdf/2407.03530#page=5)
 
 For one sense of scale, take $9413=97^2+4$. Its first crossing is between 525.474356978253 and 525.474356978254. The general bound is enormous even here. Its purpose is to give a finite deadline from the discriminant alone for every field, including those left outside a density-one conclusion. [Earlier family result and census](https://github.com/leecrossley/yokoi-mertens-crossing-bounds/releases/tag/v1.0.0)
 
@@ -20,6 +22,8 @@ Start just above $x=1$, before even the first prime ideal could enter. In the pr
 
 The proof uses the Dirichlet zero-location theorem announced by Levent Alpöge on 20 November 2026. Andrew Sutherland reports independent kernel checks and statement matching. The quadratic factorization reduces the zero-location input to exactly that statement. The rest is a written analytic proof, with the finite simultaneous approximation argument and exponent estimates also checked in Lean. Hathi and Lee had already proved fixed-field oscillation under a zero condition. The contribution here is the explicit discriminant-only deadline. [Upstream audit](https://math.mit.edu/~drew/grh/) · [Hathi and Lee](https://arxiv.org/pdf/2112.02166#page=3) · [Prior work and verification scope](PRIOR-WORK.md)
 
+The later conductor bound gives a smaller explicit deadline under the same field GRH hypothesis. For computed first crossings the census gives the values from 2 and identifies the largest field through discriminant 10,000. [Smaller deadline](https://github.com/leecrossley/quadratic-mertens-conductor-bound) [Finite census](https://github.com/leecrossley/yokoi-mertens-crossing-bounds)
+
 ## Verification
 
 Print the sharper bound in exact symbolic form for a positive fundamental discriminant. The calculator takes the integer supplied as its size parameter. Field membership is a hypothesis of the theorem. Python 3.10 or later suffices.
@@ -28,7 +32,7 @@ Print the sharper bound in exact symbolic form for a positive fundamental discri
 python3 bound.py 9413
 ~~~
 
-To reproduce the finite interval checks and verify the release manifest, run the commands below in the release directory. The checks evaluate the constant term in the explicit formula independently at zero and one, compare the signed prime-power and product errors at 35 arguments, and replay the full first-crossing window calculation for $d=9413$.
+To reproduce the finite interval checks and verify the release manifest, run the commands below in the release directory. The checks evaluate the constant term in the explicit formula independently at zero and one, bound the difference between the two signed errors by 3 at 35 arguments and check them against the empty product for $d=5$ at $x=7/2$, and replay the full first-crossing window calculation for $d=9413$.
 
 ~~~sh
 python3 -m venv .venv
