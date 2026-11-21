@@ -30,6 +30,7 @@ Open a result to read its statement, hypotheses and replay instructions. Run its
 
 - In many Yokoi fields the average is positive from 2 across a range longer than every fixed power of the log discriminant. At sufficiently large starts in this range the untwisted bias exceeds every quadratic correlation in the stated conductor range. The proof assumes RH and quadratic Dirichlet GRH. [Statement and checks](results/yokoi-delay-small-character-correlations/) [Archived releases](https://doi.org/10.5281/zenodo.24417504)
 - In an ordinary-prime model the untwisted bias can grow while every fixed secondary quadratic correlation stays bounded through a prescribed horizon. The proof uses RH and quadratic Dirichlet GRH. [Statement and checks](results/quadratic-twist-correlation-obstruction/) [Archived releases](https://doi.org/10.5281/zenodo.24417499)
+- A long delay forces a signed count on integers free of small prime factors to go negative and then recover. Both witnesses occur by $`d^8`$ for any selection of primes through the squared log discriminant, including a field with a central zero. The proof uses RH and quadratic Dirichlet GRH. [Proof, replay and evidence](results/rough-character-deficits/)
 
 ## Checking the collection
 
