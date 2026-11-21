@@ -5,7 +5,7 @@ abstract: "A quantitative bound on the Yokoi fields missed by a fixed scan for n
 authors:
   - family-names: Crossley
     given-names: Lee
-version: 1.0.1
+version: 1.0.2
 license: CC-BY-4.0
 repository-code: https://github.com/leecrossley/yokoi-mertens-geometric-starts
 type: software
