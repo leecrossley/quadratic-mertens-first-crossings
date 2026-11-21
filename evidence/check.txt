@@ -1,0 +1,2 @@
+Three cutoffs for an asymmetric signed tilt: discarded squared norm equals the exact random-product tail.
+52488 exact full and capped power sums satisfy the Abel bound over all tested sign patterns.
