@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: If you use this work, please cite it as below.
 title: "How close must averaging start to a late Mertens crossing?"
-abstract: "Prescribed first crossings and earliest weighted starts in Yokoi real quadratic fields"
+abstract: "Prescribed first crossings and earliest weighted starts in Yokoi real quadratic fields under ordinary RH and quadratic Dirichlet GRH."
 authors:
   - family-names: Crossley
     given-names: Lee
