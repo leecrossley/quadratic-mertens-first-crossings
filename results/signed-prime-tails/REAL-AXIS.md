@@ -10,7 +10,7 @@ Let $`d>1`$ be a positive fundamental discriminant, $`\chi_d`$ its primitive qua
  F_d(y)=\int_y^\infty B_d(t)\frac y{t^2}\,dt .
 ```
 
-Use RH for the ordinary zeta function and GRH for each primitive quadratic character in the statement in question. These are the zero-location hypotheses in the proofs. Yokoi's family consists here of squarefree $d=n^2+4$ with $n$ odd. Daniel R. Johnston's Problem 8 concerns the first crossing of the underlying product. The question here concerns a starting point of its future average. [Problem 8](https://arxiv.org/html/2407.03530v1) · [Critical-line statements](https://math.mit.edu/~drew/grh/)
+Use RH for the ordinary zeta function and GRH for each primitive quadratic character in the statement in question. These are the zero-location hypotheses in the proofs. Alpöge's announced Dirichlet GRH theorem supplies this input. Yokoi's family consists here of squarefree $d=n^2+4$ with $n$ odd. Daniel R. Johnston's Problem 8 concerns the first crossing of the underlying product. The question here concerns a starting point of its future average. [Problem 8](https://arxiv.org/html/2407.03530v1) · [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/)
 
 For $x>0$ let $\Lambda_d(s)=(d/\pi)^{s/2}\Gamma(s/2)L(s,\chi_d)$ and put
 
@@ -28,7 +28,7 @@ $$
  \tag{1}
 $$
 
-Both the exponent and the threshold are uniform in the number of zeros at or near the centre. A finite menu of tests uses the maximum of their exponents and thresholds. For example $K(v)=e^{-xv}(1-e^{-hv})^k$, $h>0$, gives a test on $k+1$ equally spaced points. The case $k=0$ says that a fixed relative shortfall below $P_d(x)=1/2-1/(2x)$ suffices. The theorem gives no numerical exponent for a field whose test has no such shortfall.
+Both the exponent and the threshold are uniform in the number of zeros at or near the centre. A finite menu of tests uses the maximum of their exponents and thresholds. For example $K(v)=e^{-xv}(1-e^{-hv})^k$, $h>0$, gives a test on $k+1$ equally spaced points. The case $k=0$ says that $P_d(x)\lt1/2-1/(2x)-\eta M_d$ suffices. The proof does not compute $a$ or $d_0$, because $d_0$ comes from the weak limit (4), which is proved without a rate. The theorem says nothing about a field whose test has no such shortfall.
 
 There is a companion test using ordinary primes. On a fixed interval of powers, a smoothed split-prime excess exceeding a field-independent error of order $1/\log\log(3d)$ forces a negative start in that same interval. It gives explicit prime-sum limits for the double lattice and the concentrated central pattern. [Local identity and the two prime sums](REAL-AXIS-PRIMES.md)
 
