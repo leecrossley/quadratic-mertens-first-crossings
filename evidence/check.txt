@@ -1,0 +1,3 @@
+Euler-factor switches and their signs checked at all primes from 5 through 1999.
+Exact second and fourth moment checks on the independent seven-prime splitting model passed.
+Maximal-chain and middle-layer bounds passed on all equal-sum classes through dimension ten.

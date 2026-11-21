@@ -1,0 +1,3 @@
+'CrossingDensity.switch_decreases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CrossingDensity.short_recovery' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CrossingDensity.conditional_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
