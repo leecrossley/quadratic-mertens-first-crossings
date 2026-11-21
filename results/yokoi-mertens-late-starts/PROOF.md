@@ -2,7 +2,7 @@
 
 Take squarefree $d=m^2+4$, with $m$ odd and positive. For $K=\mathbb Q(\sqrt d)$ let $P_d(t)$ be its prime-ideal Mertens product, $c_d=e^\gamma L(1,\chi_d)$ and $B_d(t)=\log(P_d(t)/(c_d\log t))$. Write $S_d=\inf\lbrace t\ge2:B_d(t)<0\rbrace$. Write $Y_d$ for the infimum of starts $y\ge2$ where some bounded nonnegative nonincreasing weight gives $\int_y^\infty w(t)B_d(t)\thinspace dt/t<0$. An empty infimum is infinite. Let $\Pr_D$ be the proportion of these discriminants in $(D/2,D]$ and write $u=\log X$.
 
-**Theorem.** For every $K_0>0$ there are positive $a,c$ such that, uniformly as $D,X\to\infty$ with $u\le c(\log D)^{1/5}$,
+**Theorem.** Assume RH for the Riemann zeta function and GRH for the quadratic Dirichlet L-functions attached to these discriminants. For every $K_0>0$ there are positive $a,c$ such that, uniformly as $D,X\to\infty$ with $u\le c(\log D)^{1/5}$,
 
 $$
  \Pr_D\big(S_d\ge X,\thinspace Y_d\le a X/u^8\big)\le\exp(-K_0 u^4).
