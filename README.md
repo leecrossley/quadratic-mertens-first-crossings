@@ -1,5 +1,7 @@
 # How rare is a late crossing that an average from 2 can still detect?
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24412657.svg)](https://doi.org/10.5281/zenodo.24412657)
+
 Take Yokoi's real quadratic fields, whose squarefree discriminants are $m^2+4$ for positive odd $m$. Keep the fields in which the prime-ideal Mertens product stays above its expected value through $X$, yet a running log-error integral starting at 2 eventually turns negative. Their fraction has a limiting value $p(X)>0$. Its rate of decay is
 
 $$
