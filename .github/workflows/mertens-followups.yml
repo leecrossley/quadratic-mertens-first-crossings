@@ -1,0 +1,59 @@
+name: Verify quadratic Mertens results
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'results/yokoi-mertens-positive-averages-5-13/**'
+      - 'results/split-inert-prime-test-obstruction/**'
+      - 'results/quadratic-prime-disagreement-windows/**'
+      - 'results/quadratic-prime-disagreement-model/**'
+      - 'results/yokoi-delay-small-character-correlations/**'
+      - 'results/quadratic-twist-correlation-obstruction/**'
+      - '.github/workflows/mertens-followups.yml'
+  pull_request:
+    paths:
+      - 'results/yokoi-mertens-positive-averages-5-13/**'
+      - 'results/split-inert-prime-test-obstruction/**'
+      - 'results/quadratic-prime-disagreement-windows/**'
+      - 'results/quadratic-prime-disagreement-model/**'
+      - 'results/yokoi-delay-small-character-correlations/**'
+      - 'results/quadratic-twist-correlation-obstruction/**'
+      - '.github/workflows/mertens-followups.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mertens-followups-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Verify ${{ matrix.result }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    strategy:
+      fail-fast: false
+      matrix:
+        result:
+          - yokoi-mertens-positive-averages-5-13
+          - split-inert-prime-test-obstruction
+          - quadratic-prime-disagreement-windows
+          - quadratic-prime-disagreement-model
+          - yokoi-delay-small-character-correlations
+          - quadratic-twist-correlation-obstruction
+    defaults:
+      run:
+        working-directory: results/${{ matrix.result }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Install the pinned arithmetic package
+        run: |
+          python3 -m venv "$RUNNER_TEMP/venv"
+          "$RUNNER_TEMP/venv/bin/python" -m pip install -r requirements.txt
+      - name: Replay the certificates
+        run: PYTHON="$RUNNER_TEMP/venv/bin/python" sh verify-release.sh
