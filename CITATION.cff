@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: "First Mertens crossings in two real quadratic fields"
+abstract: "First Mertens-product crossings in two real quadratic fields and an explicit density bound for Yokoi discriminants. CPNTS Problem 8."
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: 1.0.2
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/quadratic-mertens-first-crossings
+type: software
