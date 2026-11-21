@@ -1,6 +1,6 @@
 # Enough fields remain above their benchmark through X
 
-The lower bound needed to condition on $S_d\ge X$ is $\Pr_D(S_d\ge X)\ge\exp[-C(\log X)^4]$ for $\log X\le c(\log D)^{1/5}$, with $c$ small and $D,X\to\infty$. It assumes RH for the Riemann zeta function, but no hypothesis on $L(s,\chi_d)$. We give the changes of parameters in the earlier signed-profile estimate since the cutoff can grow very slowly here. [Signed-profile proof, §§1–2](https://github.com/leecrossley/yokoi-mertens-prescribed-crossings/blob/v1.0.0/PROOF.md)
+The lower bound needed to condition on $S_d\ge X$ is $\Pr_D(S_d\ge X)\ge\exp[-C(\log X)^4]$ for $\log X\le c(\log D)^{1/5}$, with $c$ small and $D,X\to\infty$. It assumes RH for the Riemann zeta function, but no hypothesis on $L(s,\chi_d)$. We give the changes of parameters in the earlier signed-profile estimate since the cutoff can grow very slowly here. [Signed-profile proof, §§1–2](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-prescribed-crossings/PROOF.md)
 
 Replace $X$ temporarily by the next dyadic integer $X'$ (so $X\le X'<2X$ except equality). Choose first a sufficiently large amplitude $A$ and then a sufficiently large fixed dyadic $B$. Force all primes through $B$ inert. On $B<p\le2X'$ set
 

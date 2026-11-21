@@ -22,7 +22,7 @@ Start just above $x=1$, before even the first prime ideal could enter. In the pr
 
 The proof uses the Dirichlet zero-location theorem announced by Levent Alpöge on 20 November 2026. Andrew Sutherland reports independent kernel checks and statement matching. The quadratic factorization reduces the zero-location input to exactly that statement. The rest is a written analytic proof, with the finite simultaneous approximation argument and exponent estimates also checked in Lean. Hathi and Lee had already proved fixed-field oscillation under a zero condition. The contribution here is the explicit discriminant-only deadline. [Upstream audit](https://math.mit.edu/~drew/grh/) · [Hathi and Lee](https://arxiv.org/pdf/2112.02166#page=3) · [Prior work and verification scope](PRIOR-WORK.md)
 
-The later conductor bound gives a smaller explicit deadline under the same field GRH hypothesis. For computed first crossings the census gives the values from 2 and identifies the largest field through discriminant 10,000. [Smaller deadline](https://github.com/leecrossley/quadratic-mertens-conductor-bound) [Finite census](https://github.com/leecrossley/yokoi-mertens-crossing-bounds)
+The later conductor bound gives a smaller explicit deadline under the same field GRH hypothesis. For computed first crossings the census gives the values from 2 and identifies the largest field through discriminant 10,000. [Smaller deadline](https://github.com/leecrossley/quadratic-mertens-first-crossings/tree/main/results/quadratic-mertens-conductor-bound) [Finite census](https://github.com/leecrossley/quadratic-mertens-first-crossings/tree/main/results/yokoi-mertens-crossing-bounds)
 
 ## Verification
 

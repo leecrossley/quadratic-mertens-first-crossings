@@ -18,7 +18,7 @@ $$
  -\min(w,\ 2\sqrt{A_\ast}-w),\qquad 0\le w\le2\sqrt{A_\ast}.
 $$
 
-It descends to a minimum at $w=\sqrt{A_\ast}$ and then recovers. The positive area accumulated through $X$ converges to $A_\ast$. This constant is the minimum positive area required to stay above the benchmark indefinitely in the space of admissible prime splitting patterns. [Shape theorem](SHAPE.md) · [Definition of the constant](https://github.com/leecrossley/mertens-power-average-deadlines/blob/v1.0.0/SLOW-WEIGHTS.md)
+It descends to a minimum at $w=\sqrt{A_\ast}$ and then recovers. The positive area accumulated through $X$ converges to $A_\ast$. This constant is the minimum positive area required to stay above the benchmark indefinitely in the space of admissible prime splitting patterns. [Shape theorem](SHAPE.md) · [Definition of the constant](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/mertens-power-average-deadlines/SLOW-WEIGHTS.md)
 
 The proof uses independent local prime signs, a joint limit for the residue and the entire running integral, and a comparison of high moments in individual discriminant shells. It leaves open whether every individual field has a polynomially bounded first crossing. [Moment estimates](MOMENTS.md) · [Prior work](PRIOR-WORK.md)
 

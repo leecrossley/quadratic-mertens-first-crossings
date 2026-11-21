@@ -10,7 +10,7 @@ $$
 M(D)>\exp\big(c(\log D)^{1/5}\big).
 $$
 
-To deduce infinitely many distinct fields with finite waits larger than any fixed power of $\log d$, we also use the all-field finiteness theorem under GRH for $\zeta(s)L(s,\chi_d)$. The older unconditional lower bound was of order $\log D / ((\log\log D)^2\log\log\log D)$. The exponent $1/5$ comes from the cost of biasing the primes enough to keep the product ahead at **every** point in a growing interval. The constant and starting discriminant are implicit. [Proof](PROOF.md) [Earlier lower bound, §5](https://github.com/leecrossley/yokoi-mertens-crossing-bounds/blob/v1.0.0/PROOF.md) [Literature and scope](PRIOR-WORK.md)
+To deduce infinitely many distinct fields with finite waits larger than any fixed power of $\log d$, we also use the all-field finiteness theorem under GRH for $\zeta(s)L(s,\chi_d)$. The older unconditional lower bound was of order $\log D / ((\log\log D)^2\log\log\log D)$. The exponent $1/5$ comes from the cost of biasing the primes enough to keep the product ahead at **every** point in a growing interval. The constant and starting discriminant are implicit. [Proof](PROOF.md) [Earlier lower bound, §5](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-crossing-bounds/PROOF.md) [Literature and scope](PRIOR-WORK.md)
 
 ## The field with first crossing near 201,402
 
@@ -22,7 +22,7 @@ $$
 201402.091859 < S_d<201402.091860 .
 $$
 
-The first calculation derives the residue from a complete character period, a rigorous tail bound, and the real quadratic class number formula. The fundamental unit is $(2237+\sqrt d)/2$, by the minimum-unit argument for this family. The class number comes out as 48. Prime splitting is computed by Euler's criterion and the local factors are multiplied. The second calculation obtains the residue directly from a Dirichlet $L$-function and sums the logarithms of independently generated local factors. Both use Arb interval arithmetic. This is a worked example from a search, with no claim that it is the largest below a given discriminant. [Example code](example.py) · [Certified output](evidence/example.txt) · [Fundamental unit and class formula, §6](https://github.com/leecrossley/yokoi-mertens-crossing-bounds/blob/v1.0.0/PROOF.md)
+The first calculation derives the residue from a complete character period, a rigorous tail bound, and the real quadratic class number formula. The fundamental unit is $(2237+\sqrt d)/2$, by the minimum-unit argument for this family. The class number comes out as 48. Prime splitting is computed by Euler's criterion and the local factors are multiplied. The second calculation obtains the residue directly from a Dirichlet $L$-function and sums the logarithms of independently generated local factors. Both use Arb interval arithmetic. This is a worked example from a search, with no claim that it is the largest below a given discriminant. [Example code](example.py) · [Certified output](evidence/example.txt) · [Fundamental unit and class formula, §6](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-crossing-bounds/PROOF.md)
 
 ## Checking the result
 

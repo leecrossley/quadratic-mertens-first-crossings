@@ -7,5 +7,5 @@ authors:
 version: 1.0.4
 date-released: 2026-11-21
 license: CC-BY-4.0
-repository-code: https://github.com/leecrossley/quadratic-twist-correlation-obstruction
+repository-code: https://github.com/leecrossley/quadratic-mertens-first-crossings/tree/main/results/quadratic-twist-correlation-obstruction
 type: software

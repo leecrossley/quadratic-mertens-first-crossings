@@ -7,5 +7,5 @@ authors:
     given-names: Lee
 version: 1.0.2
 license: CC-BY-4.0
-repository-code: https://github.com/leecrossley/mertens-power-average-deadlines
+repository-code: https://github.com/leecrossley/quadratic-mertens-first-crossings/tree/main/results/mertens-power-average-deadlines
 type: software

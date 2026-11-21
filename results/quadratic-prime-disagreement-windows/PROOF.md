@@ -101,7 +101,7 @@ Indeed $`|(\arg c_t)'|\le 8/3`$. Pair the resulting $`O(|\lambda-t|)`$ error wit
  \tag{5}
 ```
 
-[Conductor-five certificate](https://github.com/leecrossley/yokoi-mertens-positive-averages-5-13/blob/f7233ab4e1c85b9b37bffdaa11c4559d7713bd62/PROOF.md)
+[Conductor-five certificate](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-positive-averages-5-13/PROOF.md)
 
 For any fixed nonempty positive interval $`J`$, the number of $`d`$-ordinates there is $`(|J|/(2\pi)+o(1))\log d`$. For completeness, for fixed $`v>1/2`$ the paired logarithmic derivative gives
 $`\sum_d(v^2+\lambda^2)^{-1}=(\log d)/(2v)+O_v(1)`$; the Euler product at $`1/2+v>1`$ bounds its logarithmic derivative uniformly. Weight each ordinate by $`(1+\lambda^2)^{-1}/\log d`$ and map it to $`x=(1+\lambda^2)^{-1}`$. The finite measures on $`[0,1]`$ are bounded. For any weak limit, integration of $`(1+(v^2-1)x)^{-1}`$ gives $`1/(2v)`$. The image of $`d\lambda/[2\pi(1+\lambda^2)]`$ gives the same values. Expansion near $`v=1`$ identifies the moments, hence the measure. The limiting measure has no boundary atoms for finite nondegenerate intervals. Undo the weight and use symmetry to count one sign. [Earlier low-ordinate argument](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/ef3e53c/results/signed-prime-tails/PROOF.md)

@@ -43,7 +43,7 @@ $$
  |B_d(t)|\le |Z_t|+C\big(e^{-c\sqrt{\log t}}+t^{-1/2}+(\log D)^{-3}\big).
 $$
 
-This is obtained by truncating the quadratic Euler product via Granville and Soundararajan and using the rational norm factorisation. Beyond $V$, the quadratic pointwise bound, which assumes field GRH, gives $\int_V^\infty |B_d(t)|\thinspace dt/t\ll(\log D+\log V+1)/\sqrt V$ for every field. [Euler products, Proposition 2.2](https://arxiv.org/pdf/math/0206031#page=7) · [Details of both error estimates](https://github.com/leecrossley/yokoi-mertens-crossing-lookahead/blob/v1.0.0/FAMILY.md)
+This is obtained by truncating the quadratic Euler product via Granville and Soundararajan and using the rational norm factorisation. Beyond $V$, the quadratic pointwise bound, which assumes field GRH, gives $\int_V^\infty |B_d(t)|\thinspace dt/t\ll(\log D+\log V+1)/\sqrt V$ for every field. [Euler products, Proposition 2.2](https://arxiv.org/pdf/math/0206031#page=7) · [Details of both error estimates](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-crossing-lookahead/FAMILY.md)
 
 Multiply either controlled quantity by the indicator of the nonexceptional set. Applying Minkowski over $R\le t\le V$ gives (7) with the additional error
 

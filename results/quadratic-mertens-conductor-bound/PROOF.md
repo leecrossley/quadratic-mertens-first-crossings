@@ -20,7 +20,7 @@ U(d)&=2^{4JQ^N}. &&
 \end{aligned}
 $$
 
-Consequently $\log\log U(d)\ll (\log d)^3(\log\log d)^2$ as $d\to\infty$, with an absolute implied constant. The explicit expression covers small discriminants too. The earlier cutoff had $\log\log U_{\rm old}(d)$ polynomial in $d$. All members of Yokoi's family have the required signature. [Earlier cutoff and definitions](https://github.com/leecrossley/yokoi-mertens-explicit-upper-bound/blob/v1.0.0/PROOF.md)
+Consequently $\log\log U(d)\ll (\log d)^3(\log\log d)^2$ as $d\to\infty$, with an absolute implied constant. The explicit expression covers small discriminants too. The earlier cutoff had $\log\log U_{\rm old}(d)$ polynomial in $d$. All members of Yokoi's family have the required signature. [Earlier cutoff and definitions](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-explicit-upper-bound/PROOF.md)
 
 ## 1. The zero sum and its real constant
 
@@ -39,7 +39,7 @@ $$
 D(u):=\Phi(u)-b(u)=-\sum_\rho e^{i\lambda u}/\rho .
 $$
 
-The once-integrated formula of Grenié and Molteni has a locally absolutely convergent zero sum. Differentiating it gives this identity. The paired logarithmic derivative of $\Xi(s)=s(s-1)d^{s/2}\pi^{-s}\Gamma(s/2)^2\zeta_K(s)$ at 2 gives $V\le9+3\log d$. Hence $V\le3L$ and $|C|\le8+2\log d\le2L$. Details of the residues and those estimates are in §§1–2 of the earlier proof. [Integrated explicit formula, (1.3a) and Lemma 3.3](https://arxiv.org/pdf/1312.4465#page=2) · [Derivation of the constants](https://github.com/leecrossley/yokoi-mertens-explicit-upper-bound/blob/v1.0.0/PROOF.md)
+The once-integrated formula of Grenié and Molteni has a locally absolutely convergent zero sum. Differentiating it gives this identity. The paired logarithmic derivative of $\Xi(s)=s(s-1)d^{s/2}\pi^{-s}\Gamma(s/2)^2\zeta_K(s)$ at 2 gives $V\le9+3\log d$. Hence $V\le3L$ and $|C|\le8+2\log d\le2L$. Details of the residues and those estimates are in §§1–2 of the earlier proof. [Integrated explicit formula, (1.3a) and Lemma 3.3](https://arxiv.org/pdf/1312.4465#page=2) · [Derivation of the constants](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-explicit-upper-bound/PROOF.md)
 
 We need the **difference** $V-C$. At 1, $\Xi'(1)/\Xi(1)=V/2$. The residue expansion of the Riemann zeta function and the identity $\Gamma'(1/2)/\Gamma(1/2)=-\gamma_E-2\log2$ give
 
@@ -77,7 +77,7 @@ E_A(u)-Z(u)=\frac{W(u)}{u}+\int_0^\infty e^{-t/2}a'_u(t)W(u+t)\thinspace dt
  +b(u)-\int_0^\infty e^{-t/2}a_u(t)b(u+t)\thinspace dt .
 $$
 
-In particular its absolute value is at most $7V/u+3e^{-u/2}(|C|+u+2)$. For the second term use $|b(v)|\le e^{-v/2}(|C|+v+1)$ for $v\ge1$ and integrate $(|C|+u+t+1)e^{-t}$. The correction for ideal powers satisfies $0\le e^{u/2}u(\log P(e^u)-A(e^u))\le48$ for $u\ge1$. This bound follows by splitting the ideals at $e^{u/2}$ and using $\sum_{q\le y}\log q\le8y$ as in §3 of the earlier proof. [Partial summation and prime-power correction](https://github.com/leecrossley/yokoi-mertens-explicit-upper-bound/blob/v1.0.0/PROOF.md)
+In particular its absolute value is at most $7V/u+3e^{-u/2}(|C|+u+2)$. For the second term use $|b(v)|\le e^{-v/2}(|C|+v+1)$ for $v\ge1$ and integrate $(|C|+u+t+1)e^{-t}$. The correction for ideal powers satisfies $0\le e^{u/2}u(\log P(e^u)-A(e^u))\le48$ for $u\ge1$. This bound follows by splitting the ideals at $e^{u/2}$ and using $\sum_{q\le y}\log q\le8y$ as in §3 of the earlier proof. [Partial summation and prime-power correction](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-explicit-upper-bound/PROOF.md)
 
 Set $E(u)=e^{u/2}u\log(P(e^u)/(e^{\gamma_E}\kappa u))$. For $u\ge J$ the two bounds give, almost everywhere,
 
@@ -124,10 +124,10 @@ $$
 
 The gamma term satisfies $\Gamma'(a)/\Gamma(a)\le\log a$ for $a>0$ by Jensen's inequality for the logarithm under the gamma density of mean $a$. For the elementary last bound, $m\le80L$ for $L\ge19$, $\log(T+1)\le258\log2+\log(80)+3\log L\le 16L$, and $\log d\le L$. The sum of absolute coefficients at these low frequencies is at most $2TV$, by $|\rho|\le2T$.
 
-Partition the unit cube of dimension the number of low frequencies into boxes of side $1/Q$. Two of the first $Q^n+1$ multiples of the vector with coordinates $J\lambda/(2\pi)$ fall in one box when $n$ coordinates are present. Their difference $q$ satisfies $1\le q\le Q^N$ and $|e^{iJq\lambda}-1|\le2\pi/Q$ for every low frequency. Repeated or central zeros pose no issue. The simultaneous approximation statement was checked in Lean in the earlier release. [Formal recurrence lemma](https://github.com/leecrossley/yokoi-mertens-explicit-upper-bound/blob/v1.0.0/FirstCrossing.lean)
+Partition the unit cube of dimension the number of low frequencies into boxes of side $1/Q$. Two of the first $Q^n+1$ multiples of the vector with coordinates $J\lambda/(2\pi)$ fall in one box when $n$ coordinates are present. Their difference $q$ satisfies $1\le q\le Q^N$ and $|e^{iJq\lambda}-1|\le2\pi/Q$ for every low frequency. Repeated or central zeros pose no issue. The simultaneous approximation statement was checked in Lean in the earlier release. [Formal recurrence lemma](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-explicit-upper-bound/FirstCrossing.lean)
 
 On translating the average by $Jq$, the low terms change by at most $4\pi TV/Q\le12\pi/128<1$. Each high tail costs less than 1 by (6). Consequently $Z_k(2\delta+Jq)<-77$. Throughout this last averaging interval (4) applies. The average of $E$ is strictly negative, so it is negative on a positive-measure subset, including points away from jumps. At any such $u$, $P(e^u)<e^{\gamma_E}\kappa u$ and $u\le JQ^N+3\delta$. Hence $e^u<U(d)$.
 
 Finally $m=O(\log L)$, $T=O(L^2\log L)$, $N=O(L^3\log L)$ and $\log Q=O(\log L)$. It follows directly that $\log\log U(d)=\log(4J\log2)+N\log Q=O(L^3(\log L)^2)$. This completes the bound.
 
-The displayed cutoff also improves the earlier one at each $d\ge5$. For a direct integer comparison, $L\le5d$, $m\le80L$, $N\le2^{270}L^4\le2^{280}d^4$ and $Q\le2^{281}d^4$. Thus $\lceil\log_2 Q\rceil\le281+4d\le61d$ and $\lceil\log_2(4J)\rceil\le15+d\le4d$. The integer $H=\lceil\log_2(4J)\rceil+N\lceil\log_2Q\rceil$ satisfies $U(d)\le2^{2^H}$ with $H<2^{287}d^5<d^{30000}$. For the earlier exact cutoff put $H_0=512+128\lceil\log_2 d\rceil$. Its double binary logarithm is $3+H_0(32H_0+9)2^{64H_0+9}>2^{64H_0}\ge2^{32768}d^{8192}>2^{287}d^5$. This compares the two cutoffs for every $d\ge5$. The new upper estimate, earlier exact integer and earlier simplified exponent have respectively 89, 17,273 and 20,970 decimal digits at $d=5$, and 90, 44,400 and 119,212 at $d=9413$. [Earlier exact formula](https://github.com/leecrossley/yokoi-mertens-explicit-upper-bound/blob/v1.0.0/PROOF.md)
+The displayed cutoff also improves the earlier one at each $d\ge5$. For a direct integer comparison, $L\le5d$, $m\le80L$, $N\le2^{270}L^4\le2^{280}d^4$ and $Q\le2^{281}d^4$. Thus $\lceil\log_2 Q\rceil\le281+4d\le61d$ and $\lceil\log_2(4J)\rceil\le15+d\le4d$. The integer $H=\lceil\log_2(4J)\rceil+N\lceil\log_2Q\rceil$ satisfies $U(d)\le2^{2^H}$ with $H<2^{287}d^5<d^{30000}$. For the earlier exact cutoff put $H_0=512+128\lceil\log_2 d\rceil$. Its double binary logarithm is $3+H_0(32H_0+9)2^{64H_0+9}>2^{64H_0}\ge2^{32768}d^{8192}>2^{287}d^5$. This compares the two cutoffs for every $d\ge5$. The new upper estimate, earlier exact integer and earlier simplified exponent have respectively 89, 17,273 and 20,970 decimal digits at $d=5$, and 90, 44,400 and 119,212 at $d=9413$. [Earlier exact formula](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-explicit-upper-bound/PROOF.md)

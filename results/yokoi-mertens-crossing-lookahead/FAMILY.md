@@ -68,7 +68,7 @@ $$
  \mathbb E\left[\mathbf1_{\rm nonexceptional}\int_Q^V |B_d(t)|\thinspace dt/t\ \middle|\ I=1\right]=o(1).
 $$
 
-Indeed $\log V=128L$ while $Q=\exp((1+o(1))L)$. Beyond $V$ the pointwise real quadratic bound of (2) in the main proof, which assumes field GRH, gives a uniform absolute integral $O((\log D+\log V+1)/\sqrt V)=o(1)$. Markov's inequality now gives, simultaneously with (4), a proportion tending to one in the conditioned shell for which the entire absolute tail past $Q$ is $o(1)$. For example use the square root of the vanishing expectation as the cutoff on $[Q,V]$. [Quadratic pointwise estimate and its critical-line input](https://github.com/leecrossley/yokoi-mertens-optimal-starts/blob/v1.0.0/PROOF.md)
+Indeed $\log V=128L$ while $Q=\exp((1+o(1))L)$. Beyond $V$ the pointwise real quadratic bound of (2) in the main proof, which assumes field GRH, gives a uniform absolute integral $O((\log D+\log V+1)/\sqrt V)=o(1)$. Markov's inequality now gives, simultaneously with (4), a proportion tending to one in the conditioned shell for which the entire absolute tail past $Q$ is $o(1)$. For example use the square root of the vanishing expectation as the cutoff on $[Q,V]$. [Quadratic pointwise estimate and its critical-line input](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-optimal-starts/PROOF.md)
 
 Choose a fixed $\lambda>0$ sufficiently small that $e^{-\lambda}b^2>A$. For all $0<s\le\lambda/L$ the weight $(2/t)^s$ lies between $e^{-\lambda-o(1)}$ and 1 throughout $[2,Q]$. The positive prefix to $N$ has area at most $A+o(1)$, the interval $[N,Q]$ contributes at most $-e^{-\lambda}b^2+o(1)$, and the whole tail past $Q$ costs $o(1)$, uniformly over this range of powers. Consequently
 
