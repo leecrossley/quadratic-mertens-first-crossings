@@ -6,13 +6,15 @@ In the quadratic field with discriminant **82,864,613**, the prime-ideal Mertens
 
 Write $S$ for the first dip and $W$ for the first endpoint where the accumulated error from 2 becomes negative. In Yokoi fields with $W$ finite and $S$ tending to infinity, the smallest possible limiting value of $\log(W/S)/\sqrt{\log S}$ is exactly $\sqrt{2A_\ast}$. The constant $A_\ast$ is the minimum amount of positive error a product can accumulate while it stays above its benchmark indefinitely. A family of finite splitting patterns approaches the sharp coefficient in genuine fields. [Proof of the sharp waiting time](PROOF.md) · [Definition of the constant](https://github.com/leecrossley/mertens-power-average-deadlines/blob/v1.0.0/SLOW-WEIGHTS.md)
 
+For the upper bound and the power averages below, assume the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ for the quadratic discriminants concerned (field GRH). Alpöge's announced Dirichlet GRH theorem supplies this input. [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/) The sharp constant above and the count of late fields below are unconditional.
+
 For every sufficiently large Yokoi discriminant $d$ for which some decreasing average from 2 is negative, the first crossing satisfies
 
 $$
 S\le(\log d)^2\exp(-1.965\sqrt{\log\log d}).
 $$
 
-The proof gives every coefficient below $2\sqrt{2A_\ast}$ in place of $1.965$. In the other direction, every sufficiently large discriminant shell contains at least $D^{1/2-o(1)}$ fields whose first dip is as late as $(\log D)\exp(-\kappa\sqrt{\log\log D})$ for any fixed $\kappa>2\sqrt{A_\ast}$. Even in those fields an entire interval of slowly decaying power weights gives a negative integral starting at 2. Whether every sufficiently large Yokoi field has a successful start bounded by a fixed power of its discriminant remains open. [Upper estimate](PROOF.md) · [Construction and count](FAMILY.md) · [Literature](PRIOR-WORK.md)
+The proof gives every coefficient below $2\sqrt{2A_\ast}$ in place of $1.965$. In the other direction, every sufficiently large discriminant shell contains at least $D^{1/2-o(1)}$ fields whose first dip is as late as $(\log D)\exp(-\kappa\sqrt{\log\log D})$ for any fixed $\kappa>2\sqrt{A_\ast}$. Under field GRH, even in those fields an entire interval of slowly decaying power weights gives a negative integral starting at 2. Whether every sufficiently large Yokoi field has a successful start bounded by a fixed power of its discriminant remains open. [Upper estimate](PROOF.md) · [Construction and count](FAMILY.md) · [Literature](PRIOR-WORK.md)
 
 ## Verification
 
