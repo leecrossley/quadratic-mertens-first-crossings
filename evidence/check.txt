@@ -1,0 +1,14 @@
+d=5, unique minimum on [2,4]: 2.64281618 < y < 2.64281620, 0.183894 < normalised value < 0.183896.
+d=5, chord certificate: 2019 intervals cover [4,1000000].
+d=5, |psi(x)-x| < (50/1000)x for x >= 1000.
+d=5, analytic lower bound > 1/5 from y = 1000000 onwards.
+d=13, chord certificate: 2021 intervals cover [2,1000000].
+d=13, |psi(x)-x| < (37/1000)x for x >= 1000.
+d=13, analytic lower bound > 1/40 from y = 1000000 onwards.
+d=5, derivative sign and monotonicity isolate the same unique minimiser on [2,4].
+d=5, prime tests and supporting tangents certify all 39305 subintervals.
+d=5, Dirichlet L evaluation gives 0.202 < inverse-square mass < 0.204.
+d=5, independent Chebyshev and infinite tail inequalities pass.
+d=13, prime tests and supporting tangents certify all 39334 subintervals.
+d=13, Dirichlet L evaluation gives 0.442 < inverse-square mass < 0.444.
+d=13, independent Chebyshev and infinite tail inequalities pass.
