@@ -23,8 +23,8 @@ Open a result to read its statement, hypotheses and replay instructions. Run its
 - [A prime average that stays positive past 222 trillion](results/fixed-weight-delay-2380853/)
 - [A signed-prime test for a negative Mertens average](results/signed-prime-tails/)
 - [How the nearest zero and central multiplicity affect the first negative start](results/signed-prime-tails/NEAREST-ZERO.md)
-- [Positive averages for every start in discriminants 5 and 13](https://github.com/leecrossley/yokoi-mertens-positive-averages-5-13/releases/tag/v1.0.0)
-- [Split and inert prime tests with a central zero or close pair](https://github.com/leecrossley/split-inert-prime-test-obstruction/releases/tag/v1.0.0)
+- Under RH and quadratic Dirichlet GRH, the averages in discriminants 5 and 13 are positive for every real start from 2. [Corrected proof](https://github.com/leecrossley/yokoi-mertens-positive-averages-5-13/blob/f7233ab4e1c85b9b37bffdaa11c4559d7713bd62/PROOF.md) [Original release](https://github.com/leecrossley/yokoi-mertens-positive-averages-5-13/releases/tag/v1.0.0)
+- A central zero or a sufficiently close pair constrains the scalar prime test in large quadratic fields. A separate prime-sign model gives obstructions to tests at several frequencies. [Hypotheses and proof](https://github.com/leecrossley/split-inert-prime-test-obstruction/blob/v1.0.2/README.md) [Release](https://github.com/leecrossley/split-inert-prime-test-obstruction/releases/tag/v1.0.2)
 
 ## Checking the collection
 
