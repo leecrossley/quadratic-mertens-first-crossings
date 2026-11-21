@@ -1,0 +1,10 @@
+d=9413, h=3, 141781 norm jumps through 4000000; minimising endpoint 2017.
+First crossing in (509,547); 337.87434 < earliest-start infimum < 337.87436.
+Area above the minimum at cutoff [0.004187665481 +/- 4.69e-13]; certified maximum future loss [0.002397711401 +/- 2.88e-13].
+d=2380853, h=29, 3554753 norm jumps through 125000000; minimising endpoint 154877.
+First crossing in (142993,143063); 137123.79815 < earliest-start infimum < 137123.79818.
+Area above the minimum at cutoff [0.0006879977103 +/- 4.06e-14]; certified maximum future loss [0.0005089984239 +/- 2.85e-14].
+Every start through d^(4/5) fails for every decreasing weight. Worst exponent lies in (0.80560267,0.80560269).
+d=98346893, start 1105000, end 20886007: signed log area [-1.40617235237e-7 +/- 8.73e-20].
+8,948 certified first crossings before d^(4/5); d=5 has a negative average from 18/5 to 4.
+The unique largest optimal-start exponent in this finite census belongs to d=2380853.
