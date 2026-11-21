@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: "How long a whole range of power averages can miss a Mertens crossing"
+abstract: "Late Yokoi fields with delayed detection for every power average in a fixed range"
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: 1.0.2
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/yokoi-mertens-power-start-delays
+type: software
