@@ -1,5 +1,7 @@
 # How close must averaging start to a late Mertens crossing?
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24411643.svg)](https://doi.org/10.5281/zenodo.24411643)
+
 Assume the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ for the quadratic discriminants in the theorem (field GRH). Alpöge's announced Dirichlet GRH theorem supplies this input. [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/)
 
 A product over the primes of a number field can stay above its expected value for a long time. Starting a weighted average early can hide its first dip. This note shows that the earliest successful start can lie at any prescribed fraction of the way to a late crossing, to any fixed relative accuracy.
