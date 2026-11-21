@@ -65,3 +65,22 @@ lake env lean /absolute/path/to/NearCentralZeros.lean
 ~~~
 
 The five checked lemmas cover the cost of moving a pair to zero before integration, the signed Fourier margin, uniqueness of a neighbor per signed ordinate, the graph's independent-set bound, and passage to the limit in a finite quadratic form. The explicit formula, extraction of limits of zeros, the harmonic-analysis application and the resulting number-theoretic theorems are written proofs. [Exact replay output](evidence/near-central-checks.txt) · [Lean output](evidence/near-central-lean.txt)
+
+## Testing the prime average on the real axis
+
+Under RH and quadratic Dirichlet GRH, finitely many real values of the completed quadratic logarithmic derivative can certify a negative starting point inside a polynomial deadline. The test allows arbitrary central multiplicity. Limiting progressions must have density at least $1/(2\pi)$ counted with multiplicity. A double lattice attains that density in a model, and a crowded model also passes every limiting test. [Theorem and proof](REAL-AXIS.md) · [What genuine primes would have to do](REAL-AXIS-PRIMES.md) · [Approximation away from the centre](REAL-AXIS-OUTER.md)
+
+For discriminant 2,380,853, 51 real derivatives certify four successive signs of the average. Two programs check the signs by different theta quadratures and different computations of the polynomial weights. Neither takes a zero location as input. Run them here with python-flint 0.9.0. [Four intervals and proof](REAL-AXIS-FIELD.md) · [First replay](evidence/real-axis-signs.txt) · [Second replay](evidence/real-axis-gauss.txt)
+
+~~~sh
+python3 -B real_axis.py
+python3 -B real_axis_gauss.py
+~~~
+
+With Lean 4.33.1 and the Mathlib revision listed above, run the following from that Mathlib checkout.
+
+~~~sh
+lake env lean /absolute/path/to/RealAxisCrossings.lean
+~~~
+
+The six checked identities and inequalities cover the resolvents, conductor offset, transfer of a strict margin into an interval, double lattice, two-sample concentration identity and prime-square cancellation. The number-theoretic arguments and limiting theorems are written proofs. [Lean output](evidence/real-axis-lean.txt) · [Prior work and novelty](PRIOR-WORK.md#real-values-and-the-sign-of-the-future-average)

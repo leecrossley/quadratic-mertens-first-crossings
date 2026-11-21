@@ -1,0 +1,6 @@
+51 real logarithmic derivatives. No zero ordinates used.
+Quadratic coefficient mass < [8.422958790 +/- 1.02e-10]
+[d^4, d^10] sign -1  mean [-1.824297 +/- 1.54e-7]  outside [0.003662488 +/- 1.04e-10]  margin [1.368253 +/- 3.76e-7]
+[d^11, d^18] sign +1  mean [2.895685 +/- 2.92e-7]  outside [0.02571102 +/- 1.80e-9]  margin [1.831960 +/- 3.43e-7]
+[d^19, d^27] sign -1  mean [-1.007404 +/- 1.77e-7]  outside [0.04686994 +/- 4.63e-9]  margin [0.5231014 +/- 2.19e-8]
+[d^28, d^36] sign +1  mean [2.109634 +/- 6.91e-8]  outside [0.1279865 +/- 3.20e-8]  margin [0.2770212 +/- 3.83e-8]

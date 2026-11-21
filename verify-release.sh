@@ -28,6 +28,12 @@ cat "$run_output"
 "$python_bin" -B results/signed-prime-tails/central_trace.py > "$run_output"
 diff -u results/signed-prime-tails/evidence/near-central-trace.txt "$run_output"
 cat "$run_output"
+"$python_bin" -B results/signed-prime-tails/real_axis.py > "$run_output"
+diff -u results/signed-prime-tails/evidence/real-axis-signs.txt "$run_output"
+cat "$run_output"
+"$python_bin" -B results/signed-prime-tails/real_axis_gauss.py > "$run_output"
+diff -u results/signed-prime-tails/evidence/real-axis-gauss.txt "$run_output"
+cat "$run_output"
 "$python_bin" -B results/signed-prime-tails/packets.py
 (cd results/fixed-weight-delay-2380853 && check_manifest)
 "$python_bin" -B results/fixed-weight-delay-2380853/verify.py
