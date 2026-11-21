@@ -17,7 +17,7 @@ python -m pip install -r requirements.txt
 sh verify-release.sh
 ~~~
 
-The program selects ordinary primes of the prescribed signs and checks two independent evaluations of the local product changes. It also checks the finite prime-power sums at two frequencies. A second program sums the actual grid ordinates and compares them with the triangular Fourier polynomial, including a cut at a grid frequency. The estimates uniform in the parameter and starting point are proved analytically. [Finite check output](evidence/check.txt)
+The program selects ordinary primes of the prescribed signs and checks two independent evaluations of the local product changes. For packets 2, 3 and 4 it tests the prime-power sums at two frequencies against allowances with fixed coefficients 12 and 8. A second program sums the actual grid ordinates and compares them with the triangular Fourier polynomial, including a cut at a grid frequency. The estimates uniform in the parameter and starting point are proved analytically. [Finite check output](evidence/check.txt)
 
 Two Lean lemmas verify positivity of cosine difference matrices and preservation of any positive kernel under multiplication by such a cosine. Use Lean 4.33.1 and Mathlib revision 0df444a360eaa60ab8c11dca51a86af692955474. From that Mathlib checkout run the following, replacing the path with the local file. [Lean source](PrimeSigns.lean) · [Kernel output](evidence/lean.txt)
 
