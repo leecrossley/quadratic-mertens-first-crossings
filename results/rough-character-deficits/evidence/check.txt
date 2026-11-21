@@ -1,0 +1,7 @@
+q=1: full negative/positive mass in (0.9918, 0.9927).
+q=30: full negative/positive mass in (0.9845, 0.9859).
+All 47 primes up to 215 removed: first deficit 331 (-1), first recovery 367 (+1).
+444 squarefree fields, odd m <= 999, through z^2: 7 no deficit, 12 deficit only, 425 both signs in order.
+Square-residue enumeration independently finds the ordered signs at 331 and 367.
+Direct Gaussian sums at x=10: negative before removal, positive after removing 2, 3 and 5.
+Independent prime-residue walk reproduces all three census counts.
