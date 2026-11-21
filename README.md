@@ -1,5 +1,7 @@
 # Can split and inert primes expose a zero near the centre?
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24415590.svg)](https://doi.org/10.5281/zenodo.24415590)
+
 A proposed route to a negative Mertens average uses two inequalities for signed prime sums. If the average stays nonnegative through a long interval, both inequalities must hold. Reversing either one with enough margin would give a negative start. [Original tests](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/ef3e53c/results/signed-prime-tails/PRIME-TEST.md)
 
 For a genuine positive quadratic discriminant $d$, a zero at the centre or a conjugate pair of height at most $\pi/H$ forces the first sum **below $-0.52$** when $H\ge4\log(3d)$ and $d$ is sufficiently large. The proposed contradiction would require that sum to exceed a threshold near $-0.5$.
