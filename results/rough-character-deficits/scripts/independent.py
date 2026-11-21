@@ -1,4 +1,8 @@
 """Independent integer and direct-Gaussian checks using the standard library."""
+
+if not __debug__:
+    raise SystemExit("Run with assertions enabled.")
+
 from decimal import Decimal, localcontext
 from math import gcd, isqrt, prod
 
