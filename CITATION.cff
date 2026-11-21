@@ -5,7 +5,7 @@ abstract: "First Mertens crossings in Yokoi’s family: density-one upper bounds
 authors:
   - family-names: Crossley
     given-names: Lee
-version: 1.0.2
+version: 1.0.3
 license: CC-BY-4.0
 repository-code: https://github.com/leecrossley/yokoi-mertens-crossing-bounds
 type: software
