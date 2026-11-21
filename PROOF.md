@@ -8,9 +8,9 @@ S_d=\inf\lbrace t\ge2:P_d(t) < e^{\gamma_E}L_d\log t\rbrace,\qquad
 M(D)=\max_{d\in\mathcal D(D)}S_d .
 $$
 
-The first crossing is the infimum of the strictly negative set, with value $+\infty$ for an empty set. The earlier all-field upper bound implies finiteness here. Logarithms are natural except for $\log_2$ denoting base 2.
+The first crossing is the infimum of the strictly negative set, with value $+\infty$ for an empty set. GRH for $\zeta(s)L(s,\chi_d)$ gives finiteness for each field by the earlier all-field upper bound. This additional input gives infinitely many distinct fields with finite waits in the corollary. [Finiteness theorem](https://github.com/leecrossley/yokoi-mertens-explicit-upper-bound/blob/v1.0.0/PROOF.md) Logarithms are natural except for $\log_2$ denoting base 2.
 
-**Theorem.** There exists an absolute $c>0$ such that, for every sufficiently large $D$,
+**Theorem.** Assume the ordinary Riemann hypothesis, or just the prime estimate (2) below. There exists an absolute $c>0$ such that, for every sufficiently large $D$,
 
 $$
 M(D)>\exp\lbrace c(\log D)^{1/5}\rbrace.
@@ -164,4 +164,4 @@ $$
 
 for large $B$. At any $t\ge2$, every splitting pattern satisfies $P_d(t)\ge\prod_{p\le\sqrt t}(1-p^{-2})^{-1}\ge\zeta(2)(1-t^{-1/2})$. For the second inequality, multiply the missing factors over all integers larger than $\lfloor\sqrt t\rfloor$ and telescope. Since $(1-t^{-1/2})/\log t$ is decreasing for $t>1$, positivity extends to the entire interval $[2,B]$. The strict margin at $X$ and monotonicity of $P_d$ extend positivity to a right neighborhood of $X$. Thus $S_d>X$.
 
-For all large $D$, $X=2^{\lfloor c_0(\log D)^{1/5}\rfloor}>\exp\lbrace(c_0\log2/2)(\log D)^{1/5}\rbrace$. This proves the theorem. Since each individual $S_d$ is finite, the fields supplying these longest waits include infinitely many distinct discriminants.
+For all large $D$, $X=2^{\lfloor c_0(\log D)^{1/5}\rfloor}>\exp\lbrace(c_0\log2/2)(\log D)^{1/5}\rbrace$. This proves the theorem. Under the additional field GRH input, each individual $S_d$ is finite, so the fields supplying these longest waits include infinitely many distinct discriminants.
