@@ -39,10 +39,10 @@ The progressions describe limiting heights. Inferring exact relations between th
 
 Put $`u=\log y`$ and $`k(v)=e^{-v/2}(1-e^{-v})`$. In the formula for $`u e^{u/2}F_d(e^u)`$ the pair at $`\pm g`$ contributes $`2\int_0^\infty k(v)u\cos(g(u+v))/(u+v)\,dv`$. Holding all other terms fixed and replacing the pair by two central terms increases this expression by
 
-$$
+```math
 0\le 2\int_0^\infty k(v)\frac{u}{u+v}\{1-\cos(g(u+v))\}\,dv
 \le g^2\left(\frac43u^2+\frac{32}{9}u\right).
-$$
+```
 
 Use $`1-\cos z\le z^2/2`$ and the zeroth and first moments of $`k`$. Thus for fixed $`a`$ the change tends uniformly to zero for $`2\le y\le d^a`$ when $`gL\to0`$. The replacement is a comparison of terms of the explicit formula. The proof below keeps the actual quadratic character. [Explicit formula, equation (2)](NEAREST-ZERO.md#removing-the-varying-denominator)
 
@@ -113,22 +113,22 @@ For fixed $`T\ge T_m`$, Theorem 1 for large $`n`$ gives at least $`c_mT`$ mass i
 
 Write $`n(x)=\mu(\{x\})`$, with value zero off the support. We claim that the function
 
-$$
+```math
 a(x)=n(x)+\tfrac12\,\mathbf 1_{\{0\}}(x)
 \tag{2}
-$$
+```
 
 is positive definite on the additive group of reals with the discrete topology. Fix any finite list $`x_i`$ and let $`E`$ be its finite set of differences, including zero. Around each $`x\in E`$ choose a fixed interval containing no other limiting atom and with atom-free endpoints. For a point off the support choose an interval containing no atoms. Integer counts and vague convergence give exactly $`n(x)`$ rescaled ordinates there eventually, all tending to $`x`$. Let $`e_n`$ be the largest of their distances to their respective $`x`$, or zero for an empty collection. Choose $`B_n\to\infty`$ slowly enough that $`B_n e_n\to0`$ and $`2B_n L_n\le b_n\log d_n`$. Set $`H_n=B_n L_n`$. This choice counts nearby zeros together even when the original ordinates are distinct.
 
 At $`t=x/L_n`$ each of these ordinates contributes $`4/3+o(1)`$ to $`D_{H_n}(t)`$. All others are at distance at least $`\epsilon/L_n`$ for some fixed $`\epsilon>0`$ depending on $`E`$. The tail estimate with $`R=B_n\epsilon/2`$ gives $`o(1)`$ because $`D_{H_n}(0)=O_m(1)`$. Thus (1), the bound on $`|M_{H_n}|`$ and $`\theta_{x/L_n}\to0`$ give
 
-$$
+```math
 \Re M_{H_n}(x/L_n)\longrightarrow (4/3)n(x)+b\,\mathbf 1_{\{0\}}(x).
-$$
+```
 
 For real $`p_i`$ the quadratic form in these real parts is the triangular mean of $`Z(u)|\sum_i p_i e^{i x_i u/L_n}|^2`$. It is bounded below by $`-(\sum_i|p_i|)^2\langle Z_-\rangle`$, which tends to zero. Pass to the limit and divide by $`4/3`$. The resulting matrix with entries $`a(x_i-x_j)`$ is real symmetric, hence its nonnegativity for real vectors also gives nonnegativity for complex vectors. This proves (2). The additional half at the origin is $`b/(4/3)`$.
 
-By Bochner's theorem for a discrete abelian group, $`a`$ is the Fourier transform of a finite positive measure on its compact dual. Its finite range consists of integers and the half-integer at the origin. For any nonzero level, polynomial interpolation on this finite range expresses its indicator as a polynomial in $`a`$. Products of such transforms are transforms of convolutions and the constant one is the transform of the unit point mass. The indicator is therefore a Fourier–Stieltjes transform taking only the values zero and one. Cohen's idempotent theorem puts that level set in the coset ring of the discrete group. It is locally finite in the usual real line. Rosenthal's classification says precisely that such a set is a finite union of two-sided arithmetic progressions up to a finite symmetric difference. Taking finite unions or restoring the point at zero gives the assertion for each positive multiplicity and for the support. [Bochner's theorem](https://onlinelibrary.wiley.com/doi/book/10.1002/9781118165621) · [Cohen's theorem](https://annals.math.princeton.edu/2008/168-3/p09) · [Rosenthal's classification, statement (4.4)](https://eigen-space.org/ps/tilings.pdf#page=17)
+By Bochner's theorem for a discrete abelian group, $`a`$ is the Fourier transform of a finite positive measure on its compact dual. Its finite range consists of integers and the half-integer at the origin. For any nonzero level, polynomial interpolation on this finite range expresses its indicator as a polynomial in $`a`$. Products of such transforms are transforms of convolutions and the constant one is the transform of the unit point mass. The indicator is therefore a Fourier–Stieltjes transform taking only the values zero and one. Cohen's idempotent theorem puts that level set in the coset ring of the discrete group. It is locally finite in the usual real line. Rosenthal's classification says precisely that such a set is a finite union of two-sided arithmetic progressions up to a finite symmetric difference. Taking finite unions or restoring the point at zero gives the assertion for each positive multiplicity and for the support. [Bochner's theorem](https://onlinelibrary.wiley.com/doi/book/10.1002/9781118165621) · [Green and Sanders on the idempotent theorem](https://annals.math.princeton.edu/2008/168-3/p09) [Rosenthal’s classification, statement (4.4)](https://eigen-space.org/ps/tilings.pdf#page=18)
 
 Finally suppose $`N_{d_n}(1)\to\infty`$. For each fixed $`0<\delta\le1`$, take $`H=KL_n/\delta`$, permitted eventually by the growing deadline. Covering $`[-1/L_n,1/L_n]`$ by the short-interval estimate gives $`N_{d_n}(1)\ll_\delta 1+N_{d_n}(\delta)`$. Consequently $`N_{d_n}(\delta)\to\infty`$ for every such $`\delta`$, and monotonicity gives the claim for larger $`\delta`$. For $`\delta=1/j`$ choose successively increasing indices after which the count is at least $`j`$. This gives the shrinking sequence in the statement.
 
