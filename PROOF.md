@@ -7,7 +7,7 @@ $$
  \qquad F_d(y)=\int_y^\infty B_d(t)\frac{y}{t^2}\thinspace{}dt .
 $$
 
-**Theorem.** Use RH for $\zeta$ and the critical-line property for $L(s,\chi_d)$ for the two indicated characters. Then $N_y F_{13}(y)>1/40$ for every real $y\ge2$. For $d=5$, $N_yF_5(y)$ has a unique global minimum. Its argument lies in $(2.64281618,2.64281620)$ and its value in $(0.183894,0.183896)$. For $y\ge4$ it exceeds $1/5$. Thus neither field has a negative start for this weight. The critical-line input is the case of the announced Dirichlet GRH theorem specified here. [Alpöge](https://alpo.ge/remark.pdf) · [Sutherland’s verification record](https://math.mit.edu/~drew/grh/)
+**Theorem.** Use RH for $\zeta$ and the critical-line property for $L(s,\chi_d)$ for the two indicated characters. Then $N_y F_{13}(y)>1/40$ for every real $y\ge2$. For $d=5$, $N_yF_5(y)$ has a unique minimum on $y\ge2$. Its argument lies in $(2.64281618,2.64281620)$ and its value in $(0.183894,0.183896)$. For $y\ge4$ it exceeds $1/5$. Thus neither field has a negative start for this weight. The critical-line input is the case of the announced Dirichlet GRH theorem specified here. [Alpöge](https://alpo.ge/remark.pdf) · [Sutherland’s verification record](https://math.mit.edu/~drew/grh/)
 
 ## The finite part
 
@@ -20,7 +20,7 @@ $$
 
 The norm list has two copies of $p$ for split primes, one copy of $p^2$ for inert primes and one copy of $p$ for ramified primes. To enclose $D$, start with $\log(\zeta(2)L(2,\chi_d))$ and add $\ell(q)/q-\ell(q^2)$ for $q\le M=10^6$. With $x=1/q$, each of $x\ell(q)-x^2$ and $\ell(q^2)-x^2$ lies between $0$ and $x^3$ by the log series. There are at most two ideals of each norm, so $4/M^2$ more than bounds the absolute tail.
 
-Both fields have class number one by the Minkowski bound. Their fundamental units are $(m+\sqrt d)/2$ with $m=1,3$ respectively, of norm $-1$. Minimality follows from the norm equation: a smaller unit $v>1$ would have positive integer coefficient $(v-v')/\sqrt d<1$ if its norm is $-1$; if its norm is $+1$, the same inequality follows from $v-1/v<v+1/v$. The class number formula gives $\kappa=2\log((m+\sqrt d)/2)/\sqrt d$. Equivalently one can evaluate the Dirichlet series itself. Expanding the Fourier series of $B_2(x)=x^2-x+1/6$ and summing with the quadratic Gauss sum gives $L(2,\chi_d)=\pi^2 d^{-1/2}\sum_{a=1}^{d}\chi_d(a)B_2(a/d)$. The constant and linear terms sum to zero.
+Both fields have class number one by the Minkowski bound. Their fundamental units are $(m+\sqrt d)/2$ with $m=1,3$ respectively, of norm $-1$. Minimality follows from the norm equation: a smaller unit $v>1$ would have positive integer coefficient $(v-v')/\sqrt d<1$ if its norm is $-1$; if its norm is $+1$, the same inequality follows from $v-1/v\lt v+1/v$. The class number formula gives $\kappa=2\log((m+\sqrt d)/2)/\sqrt d$. Equivalently one can evaluate the Dirichlet series itself. Expanding the Fourier series of $B_2(x)=x^2-x+1/6$ and summing with the quadratic Gauss sum gives $L(2,\chi_d)=\pi^2 d^{-1/2}\sum_{a=1}^{d}\chi_d(a)B_2(a/d)$. The constant and linear terms sum to zero.
 
 Between prime-ideal norms $F_d''(y)=1/(y^2\log y)$. At each norm its first derivative jumps down by $\ell(q)/q$ per ideal. On $[a,b]$ the curve therefore lies above its endpoint chord minus $(b-a)^2/(8a^2\log a)$, by subtracting a quadratic of second derivative $1/(a^2\log a)$. Use the increasing factor $N_a$ for the lower bound once both endpoint bounds exceed the positive target. The first calculation covers $[4,M]$ for $d=5$ and $[2,M]$ for $d=13$. A second calculation uses the supporting tangent on each gap between successive norms, where $F_d$ is convex, subdividing any inconclusive gap. It obtains the two special values from the Dirichlet $L$ function in Arb and checks splitting by a separate primality and Jacobi-symbol calculation. [Chord calculation](verify.py) · [Tangent calculation](independent.py)
 
@@ -51,7 +51,7 @@ $$
  e^{-h/2}\big[(h/(2\pi)+2)\log d+h^2/(4\pi)+4\big],\qquad h=\log v .
 $$
 
-This expression decreases for $h>4$, and at $M$ it is below the indicated $\delta$. Truncating the character series for $L(1)$ and $L'(1)$ at $65000$ bounds their tails by $b/65000$ and $b\log(65000)/65000$, where $b=\max_k|\sum_{n\le k}\chi_d(n)|$. Complete periods and Abel summation give these bounds. They imply $V_5<0.22$ and $V_{13}<0.445$. A separate power-series evaluation of the two $L$ functions gives $0.202<V_5<0.204$ and $0.442<V_{13}<0.444$. [Explicit prime-ideal theorem](https://arxiv.org/pdf/1312.4463#page=3)
+This expression decreases for $h>4$, and at $M$ it is below the indicated $\delta$. Truncating the character series for $L(1)$ and $L'(1)$ at $65000$ bounds their tails by $b/65000$ and $b\log(65000)/65000$, where $b=\max_k|\sum_{n\le k}\chi_d(n)|$. Complete periods and Abel summation give these bounds. They imply $V_5<0.22$ and $V_{13}<0.445$. A separate power-series evaluation of the two $L$ functions gives $0.202\lt V_5\lt 0.204$ and $0.442\lt V_{13}\lt 0.444$. [Explicit prime-ideal theorem](https://arxiv.org/pdf/1312.4463#page=3)
 
 Keep only the even indices in $Q(t)$. Adding the omitted $q>t$ costs at most $\sum_{n>t}1/(n^2-1)\le2/t$. With $z=\sqrt t$ and $h(v)=1/(v^2\log v)$, this gives
 
