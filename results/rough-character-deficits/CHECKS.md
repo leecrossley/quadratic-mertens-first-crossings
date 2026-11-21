@@ -40,7 +40,7 @@ The signed integral and the positive-mass enclosure give $`N/P=1-(P-N)/P`$. The 
 
 ## Lean and replay
 
-[Balance.lean](Balance.lean) checks four supporting lemmas. They cover the signed cosine integral, a finite weighted witness, the budget in the ordered recovery proof and the numerical margins for the exponent 8. The functional equation, the use of Chandee's bound, the microscopic zero implication, the ordered recovery and the number-theoretic theorem are proved in [PROOF.md](PROOF.md).
+[Balance.lean](Balance.lean) checks six supporting lemmas. The original four cover the signed cosine integral, a finite weighted witness, the budget in the ordered recovery proof and the numerical margins for the exponent 8. `negative_prefix_of_dilates` and `mass_ratio_order` support the sieve-choice theorem. The functional equation, the use of Chandee's bound, the microscopic zero implication, the ordered recovery and the number-theoretic theorem are proved in [PROOF.md](PROOF.md).
 
 Run the following from this result's directory. The optional second command uses a built Mathlib checkout at the linked revision, with its Lean toolchain on the path.
 
