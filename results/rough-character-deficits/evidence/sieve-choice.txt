@@ -1,0 +1,10 @@
+47 eligible primes, 31 inert. The latest first negative is 49937. This sieve first recovers at 49943.
+Maximum absolute primitive partial sum over one period: 1068.
+Opposite signs of the real completed transform at 0.028 and 0.030.
+Every one of 140737488355328 sieves meets both 1/1000 thresholds in order by d^6.
+The minimum full Gaussian negative/positive mass ratio lies strictly between 0.912 and 0.913.
+Enumeration of nonzero squares separately verifies both first crossings and the period maximum.
+Squarefree divisor sums reproduce the six endpoints of the long recovery.
+An independent incomplete-gamma sum certifies a zero between 0.02849001 and 0.02849002.
+With 43 retained: first -1 at 48221, next +1 at 137705720539, first subsequent +19 at 137705727787.
+Independent 64-integer sweep reproduces all three positions.
