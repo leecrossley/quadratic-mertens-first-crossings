@@ -1,0 +1,5 @@
+'NearCentralZeros.central_pair_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NearCentralZeros.six_height_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NearCentralZeros.unique_neighbor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NearCentralZeros.independent_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NearCentralZeros.limit_of_square_tests' depends on axioms: [propext, Classical.choice, Quot.sound]

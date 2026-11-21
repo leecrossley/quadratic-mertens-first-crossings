@@ -1,0 +1,4 @@
+Six Fourier coefficients: 6 -10 8 -6 4 -2
+Worst permitted square with errors of 1/100: -16/25
+Checked degree and independent-set bounds for 65,280 finite graphs with inclusive endpoints.
+Checked the double lattice and its half-unit central bias on 2,187 signed vectors.

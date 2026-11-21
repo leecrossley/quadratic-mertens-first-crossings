@@ -41,3 +41,27 @@ lake env lean /absolute/path/to/CentralPackets.lean
 ~~~
 
 The four kernel-checked lemmas establish the exact integral identity, a lower bound on a signed square test, absorption of the central mass, and the numerical margin for seven frequencies. The written proof derives the analytic theorems and states the hypotheses on the zero differences. [Interval output](evidence/packets.txt) · [Lean output](evidence/central-lean.txt)
+
+## Near-central zeros on the conductor scale
+
+Assume RH and quadratic Dirichlet GRH as above. One fixed exponent covers a pair arbitrarily close to the centre, including a double zero there, if the next pair is sufficiently far away on the scale $`1/\log(3d)`$. A second criterion uses zeros near $`t`$ and $`3t`$ and gaps near $`2t`$ and $`4t`$. The theorem gives the allowed widths. For a sequence that misses every fixed power, bounded crowding at the centre forces the limiting rescaled zero heights to lie in finitely many arithmetic progressions up to finitely many exceptions, with the same conclusion for each multiplicity. The same restriction gives a test using real values of the completed quadratic function. A common exponent for the full Yokoi family remains open. [Theorems and proof](NEAR-CENTRAL.md) · [Earlier work](PRIOR-WORK.md#near-central-zeros-on-the-conductor-scale)
+
+Run the following from this result directory to replay the six Fourier coefficients, the margin with errors, the finite conflict graphs and the double-lattice check.
+
+~~~sh
+python3 -B central_patterns.py
+~~~
+
+For the three real-axis measurements in discriminant 2,380,853, run the next command with python-flint 0.9.0. It uses the adjacent field result’s theta quadrature. [Interval output](evidence/near-central-trace.txt)
+
+~~~sh
+python3 -B central_trace.py
+~~~
+
+From the Mathlib revision listed above run the following with Lean 4.33.1.
+
+~~~sh
+lake env lean /absolute/path/to/NearCentralZeros.lean
+~~~
+
+The five checked lemmas cover the cost of moving a pair to zero before integration, the signed Fourier margin, uniqueness of a neighbor per signed ordinate, the graph's independent-set bound, and passage to the limit in a finite quadratic form. The explicit formula, extraction of limits of zeros, the harmonic-analysis application and the resulting number-theoretic theorems are written proofs. [Exact replay output](evidence/near-central-checks.txt) · [Lean output](evidence/near-central-lean.txt)
