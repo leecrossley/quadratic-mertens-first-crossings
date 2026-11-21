@@ -1,0 +1,5 @@
+'QuadraticDisagreement.diagonal_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticDisagreement.orientation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticDisagreement.taper_middle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticDisagreement.taper_ends' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticDisagreement.adverse_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
