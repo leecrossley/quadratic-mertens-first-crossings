@@ -6,7 +6,7 @@ $$
  N_y F_d(y) < -1/20,\qquad N_y T_d(y)>1/10,\qquad y < d^{100}.
 $$
 
-The input lists 151 positive quadratic zero brackets, all above height $1/2$. No central value, individual ordinary zeta zero, completeness of the list or spacing between the missing zeros enters either inequality. Every rearrangement of the remaining quadratic zero mass consistent with the single trace bound below satisfies the same sign estimates. This discriminant already has a negative start below $d^{7/3}$. The purpose of this later witness is to test the effect of withholding the hardest data. [Earlier first-start bounds](../fixed-weight-delay-2380853/PROOF.md) · [The 151 input intervals](brackets-above-half.txt)
+The input lists 151 positive quadratic zero brackets, all above height $1/2$. They are the earlier calculation's 152 brackets without the lowest one. No central value, individual ordinary zeta zero, completeness of the list or spacing between the missing zeros enters either inequality. Every rearrangement of the remaining quadratic zero mass consistent with the single trace bound below satisfies the same sign estimates. This discriminant already has a negative start below $d^{7/3}$. The purpose of this later witness is to test the effect of withholding the hardest data. [Earlier first-start bounds](../fixed-weight-delay-2380853/PROOF.md) · [The 151 input intervals](brackets-above-half.txt) · [The earlier brackets and their check](../fixed-weight-delay-2380853/QUADRATURE.md)
 
 ## Bounding all unobserved ordinates
 

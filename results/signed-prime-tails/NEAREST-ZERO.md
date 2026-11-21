@@ -8,7 +8,7 @@ $$
  F_d(y)=\int_y^\infty B_d(t)\frac{y}{t^2}\thinspace dt .
 $$
 
-A negative value means that the prime-ideal product falls below its Mertens prediction somewhere at or after $y$. We bound the starting point $y$ of the average. The first negative value of the unaveraged error is a different quantity. The number-theoretic input on zeros is RH for the ordinary zeta function and GRH for the primitive quadratic Dirichlet function. The completed functions count all nontrivial zeros with multiplicity. [Critical-line statements and verification](https://math.mit.edu/~drew/grh/) · [Earlier explicit formula](PROOF.md)
+A negative value means that the prime-ideal product falls below its Mertens prediction somewhere at or after $y$. We bound the starting point $y$ of the average. The first negative value of the unaveraged error is a different quantity. The number-theoretic input on zeros is RH for the ordinary zeta function and GRH for the primitive quadratic Dirichlet function. Alpöge's announced Dirichlet GRH theorem supplies this input. The completed functions count all nontrivial zeros with multiplicity. [Announcement](https://alpo.ge/remark.pdf) · [Critical-line statements and verification](https://math.mit.edu/~drew/grh/) · [Earlier explicit formula](PROOF.md)
 
 **Theorem 1.** Assume the stated critical-line property for each field considered. Let $L=\log(3d)$ and let $g_d$ be the minimum of $|\Im\rho|$ over the nontrivial zeros of $L(s,\chi_d)$, including the centre. There is an absolute constant $C$ such that for every sufficiently large $d$ with $g_d>0$,
 
@@ -17,7 +17,7 @@ $$
  \tag{1}
 $$
 
-Consequently a single exponent works on every set of fields with $g_d L\ge c>0$. Noncentral zeros may have arbitrary multiplicities and arbitrary separations. If every exponent fails on arbitrarily large Yokoi fields, there must be a sequence of those failures with $g_d L\to0$, with a central zero counted as height zero.
+Consequently a single exponent works for every sufficiently large $d$ in any set of fields with $g_d L\ge c>0$. Noncentral zeros may have arbitrary multiplicities and arbitrary separations. If every exponent fails on arbitrarily large Yokoi fields, there must be a sequence of those failures with $g_d L\to0$, with a central zero counted as height zero.
 
 **Theorem 2.** Under the same critical-line hypothesis, fix a nonnegative integer $m$ and set $k=\lfloor(m+1/2)^2\rfloor+1$. There are constants $A_m,R_m>2$ and $r_m>0$ with the following property. Put $H=A_m L$. Suppose that
 
@@ -79,15 +79,15 @@ For the error average up to $100\log(3+L)$ use its uniform bound. Beyond that po
 Let $K_H(x)=\langle e^{ixu}\rangle$. Direct integration and integration by parts give
 
 $$
- \Re K_H(x)=\operatorname{sinc}^2(Hx/2),\qquad
+ \Re K_H(x)=\mathrm{sinc}^2(Hx/2),\qquad
  |K_H(x)|\le\min(1,4/(H|x|)),
 $$
 
-with $\operatorname{sinc}(v)=\sin(v)/v$ and $\operatorname{sinc}(0)=1$. Set
+with $\mathrm{sinc}(v)=\sin(v)/v$ and $\mathrm{sinc}(0)=1$. Set
 
 $$
  M(t)=\langle Z(u)e^{-itu}\rangle,\qquad
- D(t)=\sum_\lambda w_\lambda \operatorname{sinc}^2(H(\lambda-t)/2).
+ D(t)=\sum_\lambda w_\lambda \mathrm{sinc}^2(H(\lambda-t)/2).
 $$
 
 Use the continuous phase $\theta_t=\arctan(2t)+\arctan(2t/3)$ of $c_t$. It satisfies $|\theta'_t|\le8/3$, giving for every $t$
@@ -116,12 +116,12 @@ $$
 For $d$ sufficiently large and $H\ge L$, there is an absolute $C_0$ such that the $w$-mass of **every** interval of length $1/H$ is at most $2(D(0)+C_0)$. Apply (6) at its midpoint, where each included squared sinc is at least $1/2$. In particular, for every $x$ and $R\ge2$ there is an absolute $C_1$ with
 
 $$
- \sum_{|\lambda-x|>R/H}w_\lambda\operatorname{sinc}^2(H(\lambda-x)/2)
+ \sum_{|\lambda-x|>R/H}w_\lambda\mathrm{sinc}^2(H(\lambda-x)/2)
  \le \frac{C_1}{R}(D(0)+C_0).
  \tag{7}
 $$
 
-Cover the two tails by intervals of length $1/H$ beginning at distance $R/H$. On the $j$th interval the square is at most $4/(R+j)^2$, $j\ge0$, and sum the bounds. Multiplicities require no change.
+Cover the two tails by intervals of length $1/H$ beginning at distance $R/H$. On the $j$-th interval the square is at most $4/(R+j)^2$, $j\ge0$, and sum the bounds. Multiplicities require no change.
 
 ## The nearest ordinate
 

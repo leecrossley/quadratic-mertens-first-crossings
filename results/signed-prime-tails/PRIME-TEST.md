@@ -10,7 +10,7 @@ $$
 
 Thus a field that keeps the average nonnegative throughout the window must have a definite weighted excess of inert primes. This *initial* prime sum differs from the signed *tail* $T_d(y)$.
 
-Write $S(t)=\sum_{\lambda\ {\rm quadratic}}\operatorname{sinc}^2(H(\lambda-t)/2)$. For bounded $|t|\le1$, the Guinand–Weil formula gives
+Write $S(t)=\sum_{\lambda\ {\rm quadratic}}\mathrm{sinc}^2(H(\lambda-t)/2)$. For bounded $|t|\le1$, the Guinand–Weil formula gives
 
 $$
  S(t)=\frac{\log(d/\pi)}H+G_H(t)
@@ -22,7 +22,7 @@ $$
 where $\Lambda(n)$ is the von Mangoldt function and
 
 $$
- G_H(t)=\frac1{2\pi}\int_{\mathbb R}\operatorname{sinc}^2(H(v-t)/2)
+ G_H(t)=\frac1{2\pi}\int_{\mathbb R}\mathrm{sinc}^2(H(v-t)/2)
        \Re\psi(1/4+iv/2)\thinspace dv=O(1/H).
 $$
 
@@ -37,7 +37,7 @@ At $t=0$ the square terms inside the sum in (2) are $H/4+O(\log(2+L))$. Indeed $
 Formula (2) also makes the several-frequency argument available without individual zero data. Fix an absolute $r_0\in(0,1/4)$ whose double lies in the ordinary central zero-free interval. For $0 < r\le r_0$, choose any $t_1,\ldots,t_n\in[0,r]$ and real $v_1,\ldots,v_n$. Define the even function
 
 $$
- E(t)=w_t S(t)+b\operatorname{sinc}^2(Ht/2).
+ E(t)=w_t S(t)+b\mathrm{sinc}^2(Ht/2).
 $$
 
 If $F_d$ stays nonnegative throughout the same interval and $H\ge L$, then
@@ -51,6 +51,6 @@ $$
 
 The constant is absolute for fixed $r_0$ and the remainder tends to zero uniformly in $H\ge L$ as $d\to\infty$. All entries can be expressed through finite prime-power sums, the conductor and an explicit gamma integral by (2).
 
-For $|t|\le r_0$ one has $D(t)=w_t S(t)+O(L/H)$. Within $|\lambda-t|\le1$ the derivative of $w$ is bounded, $w_\lambda$ is bounded below, and $|\lambda-t|\operatorname{sinc}^2(H(\lambda-t)/2)\ll1/H$. Sum against the total mass $V\ll L$. Outside this interval the squared sinc is $O(H^{-2}(1+\lambda^2)^{-1})$ and the sum of $(1+\lambda^2)^{-1}$ is $O(L)$. The ordinary contribution is $O(H^{-2})$ because of the fixed central gap. Under positivity, (3)–(5) of the main proof give $|M(t)|\ll1+S(0)$. Removing the phase $\theta_t$ from the left side of (4) there and from the bias costs $O(r(1+S(0)))$ for $|t|\le r$. Thus $\Re M(t)=E(t)+O(L/H+r(1+S(0))+o(1))$. Finally integrate $Z(u)|\sum v_j e^{it_j u}|^2$ against the triangular measure. It is bounded below by $-(\sum |v_j|)^2\langle Z_-\rangle$. Substituting the preceding estimate in the expanded square proves (3).
+For $|t|\le r_0$ one has $D(t)=w_t S(t)+O(L/H)$. Within $|\lambda-t|\le1$ the derivative of $w$ is bounded, $w_\lambda$ is bounded below, and $|\lambda-t|\mathrm{sinc}^2(H(\lambda-t)/2)\ll1/H$. Sum against the total mass $V\ll L$. Outside this interval the squared sinc is $O(H^{-2}(1+\lambda^2)^{-1})$ and the sum of $(1+\lambda^2)^{-1}$ is $O(L)$. The ordinary contribution is $O(H^{-2})$ because of the fixed central gap. Under positivity, (3)–(5) of the main proof give $|M(t)|\ll1+S(0)$. Removing the phase $\theta_t$ from the left side of (4) there and from the bias costs $O(r(1+S(0)))$ for $|t|\le r$. Thus $\Re M(t)=E(t)+O(L/H+r(1+S(0))+o(1))$. Finally integrate $Z(u)|\sum v_j e^{it_j u}|^2$ against the triangular measure. It is bounded below by $-(\sum |v_j|)^2\langle Z_-\rangle$. Substituting the preceding estimate in the expanded square proves (3).
 
 To settle the exceptional fields by this route one would need a violation of (3), with a margin larger than its error, for every field that escapes the nearest-zero bound. No such uniform prime estimate is established here.
