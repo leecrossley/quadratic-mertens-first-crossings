@@ -4,11 +4,11 @@ Lee Crossley
 
 Let $`d>1`$ be a positive fundamental discriminant, $`\chi_d`$ its primitive quadratic character and $`L=\log(3d)`$. In $`\mathbb Q(\sqrt d)`$ take the error in the logarithm of the Mertens product over prime ideals and its weighted average from a real starting point $`y`$,
 
-$$
+```math
  B_d(t)=\sum_{N\mathfrak p\le t}-\log(1-1/N\mathfrak p)
    -\gamma_E-\log L(1,\chi_d)-\log\log t,\qquad
  F_d(y)=\int_y^\infty B_d(t)\frac y{t^2}\,dt .
-$$
+```
 
 Use RH for the ordinary zeta function and GRH for each primitive quadratic character in the statement in question. These are the zero-location hypotheses in the proofs. Yokoi's family consists here of squarefree $d=n^2+4$ with $n$ odd. Daniel R. Johnston's Problem 8 concerns the first crossing of the underlying product. The question here concerns a starting point of its future average. [Problem 8](https://arxiv.org/html/2407.03530v1) · [Critical-line statements](https://math.mit.edu/~drew/grh/)
 
@@ -45,22 +45,22 @@ $$
 
 We use the established identities $\sum |c_\lambda|\ll L$, $|f_d(u)|\ll L$, and
 
-$$
+```math
  f_d(u)+\int_0^\infty e^{-r/2}(1+e^{-r})\frac{f_d(u+r)}{u+r}\,dr
    =Z_d(u)+E_d(u).
  \tag{2}
-$$
+```
 
 Here $E_d$ is bounded uniformly for $u\ge u_0$ and is $O(1/u+(1+u+L)^3e^{-u/6})$ for $u\ge10$. These estimates include the contribution of prime squares. [Explicit formula and positive integral operator](NEAREST-ZERO.md#removing-the-varying-denominator)
 
-Write $P_*(x)=\sum_\lambda x/(x^2+(L\lambda)^2)$. Pairing conjugate zeros in the Hadamard product gives $P_*=P_d+P_\zeta$, where $P_\zeta$ uses the ordinary completed entire function $\xi$ and the same scale $L$. Put $A=1/2$, $B=3/2$, $q=x/L$. For $q\ne A,B$ direct integration gives
+Write $`P_*(x)=\sum_\lambda x/(x^2+(L\lambda)^2)`$. Pairing conjugate zeros in the Hadamard product gives $`P_*=P_d+P_\zeta`$, where $P_\zeta$ uses the ordinary completed entire function $\xi$ and the same scale $L$. Put $A=1/2$, $B=3/2$, $q=x/L$. For $q\ne A,B$ direct integration gives
 
-$$
+```math
  I_d(x):=\int_0^\infty e^{-xv}Z_d(Lv)\,dv
   =\frac b x+\frac{P_*(x)}{(A-q)(B-q)}
       -\frac{P_*(AL)}{A-q}+\frac{P_*(BL)}{B-q}.
  \tag{3}
-$$
+```
 
 For a single zero the integral in the sum is $1/[L(q-i\lambda)(A-i\lambda)(B-i\lambda)]$. Resolve into three simple fractions, then pair the signs before summing. Each paired trace is absolutely convergent. A central zero contributes with its multiplicity. The original interchange follows from $\sum|c_\lambda|<\infty$.
 
@@ -87,12 +87,12 @@ The constant $-1/2$ in $Q_d$ comes from the two endpoints in (3).
 
 Choose $H\ge1$ and a smooth cutoff $0\le\psi_H\le1$, equal to one up to $H$ and zero from $H+1$ onwards, with uniformly bounded first two derivatives. Set $g=(1-\psi_H)K$ on $[0,\infty)$. The integrals of $|g|$ and $|g''|$ are $O_K(e^{-cH})$ with $c=\min_j x_j$. Two integrations by parts give
 
-$$
+```math
  \left|\int_0^\infty g(v)e^{itv}\,dv\right|
  \ll_K\frac{e^{-cH}}{1+t^2},\qquad
  \left|\int_0^\infty g(v)Z_d(Lv)\,dv\right|
  \ll_K e^{-cH}M_d .
-$$
+```
 
 The second bound uses $|c_\lambda|\le4/3$ and $\sum_\lambda(1+(L\lambda)^2)^{-1}=P_*(1)$. It charges the tail to the same real measurement as (1).
 
@@ -118,12 +118,12 @@ Indeed write $\mu$ as an integer linear combination of singleton and two-sided p
 
 The full test on any proposed bounded-crowding pattern is explicit. Write its counting measure as singleton terms $m_i\delta_{t_i}$ plus progression terms of coefficient $n_j$, step $\alpha_j$ and shift $\beta_j$. These signed coefficients refer to this representation of the measure. Expanding each periodized Poisson kernel as a geometric series gives the unique inverse Laplace measure of $P+1/(2x)-1/2$,
 
-$$
+```math
  \left(\pi\sum_j n_j/\alpha_j-1/2\right)\delta_0
  +\left(1/2+\sum_i m_i\cos(t_i v)\right)dv
  +2\pi\sum_j\frac{n_j}{\alpha_j}\sum_{k\ge1}
        \cos(2\pi k\beta_j/\alpha_j)\,\delta_{2\pi k/\alpha_j}.
-$$
+```
 
 It is positive exactly when the mass at zero is nonnegative, the displayed continuous density is nonnegative, and the weights at each common positive atom sum to a nonnegative number. For instance a single half-step translate of a lattice, with constant positive multiplicity and no other progression, has negative weight at its first positive atom. Finitely many added or removed ordinates change only the continuous density and cannot repair that weight. A double lattice through zero passes all three tests.
 
@@ -131,9 +131,9 @@ It is positive exactly when the mass at zero is nonnegative, the displayed conti
 
 Choose any sequence of large Yokoi discriminants and give a model completed function the same conductor parameter $d$. Set $p=\log(d/5)/(2r)$ and multiply $\Lambda_5(s)$ by
 
-$$
+```math
  \prod_{j=1}^r 2\{\cosh(p(s-1/2))-\cos\theta_j\}.
-$$
+```
 
 The critical-line symmetry is exact. Each factor adds the two grids $(2\pi k\pm\theta_j)/p$. Together they add $rpT/\pi+O(r)$ positive heights through $T$. Their contribution to $P$ is exactly
 
