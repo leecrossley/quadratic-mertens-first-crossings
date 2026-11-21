@@ -23,6 +23,8 @@ Open a result to read its statement, hypotheses and replay instructions. Run its
 - [A prime average that stays positive past 222 trillion](results/fixed-weight-delay-2380853/)
 - [A signed-prime test for a negative Mertens average](results/signed-prime-tails/)
 - [How the nearest zero and central multiplicity affect the first negative start](results/signed-prime-tails/NEAREST-ZERO.md)
+- [Positive averages for every start in discriminants 5 and 13](https://github.com/leecrossley/yokoi-mertens-positive-averages-5-13/releases/tag/v1.0.0)
+- [Split and inert prime tests with a central zero or close pair](https://github.com/leecrossley/split-inert-prime-test-obstruction/releases/tag/v1.0.0)
 
 ## Checking the collection
 
