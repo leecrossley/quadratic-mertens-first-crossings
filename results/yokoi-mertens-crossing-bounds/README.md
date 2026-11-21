@@ -8,7 +8,7 @@ Daniel R. Johnston’s Problem 8 asks for an upper bound on the first sign chang
 
 **A growing upper bound works for almost every field.** If $f(d)\to\infty$, however slowly, the proportion with $S_d<f(d)$ tends to one as the discriminant cutoff increases. The proof also gives a necessary worst-case growth rate for any proposed bound.
 
-**Follow-up, 21 November 2026.** Under GRH for $\zeta(s)L(s,\chi_d)$, a separate proof gives $S_d<2^{2^{d^{30000}}}$ for every real quadratic fundamental discriminant, covering the fields left outside this density-one conclusion. [Proof, zero-location input and verification](https://doi.org/10.5281/zenodo.24410811)
+**Follow-up, 21 November 2026.** Under GRH for $\zeta(s)L(s,\chi_d)$, a separate proof gives $S_d<2^{2^{d^{30000}}}$ for every real quadratic fundamental discriminant, covering the fields left outside this density-one conclusion. [Proof, zero-location input and verification](https://github.com/leecrossley/yokoi-mertens-explicit-upper-bound/releases/tag/v1.0.0)
 
 **Through discriminant 10,000, every field crosses before 526.** There are 45 fields. The largest first crossing occurs for $9413=97^2+4$, between 525.474356978253 and 525.474356978254. The second largest occurs for $d=1685$, between 36.195773681475 and 36.195773681476. The census checks entire real intervals between prime-ideal norms. [All 45 enclosures](evidence/census.tsv)
 

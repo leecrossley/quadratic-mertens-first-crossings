@@ -14,7 +14,7 @@ $$
 
 For $K=\mathbb Q(\sqrt d)$ of fundamental discriminant $d$, the product is $P_K(x)=\prod_{N\mathfrak p\le x}(1-1/N\mathfrak p)^{-1}$ and the curve is $e^{\gamma_E}\kappa_K\log x$, where $\kappa_K$ is the residue of the Dedekind zeta function at 1. For the first crossing we take the infimum over $x\ge2$ of points of strict negative error, counting ideals at their norm. If the error is already negative at 2 the infimum is 2. Equality at an interior boundary can be followed immediately by negative values. The proof gives a point of strict inequality $P_K(x)<e^{\gamma_E}\kappa_K\log x$ with $e^2<x<U(d)$, beyond the first ideal norm (at most 4). The same formula covers every member of Yokoi's family, including arbitrarily late first crossings. The choice of Yokoi's family was ours. Johnston asked for a family in general. [Proof](PROOF.md) [Original problem](https://arxiv.org/pdf/2407.03530#page=5)
 
-For one sense of scale, take $9413=97^2+4$. Its first crossing is between 525.474356978253 and 525.474356978254. The general bound is enormous even here. Its purpose is to give a finite deadline from the discriminant alone for every field, including those left outside a density-one conclusion. [Earlier family result and census](https://doi.org/10.5281/zenodo.24410813)
+For one sense of scale, take $9413=97^2+4$. Its first crossing is between 525.474356978253 and 525.474356978254. The general bound is enormous even here. Its purpose is to give a finite deadline from the discriminant alone for every field, including those left outside a density-one conclusion. [Earlier family result and census](https://github.com/leecrossley/yokoi-mertens-crossing-bounds/releases/tag/v1.0.0)
 
 ## How the proof works
 
