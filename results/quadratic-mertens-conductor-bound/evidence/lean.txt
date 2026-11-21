@@ -1,0 +1,4 @@
+'ConductorBound.product_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConductorBound.weighted_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConductorBound.tail_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConductorBound.smoothing_order' depends on axioms: [propext, Quot.sound]

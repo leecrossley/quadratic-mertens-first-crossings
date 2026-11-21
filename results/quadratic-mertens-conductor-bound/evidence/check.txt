@@ -1,0 +1,11 @@
+d=5: independent constants agree, full seed interval and translated error pass
+d=8: independent constants agree, full seed interval and translated error pass
+d=12: independent constants agree, full seed interval and translated error pass
+d=13: independent constants agree, full seed interval and translated error pass
+d=17: independent constants agree, full seed interval and translated error pass
+d=29: independent constants agree, full seed interval and translated error pass
+d=37: independent constants agree, full seed interval and translated error pass
+9 complex quadratures agree with the signed primitive formula, including the central mode
+7 exact parameter checks pass, including sizes on both sides of the conductor threshold
+d=5: decimal digits in new upper estimate, earlier exact integer and simplified exponent: 89, 17,273, 20,970
+d=9413: decimal digits in new upper estimate, earlier exact integer and simplified exponent: 90, 44,400, 119,212

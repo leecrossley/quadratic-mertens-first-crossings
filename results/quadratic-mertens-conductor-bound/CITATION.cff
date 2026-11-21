@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: "A smaller deadline for a prime product to cross its curve"
+abstract: "An explicit discriminant bound for the first prime-ideal Mertens crossing under GRH for each real quadratic field."
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: 1.0.3
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/quadratic-mertens-conductor-bound
+type: software
