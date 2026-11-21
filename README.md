@@ -1,5 +1,7 @@
 # A prime model with two independently chosen zero patterns
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24416497.svg)](https://doi.org/10.5281/zenodo.24416497)
+
 Can the primes that split differently from $\mathbb Q(\sqrt5)$ force a quadratic Mertens average below zero? An explicit assignment of signs to ordinary primes supplies a test of what that comparison alone can establish.
 
 Both directions of disagreement occur with the usual smoothed counting estimate. The weighted lead rises by order $\log D$ across a factor of three, where $D$ is a scale parameter. Yet the average stays positive at every start in the central-zero construction. Moving the zero into a close pair keeps the average positive through any prescribed power of $D$. The product twisted by $\chi_5$ can simultaneously have a different zero pattern and a nonzero central value. [Proof](PROOF.md)
