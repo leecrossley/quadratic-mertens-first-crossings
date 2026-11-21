@@ -1,0 +1,7 @@
+cos(theta)=1, selected [128, 1365, 16384] ordinary primes in packets 2, 3 and 4.
+cos(theta)=3/5, selected [35, 1277, 13814] ordinary primes in packets 2, 3 and 4.
+Direct local product changes equal the signed tails at six cutoffs per packet.
+Weighted prime powers at two frequencies meet the computed packet error bounds.
+The uniform limiting scalar bound is below -0.53.
+Direct ordinate sums overlap the triangular polynomial at 12 frequency/scale choices.
+A signed four-point quadratic form is strictly positive in all four test cases.
