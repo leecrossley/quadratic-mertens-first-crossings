@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: "How long can a prime product stay above its predicted curve?"
+abstract: "A lower bound for the latest first prime-ideal Mertens crossing in Yokoi's family, with a certified example."
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: 1.0.1
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/yokoi-mertens-long-positive-intervals
+type: software
