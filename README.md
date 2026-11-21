@@ -1,5 +1,7 @@
 # How early can an average detect a late prime-product dip?
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24412666.svg)](https://doi.org/10.5281/zenodo.24412666)
+
 Let $S$ be the first time the prime-ideal Mertens product in a Yokoi field falls below its expected value. Let $Y$ be the earliest possible start for a negative average of its logarithmic error, allowing any bounded nonnegative decreasing weight and any observation length.
 
 Among fields with a very late first dip, almost all satisfy
