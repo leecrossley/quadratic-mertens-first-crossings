@@ -7,14 +7,14 @@ P_K(x)=\prod_{N\mathfrak p\le x}(1-1/N\mathfrak p)^{-1},\qquad
 \Delta_K(x)=P_K(x)-e^\gamma\kappa_K\log x.
 $$
 
-Define $S_K=\inf\{x\ge2:\Delta_K(x)<0\}$, with $\inf\varnothing=+\infty$. Every prime ideal of norm exactly $x$ contributes to $P_K(x)$. Daniel R. Johnston asked for the first negative values of this error for two real quadratic fields and for an upper bound in a family. [Comparative Prime Number Theory Problem List, Problem 8, pp. 4–5](https://arxiv.org/pdf/2407.03530#page=4)
+Define $S_K=\inf\lbrace x\ge2:\Delta_K(x)<0\rbrace$, with $\inf\varnothing=+\infty$. Every prime ideal of norm exactly $x$ contributes to $P_K(x)$. Daniel R. Johnston asked for the first negative values of this error for two real quadratic fields and for an upper bound in a family. [Comparative Prime Number Theory Problem List, Problem 8, pp. 4–5](https://arxiv.org/pdf/2407.03530#page=4)
 
 ## 1. The first interval
 
 Let $q$ be the smallest prime-ideal norm of $K$. For $2\le x<q$ the product equals 1, so the error is strictly decreasing there. If
 
 $$
-2<r_K=\exp(e^{-\gamma}/\kappa_K)<q,
+2 < r_K=\exp(e^{-\gamma}/\kappa_K) < q,
 $$
 
 then $S_K=r_K$, the error vanishes at $r_K$, and every $r_K<x<q$ has negative error. In particular a least strictly negative real argument does not exist in this case. This uses the same observation as the earlier prime-window calculation. Partition at the points where the arithmetic term changes, then keep the continuous main term between successive points. [Earlier prime-window calculation](https://github.com/leecrossley/prime-band-critical-all-scales/tree/ecb4538f96452cd25fff0d10fab52f71117d57ea)
@@ -24,7 +24,7 @@ then $S_K=r_K$, the error vanishes at $r_K$, and every $r_K<x<q$ has negative er
 Write $K_d=\mathbb Q(\sqrt d)$ and $S_d=S_{K_d}$. Take $(d,m)=(5,1)$ or $(13,3)$. In both cases $d$ is a fundamental discriminant, $d=m^2+4$ and $\epsilon=(m+\sqrt d)/2$ has norm $-1$. Minkowski’s bound for a real quadratic field is $\sqrt d/2<2$ here, hence the class number is one. To see that $\epsilon$ generates the units modulo sign, let $u>1$ be a unit in the positive real embedding, with conjugate $u'=\pm1/u$. Then $u-u'=b\sqrt d$ for an integer $b\ge1$. If $1<u<\epsilon$, monotonicity of $t+1/t$ for $t>1$ gives
 
 $$
-0<u-u'\le u+1/u<\epsilon+1/\epsilon=\sqrt d.
+0 < u-u'\le u+1/u<\epsilon+1/\epsilon=\sqrt d.
 $$
 
 This is impossible. The factorization $\zeta_{K_d}(s)=\zeta(s)L(s,\chi_d)$ and the real quadratic class number formula therefore give
@@ -32,7 +32,7 @@ This is impossible. The factorization $\zeta_{K_d}(s)=\zeta(s)L(s,\chi_d)$ and t
 $$
 \kappa_{K_d}=L(1,\chi_d)=\frac{2\log\epsilon}{\sqrt d},
 \qquad
-S_d=\exp\!\left(\frac{e^{-\gamma}\sqrt d}{2\log\epsilon}\right)
+S_d=\exp\left(\frac{e^{-\gamma}\sqrt d}{2\log\epsilon}\right)
 $$
 
 once the first-interval inequality is checked. In both fields 2 is inert since $d\equiv5\bmod 8$. At 3, the discriminant 5 is a nonsquare modulo 3, whereas 13 is a nonzero square. Thus the smallest norm is 4 for $d=5$ and 3 for $d=13$. The rigorous enclosures are
@@ -74,7 +74,7 @@ The ring of integers has generator $(1+\sqrt d)/2$ with polynomial $t^2-t+(1-d)/
 Let $\mathcal D(X)$ consist of squarefree $d=m^2+4\le X$ with positive odd $m$. Define $g(z)=e^{-\gamma}/\log z$. For $2<u<v<3$, the first interval gives the exact equivalence
 
 $$
-u<S_d\le v\quad\Longleftrightarrow\quad g(v)\le L(1,\chi_d)<g(u).
+u < S_d\le v\quad\Longleftrightarrow\quad g(v)\le L(1,\chi_d) < g(u).
 $$
 
 Indeed all these discriminants are $5\bmod 8$, so the product is 1 throughout $[2,3)$. An error already negative at 2 has $S_d=2$ and is excluded by the upper threshold on $L(1,\chi_d)$. The endpoint conventions also cover a zero exactly at $u$ or $v$.
@@ -82,8 +82,8 @@ Indeed all these discriminants are $5\bmod 8$, so the product is 1 throughout $[
 Dahl and Kala’s Theorem 2 gives the limiting proportion of $L(1,\chi_d)<\zeta(2)e^{-\gamma}/\tau$ in this family as the lower-tail probability for their random Euler product $L(1,\mathbb X_D)$. They include Yokoi’s polynomial explicitly. For fixed $2<z<3$ take $\tau=\zeta(2)\log z>1$, which is in their stated range for all sufficiently large $X$. Subtracting the two strict distribution functions gives
 
 $$
-\lim_{X\to\infty}\frac{\#\{d\in\mathcal D(X):u<S_d\le v\}}{\#\mathcal D(X)}
-=\Pr\bigl(g(v)\le L(1,\mathbb X_D)<g(u)\bigr).
+\lim_{X\to\infty}\frac{\#\lbrace d\in\mathcal D(X):u < S_d\le v\rbrace}{\#\mathcal D(X)}
+=\Pr\bigl(g(v)\le L(1,\mathbb X_D) < g(u)\bigr).
 $$
 
 This yields an unconditional proportion across fields ordered by discriminant. We now bound it from below at $u=401/200$ and $v=299/100$. [Dahl and Kala, Theorem 2 and §3](https://arxiv.org/pdf/1611.02424#page=4)
@@ -110,24 +110,24 @@ $$
 =\frac{116900317682048}{964766068682647}>\frac3{25}.
 $$
 
-One can reproduce this fraction by starting with the pair $(2/3,1)$. For each successive odd $p\le31$, replace each pair $(v,w)$ by $(vp/(p-s),\,w\Pr(X_p=s))$ for every allowed $s$. Of the resulting 5,184 configurations sum the weights whose product is in the displayed interval. [Exact enumeration](family_bound.py)
+One can reproduce this fraction by starting with the pair $(2/3,1)$. For each successive odd $p\le31$, replace each pair $(v,w)$ by $(vp/(p-s),\thinspace w\Pr(X_p=s))$ for every allowed $s$. Of the resulting 5,184 configurations sum the weights whose product is in the displayed interval. [Exact enumeration](family_bound.py)
 
 For $p>31$ put $Y_p=-\log(1-X_p/p)$ and $T=\sum_{p>31}Y_p$. We have $|Y_p|\le1/(p-1)$ and $|Y_p-X_p/p|\le1/[p(p-1)]$ by the logarithm series. The local law gives $\mathbb E X_p=-p/(p^2-c_p)$. Consequently $|\mathbb E Y_p|\le2/(p-1)^2$ and $\operatorname{Var}(Y_p)\le1/(p-1)^2$. Independence and summability give an $L^2$ limit for $T$. Set
 
 $$
-\nu=\sum_{31<p\le4000,\ p\ {\rm prime}}\frac1{(p-1)^2}+\frac1{3999}<\frac1{150}.
+\nu=\sum_{31 < p\le4000,\ p\ {\rm prime}}\frac1{(p-1)^2}+\frac1{3999}<\frac1{150}.
 $$
 
 The last summand bounds even the sum over all integers greater than 4000 by the integral test. The displayed finite inequality is checked by rational arithmetic. It follows that $|\mathbb ET|<2/150$ and $\operatorname{Var}(T)<1/150$. Chebyshev’s inequality with $r=7/50$ gives
 
 $$
-\Pr(|T|<r)\ \ge\ 1-\frac{1/150}{(7/50-2/150)^2}=\frac{211}{361}.
+\Pr(|T| < r)\ \ge\ 1-\frac{1/150}{(7/50-2/150)^2}=\frac{211}{361}.
 $$
 
 At the endpoints the two verifiers establish
 
 $$
-g(299/100)<(59/100)e^{-7/50},\qquad (7/10)e^{7/50}<g(401/200).
+g(299/100)<(59/100)e^{-7/50},\qquad (7/10)e^{7/50} < g(401/200).
 $$
 
 Thus on both events $L(1,\mathbb X_D)=Ue^T$ is in the required interval. The finite product and its tail are independent. The limiting proportion of $d$ with $2.005<S_d\le2.99$ therefore exceeds
