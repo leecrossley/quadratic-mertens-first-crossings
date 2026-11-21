@@ -1,0 +1,9 @@
+D=5: 3.685768810485 < first real boundary < 3.685768810486
+  first negative integer 28; first negative at a norm 8581; distinct norms checked 538
+D=13: 2.333070011801 < first real boundary < 2.333070011802
+  first negative integer 16; first negative at a norm 101; distinct norms checked 13
+Yokoi family: 5184 finite Euler-factor configurations; good prefix mass > 3/25; tail variance < 1/150.
+Relative proportion with 2.005 < first boundary <= 2.99 exceeds 7/100.
+D=5: Gauss-sum enclosure and norm-factorization check agree at 180 bits; first negative integer 28, norm 8581.
+D=13: Gauss-sum enclosure and norm-factorization check agree at 180 bits; first negative integer 16, norm 101.
+Yokoi family: direct local counts modulo p^2 and Arb interval checks confirm relative proportion > 7/100.
