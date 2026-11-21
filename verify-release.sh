@@ -22,6 +22,7 @@ cat "$run_output"
 
 (cd results/signed-prime-tails && check_manifest)
 "$python_bin" -B results/signed-prime-tails/check.py
+"$python_bin" -B results/signed-prime-tails/packets.py
 (cd results/fixed-weight-delay-2380853 && check_manifest)
 "$python_bin" -B results/fixed-weight-delay-2380853/verify.py
 "$python_bin" -B results/fixed-weight-delay-2380853/witness.py
