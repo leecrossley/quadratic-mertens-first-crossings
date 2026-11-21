@@ -1,4 +1,8 @@
 """On ordinary primes, interpolate four quadratic twists in two adjacent bins."""
+
+if not __debug__:
+    raise SystemExit("Run with assertions enabled.")
+
 from fractions import Fraction as F
 from itertools import product
 from math import isqrt, log
