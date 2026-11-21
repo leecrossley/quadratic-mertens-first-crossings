@@ -1,6 +1,6 @@
 # What genuine Yokoi fields can do away from the centre
 
-Assume RH and the critical-line property for the primitive quadratic characters considered. Write $`H_d=L'/L(\,\cdot\,,\chi_d)`$ for the Dirichlet factor with its conductor and gamma factor removed. Let $\mathcal D(D)$ be the squarefree $d=n^2+4\le D$ with $n$ positive and odd.
+Assume RH and the critical-line property for the primitive quadratic characters considered. Alpöge's announced Dirichlet GRH theorem supplies this input. Write $`H_d=L'/L(\,\cdot\,,\chi_d)`$ for the Dirichlet factor with its conductor and gamma factor removed. Let $\mathcal D(D)$ be the squarefree $d=n^2+4\le D$ with $n$ positive and odd. [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/)
 
 **Proposition.** Fix a compact set $C$ in $\Re s>1/2$, a tolerance $\epsilon>0$ and a finite set of primes. A positive lower proportion of the fields in $\mathcal D(D)$ have the same values of the character as $\chi_5$ at the specified primes and satisfy
 
