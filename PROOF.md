@@ -1,10 +1,10 @@
 # A lower bound for the longest wait in Yokoi's family
 
-Let $\mathcal D(D)=\{d=m^2+4\le D:m\ge1\text{ odd},\ d\text{ squarefree}\}$. For $K_d=\mathbb Q(\sqrt d)$ put $L_d=L(1,\chi_d)=\operatorname{res}_{s=1}\zeta_{K_d}(s)$. Define
+Let $\mathcal D(D)=\lbrace d=m^2+4\le D:m\ge1\text{ odd},\ d\text{ squarefree}\rbrace$. For $K_d=\mathbb Q(\sqrt d)$ put $L_d=L(1,\chi_d)=\mathrm{res}_{s=1}\zeta_{K_d}(s)$. Define
 
 $$
 P_d(t)=\prod_{N\mathfrak p\le t}(1-1/N\mathfrak p)^{-1},\qquad
-S_d=\inf\{t\ge2:P_d(t)<e^{\gamma_E}L_d\log t\},\qquad
+S_d=\inf\lbrace t\ge2:P_d(t) < e^{\gamma_E}L_d\log t\rbrace,\qquad
 M(D)=\max_{d\in\mathcal D(D)}S_d .
 $$
 
@@ -13,7 +13,7 @@ The first crossing is the infimum of the strictly negative set, with value $+\in
 **Theorem.** There exists an absolute $c>0$ such that, for every sufficiently large $D$,
 
 $$
-M(D)>\exp\{c(\log D)^{1/5}\}.
+M(D)>\exp\lbrace c(\log D)^{1/5}\rbrace.
 $$
 
 In particular no fixed power of $\log d$ can bound $S_d$ for every member of the family. The statement is about the largest crossing below a discriminant cutoff. It allows most fields to cross much earlier, as the density-one theorem proves. The proof gives an asymptotic bound. The numerical value of $c$ and the starting $D$ are not evaluated here. [Earlier worst-case obstruction, §5](https://github.com/leecrossley/yokoi-mertens-crossing-bounds/blob/v1.0.0/PROOF.md)
@@ -25,7 +25,7 @@ Write $P_{\mathbb Q}(t)$ for the ordinary rational prime product. Factoring the 
 $$
 P_d(t)=P_{\mathbb Q}(t)
 \prod_{p\le t}(1-\chi_d(p)/p)^{-1}
-\prod_{\sqrt t<p\le t,\ \chi_d(p)=-1}(1-p^{-2}).
+\prod_{\sqrt t < p\le t,\ \chi_d(p)=-1}(1-p^{-2}).
 \tag{1}
 $$
 
@@ -33,11 +33,11 @@ It holds at jumps as well. The last factor corrects the norm of an inert prime i
 
 $$
 \left|\log P_{\mathbb Q}(t)-\gamma_E-\log\log t\right|
- \le C_0\,\frac{\log t}{\sqrt t}\qquad(t\ge3).
+ \le C_0\thinspace\frac{\log t}{\sqrt t}\qquad(t\ge3).
 \tag{2}
 $$
 
-For example, the ordinary Riemann hypothesis gives $\psi(t)-t=O(\sqrt t\log^2t)$ by von Koch's estimate in Schoenfeld's explicit form. Partial summation against $1/(t\log t)$ then gives (2) for the prime-power sum $\sum_{p^j\le t}1/(jp^j)$. The boundary term is $O(\log t/\sqrt t)$, and the integral tail is bounded by a constant times $\int_t^\infty(\log v)v^{-3/2}\,dv$. The omitted powers in the product cost $O(1/\sqrt t)$, by splitting at $p=\sqrt t$. We use the ordinary zeta zero-location theorem announced by Levent Alpöge for this input. The character approximation below uses the unconditional exceptional-set theorem of Granville and Soundararajan. [Schoenfeld](https://doi.org/10.1090/S0025-5718-1976-0457374-X) · [Formal statement and independent verification](https://math.mit.edu/~drew/grh/) · [Prime-power correction](https://github.com/leecrossley/yokoi-mertens-explicit-upper-bound/blob/v1.0.0/PROOF.md)
+For example, the ordinary Riemann hypothesis gives $\psi(t)-t=O(\sqrt t\log^2t)$ by von Koch's estimate in Schoenfeld's explicit form. Partial summation against $1/(t\log t)$ then gives (2) for the prime-power sum $\sum_{p^j\le t}1/(jp^j)$. The boundary term is $O(\log t/\sqrt t)$, and the integral tail is bounded by a constant times $\int_t^\infty(\log v)v^{-3/2}\thinspace dv$. The omitted powers in the product cost $O(1/\sqrt t)$, by splitting at $p=\sqrt t$. We use the ordinary zeta zero-location theorem announced by Levent Alpöge for this input. The character approximation below uses the unconditional exceptional-set theorem of Granville and Soundararajan. [Schoenfeld](https://doi.org/10.1090/S0025-5718-1976-0457374-X) · [Formal statement and independent verification](https://math.mit.edu/~drew/grh/) · [Prime-power correction](https://github.com/leecrossley/yokoi-mertens-explicit-upper-bound/blob/v1.0.0/PROOF.md)
 
 Choose $K=\lfloor c_0(\log D)^{1/5}\rfloor$, $X=2^K$, and $Y=X^{128}$, with a fixed sufficiently small $c_0>0$ chosen in §3. All estimates henceforth concern sufficiently large $D$. By Proposition 2.2 (2.1) of Granville and Soundararajan with $Q=D$ and $A=8$, all but at most $D^{1/4}$ primitive characters of conductor up to $D$ satisfy
 
@@ -51,7 +51,7 @@ Here $8\le\log\log D$ and $Y\le D/2$ eventually. Every discriminant in the famil
 
 $$
 \log\frac{P_d(t)}{e^{\gamma_E}L_d\log t}
- \ \ge\ -C_1\frac{\log t}{\sqrt t}-\sum_{t<p\le Y}\frac{\chi_d(p)}p.
+ \ \ge\ -C_1\frac{\log t}{\sqrt t}-\sum_{t < p\le Y}\frac{\chi_d(p)}p.
 \tag{4}
 $$
 
@@ -59,7 +59,7 @@ We will construct a field for which the tail sum on the right is sufficiently ne
 
 ## 2. Biasing many primes a little
 
-Use the independent variables $X_p\in\{-1,0,1\}$ of Dahl and Kala for this family. They have the same limiting local splitting laws as $\chi_d(p)$. Here $X_2=-1$. At odd $p$ put $c_p=2$ if $p\equiv1\bmod 4$, and $c_p=0$ otherwise. The probabilities of $s=\pm1$ are $p(p-c_p-s)/(2(p^2-c_p))$, and the remaining mass is at zero. In particular $\mu_p=\mathbb E X_p=-p/(p^2-c_p)\le0$, $v_p=\operatorname{Var}(X_p)\to1$, and every inert sign has positive probability. Extend the variables completely multiplicatively. Proposition 14 of Dahl and Kala gives $|\mathcal D(D)|\asymp\sqrt D$ and, uniformly for integers $n\ge1$,
+Use the independent variables $X_p\in\lbrace-1,0,1\rbrace$ of Dahl and Kala for this family. They have the same limiting local splitting laws as $\chi_d(p)$. Here $X_2=-1$. At odd $p$ put $c_p=2$ if $p\equiv1\bmod 4$, and $c_p=0$ otherwise. The probabilities of $s=\pm1$ are $p(p-c_p-s)/(2(p^2-c_p))$, and the remaining mass is at zero. In particular $\mu_p=\mathbb E X_p=-p/(p^2-c_p)\le0$, $v_p=\mathrm{Var}(X_p)\to1$, and every inert sign has positive probability. Extend the variables completely multiplicatively. Proposition 14 of Dahl and Kala gives $|\mathcal D(D)|\asymp\sqrt D$ and, uniformly for integers $n\ge1$,
 
 $$
 \mathbb E_D\chi_d(n)=\mathbb E X(n)+O(n^{2/3}D^{-1/6}\log D),
@@ -73,7 +73,7 @@ Let $A>0$ be a sufficiently large absolute constant. Choose a fixed large power 
 With $z_p=X_p-\mu_p$, form the real product
 
 $$
-R=\prod_{B<p\le4X}(1-a_pz_p).
+R=\prod_{B < p\le4X}(1-a_pz_p).
 $$
 
 Weight the independent model by $IR^2/\mathbb E(IR^2)$. Independence persists above $B$, since the weight factors by prime. Write $\nu_p$ for the resulting mean. Outside $(B,4X]$ and above $B$ it is $\mu_p\le0$. Within the interval it equals
@@ -88,8 +88,8 @@ $$
 Indeed $|z_p|\le2$, $|\mathbb Ez_p^3|\le2v_p$, and $1/2\le v_p\le1$. Choose $B$ also so that $\pi(2t)-\pi(t)\ge t/(2\log t)$ for $t\ge B$, by the prime number theorem. Then for $B\le t\le X$,
 
 $$
-\sum_{t<p\le Y}\frac{\nu_p}{p}
- \le-\frac A2\sum_{t<p\le2t}\frac{(\log p)^2}{p^{3/2}}
+\sum_{t < p\le Y}\frac{\nu_p}{p}
+ \le-\frac A2\sum_{t < p\le2t}\frac{(\log p)^2}{p^{3/2}}
  \le-\frac{A}{32}\frac{\log t}{\sqrt t}.
 \tag{7}
 $$
@@ -104,13 +104,13 @@ With $\theta=1/\log(4X)$, Markov's inequality bounds that probability by
 
 $$
 \varepsilon\le
-\exp\!\left(-\frac{\log N}{\log(4X)}+(e-1)\sum_{B<p\le4X} a_p^2\right).
+\exp\left(-\frac{\log N}{\log(4X)}+(e-1)\sum_{B < p\le4X} a_p^2\right).
 \tag{8}
 $$
 
 Indeed $p^\theta\le e$ for every selected prime. Partial summation and $\pi(t)\ll t/\log t$ give $\sum a_p^2\ll A^2(\log(4X))^4$. Choose $c_0$ small after $A$ so the negative term dominates by a fixed factor. This is possible since $(\log X)^5\le(c_0\log2)^5\log D$. Then $\varepsilon\le\exp(-c_2(\log X)^4)$ for some $c_2>0$. In particular $\sqrt\varepsilon\le Y^{-100}$ eventually. The fifth power here pays both for the squared coefficients and the lengths of the integers carrying them.
 
-By Cauchy–Schwarz, $\mathbb E|R_N^2-R^2|\le2\sqrt\varepsilon\,\mathbb E R^2$. The initial indicator is independent of both polynomials. Expectations of a bounded function under the two normalized weights $IR_N^2$ and $IR^2$ therefore differ by $O(\sqrt\varepsilon)\|F\|_\infty$. Also $\mathbb E(IR_N^2)=p_B(1-\varepsilon')\mathbb E R^2\ge p_B/2$ for large $D$, where $0\le\varepsilon'\le\varepsilon$.
+By Cauchy–Schwarz, $\mathbb E|R_N^2-R^2|\le2\sqrt\varepsilon\thinspace\mathbb E R^2$. The initial indicator is independent of both polynomials. Expectations of a bounded function under the two normalized weights $IR_N^2$ and $IR^2$ therefore differ by $O(\sqrt\varepsilon)\|F\|_\infty$. Also $\mathbb E(IR_N^2)=p_B(1-\varepsilon')\mathbb E R^2\ge p_B/2$ for large $D$, where $0\le\varepsilon'\le\varepsilon$.
 
 Evaluate $IR_N^2$ at the actual characters and normalize it to a probability measure on $\mathcal D(D)$. The following fourth-moment comparison is uniform over all intervals $H\subset(B,Y]$. Write $S_H=\sum_{p\in H}(\chi_d(p)-\nu_p)/p$ on the field side, with $X_p$ in its place on the model side. Then
 
@@ -147,8 +147,8 @@ The probability that $M_z>(\log z)/\sqrt z$ is at most $C/(\log z)^4$. The sum o
 For this field and every real $t\in[B,X]$ sum the centered prime tail to $Y$ by dyadic blocks. The first incomplete block costs at most twice its prefix maximum. Summing the rest uses $\sum_{k\ge0}(\log z+k\log2)2^{-k/2}\ll\log z$ for $z\ge2$. It follows uniformly that
 
 $$
-\left|\sum_{t<p\le Y}\frac{\chi_d(p)-\nu_p}{p}\right|
- \le C_3\,\frac{\log t}{\sqrt t}
+\left|\sum_{t < p\le Y}\frac{\chi_d(p)-\nu_p}{p}\right|
+ \le C_3\thinspace\frac{\log t}{\sqrt t}
 $$
 
 with an absolute $C_3$ independent of $A,B,c_0$. Choose $A$ in §2 so that $A/32>C_1+C_3+5$. By (4) and (7) the logarithmic product error exceeds $5\log t/\sqrt t$ on $[B,X]$.
@@ -164,4 +164,4 @@ $$
 
 for large $B$. At any $t\ge2$, every splitting pattern satisfies $P_d(t)\ge\prod_{p\le\sqrt t}(1-p^{-2})^{-1}\ge\zeta(2)(1-t^{-1/2})$. For the second inequality, multiply the missing factors over all integers larger than $\lfloor\sqrt t\rfloor$ and telescope. Since $(1-t^{-1/2})/\log t$ is decreasing for $t>1$, positivity extends to the entire interval $[2,B]$. The strict margin at $X$ and monotonicity of $P_d$ extend positivity to a right neighborhood of $X$. Thus $S_d>X$.
 
-For all large $D$, $X=2^{\lfloor c_0(\log D)^{1/5}\rfloor}>\exp\{(c_0\log2/2)(\log D)^{1/5}\}$. This proves the theorem. Since each individual $S_d$ is finite, the fields supplying these longest waits include infinitely many distinct discriminants.
+For all large $D$, $X=2^{\lfloor c_0(\log D)^{1/5}\rfloor}>\exp\lbrace(c_0\log2/2)(\log D)^{1/5}\rbrace$. This proves the theorem. Since each individual $S_d$ is finite, the fields supplying these longest waits include infinitely many distinct discriminants.
