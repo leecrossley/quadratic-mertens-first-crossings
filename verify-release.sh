@@ -34,6 +34,13 @@ cat "$run_output"
 "$python_bin" -B results/signed-prime-tails/real_axis_gauss.py > "$run_output"
 diff -u results/signed-prime-tails/evidence/real-axis-gauss.txt "$run_output"
 cat "$run_output"
+review=results/signed-prime-tails/review
+"$python_bin" -B "$review/from_table.py" > "$run_output"
+diff -u "$review/table-only.txt" "$run_output"
+cat "$run_output"
+"$python_bin" -B "$review/recompute.py" > "$run_output"
+diff -u "$review/real-values-replay.txt" "$run_output"
+cat "$run_output"
 "$python_bin" -B results/signed-prime-tails/packets.py
 (cd results/fixed-weight-delay-2380853 && check_manifest)
 "$python_bin" -B results/fixed-weight-delay-2380853/verify.py

@@ -58,3 +58,5 @@ Run both programs from this directory using Python with python-flint 0.9.0.
 python3 -B real_axis.py
 python3 -B real_axis_gauss.py
 ~~~
+
+The [review packet](review/README.md) contains all 51 intervals, a standard-library replay of the four signs, and commands to reconstruct the table by both quadrature rules.
