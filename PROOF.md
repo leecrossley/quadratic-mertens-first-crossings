@@ -15,7 +15,7 @@ Assign two local prime-ideal norms $`p`$ at sign $`+1`$, one norm $`p^2`$ at $`-
                       -\log L_\eta(1)-\log\log t\right]\frac{y\,dt}{t^2}.
 ```
 
-The Euler product for $`L_\eta`$ starts on $`\Re s>1`$. Its ordinary ordered log product at 1 converges in this construction. Use RH and quadratic Dirichlet GRH, including the quadratic characters used to count primes in the construction. [Critical-line input](https://math.mit.edu/~drew/grh/)
+The Euler product for $`L_\eta`$ starts on $`\Re s>1`$. Its ordinary ordered log product at 1 converges in this construction. Use RH and quadratic Dirichlet GRH, including the quadratic characters used to count primes in the construction. Alpöge's announced Dirichlet GRH theorem supplies this input. [Announcement](https://alpo.ge/remark.pdf) · [Independent formal checks](https://math.mit.edu/~drew/grh/)
 
 **Theorem.** There are arbitrarily large $`P`$, with scale $`D=13e^{2P}`$, such that the following construction works. Choose $`0\le\theta<\pi/3`$ and any finite $`H\ge P`$. There is one real assignment $`\xi`$ on the primes for all the tests below. Write $`N_y=\sqrt y\log y`$.
 
