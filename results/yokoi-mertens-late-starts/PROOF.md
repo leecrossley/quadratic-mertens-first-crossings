@@ -11,7 +11,7 @@ $$
 
 There is an absolute $C_0$ such that $\Pr_D(S_d\ge X)\ge\exp(-C_0u^4)$ in this range, after reducing $c$ if necessary. In particular, among the fields still positive through $X$, the proportion allowing any decreasing weight to succeed at any start below $aX/(\log X)^8$ tends to zero.
 
-**At the actual first crossing.** There are absolute $a_1,c_1,b>0$ such that for $u\le c_1(\log D)^{1/20}$ and $D,X\to\infty$,
+**At the actual first crossing.** Under the same hypotheses, there are absolute $a_1,c_1,b>0$ such that for $u\le c_1(\log D)^{1/20}$ and $D,X\to\infty$,
 
 $$
  \Pr_D\left(Y_d\le a_1 S_d/(\log S_d)^8\ \middle|\ S_d\ge X,\thinspace S_d<\infty\right)
@@ -20,6 +20,8 @@ $$
 $$
 
 The same conclusion holds in successive limits. Since $Y_d\le S_d$ whenever $S_d$ is finite, $\log Y_d/\log S_d$ tends to 1 in conditional probability. The theorem covers arbitrary decreasing weights and fields selected by the lateness of their first dip. It makes no claim for every individual field or for the optimal power of this logarithm.
+
+Both statements use RH and GRH through the tail bound (4) below. RH enters through the rational Mertens product, and GRH for $L(s,\chi_d)$ through the far tail in [TAIL.md](TAIL.md). The lower bound for $\Pr_D(S_d\ge X)$ and the bound for fields with $S_d>Z$ in §4 use RH alone. The certificate in §5 assumes the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ for the field concerned. The reduction to (3), the estimates (5) and (6), the Markov step, Dahl and Kala's moment comparison and Granville and Soundararajan's short Euler product are unconditional. So are the Lean checks and the computed contrast sums. Alpöge's announced Dirichlet GRH theorem supplies these inputs. [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/)
 
 ## 1. A negative average needs an unusually quiet earlier interval
 
@@ -39,7 +41,7 @@ $$
  \tag{4}
 $$
 
-The moment argument uses the prime count in the variance and the ordinary critical-line bound for the rational Mertens product. It is proved in [TAIL.md](TAIL.md).
+The moment argument uses the prime count in the variance, RH for the rational Mertens product and GRH for $L(s,\chi_d)$ in the far tail. It is proved in [TAIL.md](TAIL.md).
 
 ## 2. Disjoint contrasts on the logarithmic axis
 
@@ -107,11 +109,11 @@ Markov's inequality now gives $\beta^J+D^{-1/8}$ for the fraction satisfying (3)
 
 The lower bound $\Pr_D(S_d\ge X)\ge e^{-C_0u^4}$ follows from a small bias towards inert primes through $2X$, with a count in the original family. The argument and the truncation needed for slow-growing $X$ are given in [SURVIVAL.md](SURVIVAL.md). Choosing $K_0>C_0+2$ in (1) proves the first conditional assertion.
 
-To prove (2), put $Z=\exp(c_2(\log D)^{1/5})$, with $c_2$ small enough for (1) at this $K_0$. Divide $[X,Z]$ into dyadic ranges $[x,2x)$, stopping when the next lower endpoint would exceed $Z$. On such a range $S/(\log S)^8\le2x/(\log x)^8$. Use (1) with $a_1=a/2$. Summing gives $O(\exp[-K_0u^4])$, since successive log endpoints increase by $\log 2$. The remaining fields have $S>Z$. The geometric-window theorem bounds their fraction by $O(Z^{-\theta})$ for an absolute $\theta>0$. It also bounds the fraction with $S=\infty$. The denominator for conditioning on finite $S\ge X$ is at least $\exp(-C_0u^4)-O(Z^{-\theta})$. Take $u\le c_1(\log D)^{1/20}$ with $c_1$ sufficiently small. Then $Z^{-\theta}$ is at most $\exp[-(C_0+2)u^4]$. Division gives (2) for some $b>0$. All bounds also yield the asserted successive limits. Finally, every negative point has a negative right neighbourhood and gives a successful interval, so $Y_d\le S_d$. [Geometric scan and its exceptional proportion](https://github.com/leecrossley/yokoi-mertens-geometric-starts/blob/v1.0.0/PROOF.md)
+To prove (2), put $Z=\exp(c_2(\log D)^{1/5})$, with $c_2$ small enough for (1) at this $K_0$. Divide $[X,Z]$ into dyadic ranges $[x,2x)$, stopping when the next lower endpoint would exceed $Z$. On such a range $S/(\log S)^8\le2x/(\log x)^8$. Use (1) with $a_1=a/2$. Summing gives $O(\exp[-K_0u^4])$, since successive log endpoints increase by $\log 2$. The remaining fields have $S>Z$. Under RH the geometric-window theorem bounds their fraction by $O(Z^{-\theta})$ for an absolute $\theta>0$. It also bounds the fraction with $S=\infty$. The denominator for conditioning on finite $S\ge X$ is at least $\exp(-C_0u^4)-O(Z^{-\theta})$. Take $u\le c_1(\log D)^{1/20}$ with $c_1$ sufficiently small. Then $Z^{-\theta}$ is at most $\exp[-(C_0+2)u^4]$. Division gives (2) for some $b>0$. All bounds also yield the asserted successive limits. Finally, every negative point has a negative right neighbourhood and gives a successful interval, so $Y_d\le S_d$. [Geometric scan and its exceptional proportion](https://github.com/leecrossley/yokoi-mertens-geometric-starts/blob/v1.0.0/PROOF.md)
 
 ## 5. An individual certificate from a finite interval
 
-For a fixed field compute $M=\sum_i|D_i|$ from the norms in $[z,2z]$. Every contrast has mean-zero test function, so the computation needs no residue or class number. If a decreasing average succeeds at a start $y\le z$, its first crossing is strictly before any $N\ge2z$ such that
+For a fixed field compute $M=\sum_i|D_i|$ from the norms in $[z,2z]$. Every contrast has mean-zero test function, so the computation needs no residue or class number. The deadline below assumes the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ for this field (field GRH). If a decreasing average succeeds at a start $y\le z$, its first crossing is strictly before any $N\ge2z$ such that
 
 $$
  \sqrt N\log N\thinspace M>2(9+3\log d).

@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: If you use this work, please cite it as below.
 title: "How early can an average detect a late prime-product dip?"
-abstract: "Earliest successful decreasing averages in fields with a late first Mertens crossing."
+abstract: "Earliest successful decreasing averages in fields with a late first Mertens crossing, under ordinary RH and quadratic Dirichlet GRH."
 authors:
   - family-names: Crossley
     given-names: Lee
