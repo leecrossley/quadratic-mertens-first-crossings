@@ -31,7 +31,7 @@ For $`j\ge1`$ put $`X_j=e^{jP},\ c_j=\cos(j\theta),\ b_j=\cos(j\beta)`$, and
  a_{j,\eta}=(c_j+\eta b_j)/2,\qquad \eta=\pm1.
 ```
 
-In the packet $`[X_j,X_j+X_j^{3/4}]`$, for each $`\eta`$ take the first $`\lfloor|a_{j,\eta}|\sqrt{X_j}/j\rfloor`$ primes with $`\chi_5(p)=\eta`$ and $`\chi_{13}(p)=\operatorname{sgn}(a_{j,\eta})`$. A zero count requires no choice. Reverse their $`\chi_{13}`$ signs. Retain all other prime values, and extend multiplicatively.
+In the packet $`[X_j,X_j+X_j^{3/4}]`$, for each $`\eta`$ take the first $`\lfloor|a_{j,\eta}|\sqrt{X_j}/j\rfloor`$ primes with $`\chi_5(p)=\eta`$ and $`\chi_{13}(p)=\mathrm{sgn}(a_{j,\eta})`$. A zero count requires no choice. Reverse their $`\chi_{13}`$ signs. Retain all other prime values, and extend multiplicatively.
 
 The four eligible classes have indicators $`(1+\epsilon\chi_{13})(1+\eta\chi_5)/4`$ on primes away from 65. The log-weighted prime number theorem for the three fixed characters and $`\zeta`$ gives $`X^{3/4}/(4\log X)(1+o(1))`$ available primes per class in a packet at $`X`$, uniformly for $`X\ge e^P`$ as $`P\to\infty`$. The $`O(\sqrt X\log^2 X)`$ endpoint errors are smaller than the main term. Each selection exists uniformly in $`j`$. Summing the signed counts of changed primes with their *old* signs approximates $`c_j\sqrt X/j`$ with error at most 2. Multiplying those old signs by $`\chi_5(p)`$ instead gives $`b_j\sqrt X/j`$ with the same error. This follows from $`a_{j,+}+a_{j,-}=c_j`$ and $`a_{j,+}-a_{j,-}=b_j`$. The total number of changes is at most $`\sqrt X/j`$, since $`(|c+b|+|c-b|)/2=\max(|c|,|b|)`$.
 
