@@ -1,0 +1,3 @@
+All ten deadline brackets passed using direct window masses, integer factorisation and a separate quadrature.
+Yokoi supremum at y=2, s=1 in (3.46133211, 3.46133212).
+A split at 3 forces the first crossing below 3. The all-inert limit crosses between 3 and 4.

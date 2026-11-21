@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: "A sharp deadline for a negative prime-product average"
+abstract: "Sharp first-crossing deadlines from a negative power average of the prime-ideal Mertens error."
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: 1.0.2
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/mertens-power-average-deadlines
+type: software

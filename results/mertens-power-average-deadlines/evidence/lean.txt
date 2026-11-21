@@ -1,0 +1,4 @@
+'MertensDeadline.survival_excludes_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MertensDeadline.tail_mass_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MertensDeadline.inside_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MertensDeadline.adjust_margin' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,2 @@
+Integer-zeta inversion gives sharp Yokoi deadline [3.4613321124861050 +/- 3.73e-17]
+32 prime-zeta terms, 20 Moebius terms and explicit bounds on both remainders.
