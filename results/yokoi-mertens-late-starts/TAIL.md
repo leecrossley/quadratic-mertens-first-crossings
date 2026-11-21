@@ -24,7 +24,7 @@ $$
   +O\left(\log t/\sqrt t+(\log D)V^{-1/32}\right).
 $$
 
-Use the ordinary critical-line prime number theorem and partial summation for the rational Mertens product. Delayed inert squares cost $O(t^{-1/2})$. The short Euler product gives the residue error in this display. Beyond $V$ the total absolute integral is $O((\log D+\log V+1)/\sqrt V)$ by the pointwise quadratic estimate. [Ordinary and quadratic error bounds](https://github.com/leecrossley/yokoi-mertens-prescribed-crossings/blob/v1.0.0/PROOF.md) · [Short Euler products](https://arxiv.org/pdf/math/0206031#page=7) · [Critical-line verification](https://math.mit.edu/~drew/grh/)
+Use RH for the Riemann zeta function and partial summation for the rational Mertens product. Delayed inert squares cost $O(t^{-1/2})$. The short Euler product gives the residue error in this display. Beyond $V$ the total absolute integral is $O((\log D+\log V+1)/\sqrt V)$ by the pointwise quadratic estimate, which also assumes GRH for $L(s,\chi_d)$. [Ordinary and quadratic error bounds](https://github.com/leecrossley/yokoi-mertens-prescribed-crossings/blob/v1.0.0/PROOF.md) · [Short Euler products](https://arxiv.org/pdf/math/0206031#page=7) · [Independent formal checks](https://math.mit.edu/~drew/grh/)
 
 Apply Minkowski's integral inequality after restricting to nonexceptional fields. The $L^{2k}$ norm of their absolute tail from $X$ is at most
 

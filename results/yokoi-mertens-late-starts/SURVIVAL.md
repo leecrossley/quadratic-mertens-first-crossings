@@ -1,6 +1,6 @@
 # Enough fields remain above their benchmark through X
 
-The lower bound needed to condition on $S_d\ge X$ is $\Pr_D(S_d\ge X)\ge\exp[-C(\log X)^4]$ for $\log X\le c(\log D)^{1/5}$, with $c$ small and $D,X\to\infty$. We give the changes of parameters in the earlier signed-profile estimate since the cutoff can grow very slowly here. [Signed-profile proof, §§1–2](https://github.com/leecrossley/yokoi-mertens-prescribed-crossings/blob/v1.0.0/PROOF.md)
+The lower bound needed to condition on $S_d\ge X$ is $\Pr_D(S_d\ge X)\ge\exp[-C(\log X)^4]$ for $\log X\le c(\log D)^{1/5}$, with $c$ small and $D,X\to\infty$. It assumes RH for the Riemann zeta function, but no hypothesis on $L(s,\chi_d)$. We give the changes of parameters in the earlier signed-profile estimate since the cutoff can grow very slowly here. [Signed-profile proof, §§1–2](https://github.com/leecrossley/yokoi-mertens-prescribed-crossings/blob/v1.0.0/PROOF.md)
 
 Replace $X$ temporarily by the next dyadic integer $X'$ (so $X\le X'<2X$ except equality). Choose first a sufficiently large amplitude $A$ and then a sufficiently large fixed dyadic $B$. Force all primes through $B$ inert. On $B<p\le2X'$ set
 
@@ -31,7 +31,7 @@ $$
 
 Here $\Delta_p=0$ off its support. To see the maximal bound, on $(z,2z]$ the fourth moment on a subinterval of $h$ integers is $O(h^2/z^4)$ by independent centring and transfer. Each prefix consists of at most one dyadic block per subdivision level. Summing the fourth powers at each level and applying Minkowski gives $L^4$ norm $O(z^{-1/2})$ for the maximum. The sum of failure probabilities $O(\sum_{z=2^j\ge B}(\log z)^{-4})$ is small. Sum the successful dyadic bounds to obtain the display. All error constants in this display are absolute once $B$ is large.
 
-The second moment of the weight is at most $\exp(O_A((\log X')^4))$ in the shell. This follows by expanding $R_N^4$, vanishing of singleton centred factors in the independent model, and the comparison error $O_B(N^{32/3}D^{-1/6}\log D)=o(1)$. Cauchy–Schwarz converts the positive weighted probability to unweighted proportion at least $\exp[-O_A((\log X')^4)]$. Removing the exceptional characters of the short Euler product costs $O(D^{-1/4})$. Its truncation error for the others is now $O((\log D)V^{-1/32})=O((X')^{-4})$. Norm factorisation and the ordinary critical-line Mertens estimate consequently give
+The second moment of the weight is at most $\exp(O_A((\log X')^4))$ in the shell. This follows by expanding $R_N^4$, vanishing of singleton centred factors in the independent model, and the comparison error $O_B(N^{32/3}D^{-1/6}\log D)=o(1)$. Cauchy–Schwarz converts the positive weighted probability to unweighted proportion at least $\exp[-O_A((\log X')^4)]$. Removing the exceptional characters of the short Euler product costs $O(D^{-1/4})$. Its truncation error for the others is now $O((\log D)V^{-1/32})=O((X')^{-4})$. Norm factorisation and the rational Mertens estimate under RH consequently give
 
 $$
  B_d(t)=-\sum_{t < p\le 2X'}\Delta_p/p+O(\log t/\sqrt t)\qquad(B\le t\le X').
