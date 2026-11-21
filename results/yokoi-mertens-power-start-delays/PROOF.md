@@ -9,7 +9,7 @@ $$
 
 For $s>0$ let $F_{d,s}(y)=\int_y^\infty s(y/t)^s B_d(t)\thinspace dt/t$. The positive factor $s$ normalises the total mass to one.
 
-**Theorem.** Fix $0<s_0\le s_1<\infty$. There are $c,c',C>0$ depending only on this interval such that for all sufficiently large $D$ put
+**Theorem.** Assume the critical-line property for the Riemann zeta function (RH). Fix $0<s_0\le s_1<\infty$. There are $c,c',C>0$ depending only on this interval such that for all sufficiently large $D$ put
 
 $$
  X=2^{\lfloor c\sqrt{\log D/\log\log D}\rfloor}.
@@ -127,6 +127,6 @@ Finally for $y<B$, split $F_{d,s}(y)$ at $B$. Its first part is nonnegative and 
 
 ## 5. What information about the first split prime can decide
 
-The late fields just constructed already contain many split and inert primes below $T$. In fact, uniformly for every family field as $d\to\infty$ and every $x\ge(\log d)^4$, the sums of $\log p$ over split primes in $(x,2x]$ and over inert primes in the same interval are each $x/2+o(x)$. To see this, the quadratic prime ideal theorem on the critical line gives $\psi_K(2x)-\psi_K(x)=x+O(\sqrt x\log x(\log d+\log x))$. After discarding contributions from powers of rational primes with exponent at least two, of total size $O(\sqrt x\log^2x)$, and ramified primes, of total size at most $\log d$, this is twice the split-prime sum. The errors divided by $x$ tend uniformly to zero in this range. Subtracting from the ordinary prime sum then gives the inert-prime assertion. [Grenié and Molteni, Corollary 1.2](https://arxiv.org/pdf/1312.4463#page=3) · [Dirichlet critical-line statements](https://math.mit.edu/~drew/grh/)
+This section assumes in addition the critical-line property for $L(s,\chi_d)$ (field GRH). The theorem above does not use it. The late fields just constructed already contain many split and inert primes below $T$. In fact, uniformly for every family field as $d\to\infty$ and every $x\ge(\log d)^4$, the sums of $\log p$ over split primes in $(x,2x]$ and over inert primes in the same interval are each $x/2+o(x)$. To see this, the quadratic prime ideal theorem on the critical line gives $\psi_K(2x)-\psi_K(x)=x+O(\sqrt x\log x(\log d+\log x))$. After discarding contributions from powers of rational primes with exponent at least two, of total size $O(\sqrt x\log^2x)$, and ramified primes, of total size at most $\log d$, this is twice the split-prime sum. The errors divided by $x$ tend uniformly to zero in this range. Subtracting from the ordinary prime sum then gives the inert-prime assertion. [Grenié and Molteni, Corollary 1.2](https://arxiv.org/pdf/1312.4463#page=3) · [Dirichlet critical-line statements](https://math.mit.edu/~drew/grh/)
 
 For the two choices of $T$ above there are many such doubled intervals before the first crossing. Even correct leading proportions on every one of them coexist with all the positive averages proved here. A bound on a least residue or nonresidue records the presence of one prime; deciding the Mertens sign requires finer information on the signed tail. The Fourier optimisation theorems for least primes pose different inequalities. [Carneiro, Milinovich, Quesada-Herrera and Ramos, Theorems 1–3](https://arxiv.org/pdf/2404.08380#page=2)
