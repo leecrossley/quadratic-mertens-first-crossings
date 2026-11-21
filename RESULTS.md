@@ -22,6 +22,7 @@ Open a result to read its statement, hypotheses and replay instructions. Run its
 
 - [A prime average that stays positive past 222 trillion](results/fixed-weight-delay-2380853/)
 - [A signed-prime test for a negative Mertens average](results/signed-prime-tails/)
+- [How the nearest zero and central multiplicity affect the first negative start](results/signed-prime-tails/NEAREST-ZERO.md)
 
 ## Checking the collection
 

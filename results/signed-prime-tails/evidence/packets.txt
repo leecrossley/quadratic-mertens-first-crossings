@@ -1,0 +1,5 @@
+151 disjoint quadratic brackets above height 1/2 have opposite endpoint signs.
+Theta and Taylor give 8/9 < unresolved trace < 0.984. Normalised average < [-0.05429524894 +/- 4.79e-12], signed prime tail > [0.1004866669 +/- 2.30e-11].
+Euler product and Gaussian quadrature give 8/9 < unresolved trace < 0.984. Normalised average < [-0.05409744596 +/- 7.51e-13], signed prime tail > [0.1002888639 +/- 6.79e-12].
+The combined ordinary and conductor-five inverse-square mass is below 1/4.
+Both grid kernels agree with periodization before, at and beyond a lattice point, including a negative case.

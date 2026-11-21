@@ -1,0 +1,4 @@
+'CentralPackets.convolution_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CentralPackets.square_test_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CentralPackets.absorb_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CentralPackets.seven_frequency_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
