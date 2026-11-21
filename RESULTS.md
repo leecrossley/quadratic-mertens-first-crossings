@@ -18,6 +18,11 @@ Open a result to read its statement, hypotheses and replay instructions. Run its
 | [How rare is a late crossing that an average from 2 can still detect?](results/yokoi-mertens-late-crossing-density/) | [694371ff88](https://github.com/leecrossley/yokoi-mertens-late-crossing-density/tree/694371ff881aaa204f6d00538fd98c54a5994f95) | [Releases](https://github.com/leecrossley/yokoi-mertens-late-crossing-density/releases) · [DOI](https://doi.org/10.5281/zenodo.24412657) | [Issues](https://github.com/leecrossley/yokoi-mertens-late-crossing-density/issues) · [PRs](https://github.com/leecrossley/yokoi-mertens-late-crossing-density/pulls) |
 | [How early can an average detect a late prime-product dip?](results/yokoi-mertens-late-starts/) | [81d3e44a7f](https://github.com/leecrossley/yokoi-mertens-late-starts/tree/81d3e44a7f38affbad001b4a8c2e84ae062b7ad4) | [Releases](https://github.com/leecrossley/yokoi-mertens-late-starts/releases) · [DOI](https://doi.org/10.5281/zenodo.24412666) | [Issues](https://github.com/leecrossley/yokoi-mertens-late-starts/issues) · [PRs](https://github.com/leecrossley/yokoi-mertens-late-starts/pulls) |
 
+## Further results
+
+- [A prime average that stays positive past 222 trillion](results/fixed-weight-delay-2380853/)
+- [A signed-prime test for a negative Mertens average](results/signed-prime-tails/)
+
 ## Checking the collection
 
 Run `sh verify-collection.sh` from the repository root to check the result manifests. Each result’s README gives its mathematical replay and environment requirements. [Contribution and publication guidance](AGENTS.md)
