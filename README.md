@@ -1,8 +1,10 @@
 # How close must averaging start to a late Mertens crossing?
 
+Assume the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ for the quadratic discriminants in the theorem (field GRH). Alpöge's announced Dirichlet GRH theorem supplies this input. [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/)
+
 A product over the primes of a number field can stay above its expected value for a long time. Starting a weighted average early can hide its first dip. This note shows that the earliest successful start can lie at any prescribed fraction of the way to a late crossing, to any fixed relative accuracy.
 
-The fields are $\mathbb Q(\sqrt d)$ with $d=m^2+4$ squarefree and $m$ odd. Write $S_d$ for the first point where the prime-ideal Mertens product falls below $e^\gamma L(1,\chi_d)\log x$, and $Y_d$ for the earliest possible start, taken as an infimum, of a negative average of the logarithmic error with bounded nonnegative decreasing weight and measure $dt/t$.
+The fields are $\mathbb Q(\sqrt d)$ with $d=m^2+4$ squarefree and $m$ odd. Write $S_d$ for the infimum of real $x\ge2$ where the prime-ideal Mertens product falls strictly below $e^\gamma L(1,\chi_d)\log x$, and $Y_d$ for the earliest possible start, taken as an infimum, of a negative average of the logarithmic error with bounded nonnegative decreasing weight and measure $dt/t$.
 
 Choose $0<r\le1$ and $0<\eta\le r/4$. For every sufficiently large $D$ there is a scale $X=2^{\lfloor c(\log D)^{1/5}\rfloor}$ fixed before choosing the field. At least $\sqrt D\exp[-C(\log D)^{4/5}]$ family discriminants in $(D/2,D]$ satisfy
 
