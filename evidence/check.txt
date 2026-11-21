@@ -2,3 +2,6 @@ Exact cutoff identities and quadratic lower factors: 270 comparisons.
 Local laws: 10450 admissible residue classes counted at odd primes through 47.
 All 45 squarefree Yokoi discriminants through 10000 have a first crossing below 526.
 The largest is d=9413: 525.474356978253 < S < 525.474356978254.
+Using x >= 2, 37 boundaries precede the first norm and 11 fields are negative at 2.
+From the first norm, d=9413: 525.474356978253 < S < 525.474356978254.
+From the first norm, d=6245: 52.592121251681 < S < 52.592121251682.

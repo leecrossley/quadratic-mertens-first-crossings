@@ -65,6 +65,18 @@ def census_summary():
         raise ArithmeticError("Extremal enclosure does not separate the entire census")
     print("All 45 squarefree Yokoi discriminants through 10000 have a first crossing below 526.")
     print(f'The largest is d={top["d"]}: {top["boundary_lower"]} < S < {top["boundary_upper"]}.')
+    early = sum(Fraction(r["boundary_upper"]) < int(r["first_ideal_norm"]) for r in rows)
+    at_two = sum(r["boundary_lower"] == r["boundary_upper"] == "2" for r in rows)
+    ordered = sorted(rows, key=lambda r: Fraction(r["post_upper"]), reverse=True)
+    if (early, at_two) != (37, 11) or [r["d"] for r in ordered[:2]] != ["9413", "6245"]:
+        raise ArithmeticError("Unexpected counts or ranking after the first ideal norm")
+    for a, b in zip(ordered[:2], ordered[1:3]):
+        if Fraction(a["post_lower"]) <= Fraction(b["post_upper"]):
+            raise ArithmeticError("Overlapping enclosures in the leading pair")
+    print(f"Using x >= 2, {early} boundaries precede the first norm and {at_two} fields are negative at 2.")
+    for r in ordered[:2]:
+        print(f'From the first norm, d={r["d"]}: {r["post_lower"]} < S < {r["post_upper"]}.')
+
 
 
 if __name__ == "__main__":

@@ -104,19 +104,26 @@ def first_window(d, coefficient, primes):
             norms[p*p] = 1
     value = Fraction(1)
     left = 2
+    first = None
+    first_norm = min(norms)
     for right, multiplicity in sorted(norms.items()):
         if value < c_lo * bound(right, "ln", False):
-            if left == 2 and value < c_lo * bound(2, "ln", False):
-                return left, right, "2", "2"
-            if value <= c_hi * bound(left, "ln", True):
-                raise ArithmeticError("Unseparated sign at the start of a window")
-            low_root = bound(value/c_hi, "exp", False)
-            high_root = bound(value/c_lo, "exp", True)
-            k = int(10**12 * low_root)
-            if not Fraction(k, 10**12) < low_root <= high_root < Fraction(k+1, 10**12):
-                raise ArithmeticError("Unseparated decimal enclosure")
-            return left, right, text_at_precision(k), text_at_precision(k+1)
-        if value <= c_hi * bound(right, "ln", True):
+            if value < c_lo * bound(left, "ln", False):
+                row = (left, right, str(left), str(left))
+            else:
+                if value <= c_hi * bound(left, "ln", True):
+                    raise ArithmeticError("Unseparated sign at the start of a window")
+                low_root = bound(value/c_hi, "exp", False)
+                high_root = bound(value/c_lo, "exp", True)
+                k = int(10**12 * low_root)
+                if not Fraction(k, 10**12) < low_root <= high_root < Fraction(k+1, 10**12):
+                    raise ArithmeticError("Unseparated decimal enclosure")
+                row = (left, right, text_at_precision(k), text_at_precision(k+1))
+            if first is None:
+                first = row
+            if left >= first_norm:
+                return (*first, first_norm, *row)
+        elif value <= c_hi * bound(right, "ln", True):
             raise ArithmeticError("Unseparated sign immediately before a norm")
         value *= Fraction(right, right-1)**multiplicity
         left = right
@@ -126,7 +133,7 @@ def first_window(d, coefficient, primes):
 def main():
     primes = primes_to(600)
     gamma_lo, gamma_hi = exp_gamma()
-    print("m\td\twindow_left\twindow_right\tboundary_lower\tboundary_upper")
+    print("m\td\twindow_left\twindow_right\tboundary_lower\tboundary_upper\tfirst_ideal_norm\tpost_window_left\tpost_window_right\tpost_lower\tpost_upper")
     for m in range(1, isqrt(10000-4) + 1, 2):
         d = m*m + 4
         if any(d % (p*p) == 0 for p in primes if p*p <= d):
