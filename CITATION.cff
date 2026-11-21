@@ -5,7 +5,7 @@ abstract: "A discriminant bound for the first prime-ideal Mertens crossing under
 authors:
   - family-names: Crossley
     given-names: Lee
-version: 1.0.1
+version: 1.0.2
 license: CC-BY-4.0
 repository-code: https://github.com/leecrossley/yokoi-mertens-explicit-upper-bound
 type: software
