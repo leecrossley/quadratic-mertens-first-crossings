@@ -1,6 +1,6 @@
 # Bounds for the first crossing of the prime-ideal Mertens product in Yokoi’s family
 
-Let $\mathcal D(D)=\lbrace m^2+4\le D:m\ge1\text{ odd},\ m^2+4\text{ squarefree}\rbrace$. Each member is a positive fundamental discriminant. For $K_d=\mathbb Q(\sqrt d)$, write $L_d=L(1,\chi_d)=\mathrm{res}_{s=1}\zeta_{K_d}(s)$, where $\chi_d$ is the primitive quadratic character of conductor $d$. For real $x\ge2$ set
+Let $\mathcal D(D)=\lbrace m^2+4\le D:m\ge1\text{ odd},\ m^2+4\text{ squarefree}\rbrace$. Each member is a positive fundamental discriminant. For $K_d=\mathbb Q(\sqrt d)$, write $L_d=L(1,\chi_d)=\mathrm{res}_ {s=1}\zeta_{K_d}(s)$, where $\chi_d$ is the primitive quadratic character of conductor $d$. For real $x\ge2$ set
 
 $$
 P_d(x)=\prod_{N\mathfrak p\le x}(1-1/N\mathfrak p)^{-1},\qquad
