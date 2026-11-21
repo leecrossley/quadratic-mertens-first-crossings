@@ -2,7 +2,7 @@
 
 Lee Crossley
 
-Let $`d>1`$ be a positive fundamental discriminant different from 5. At an ordinary prime unramified in both fields, assign $`a_d(p)=1`$ for split in $`\mathbb Q(\sqrt d)`$ and inert in $`\mathbb Q(\sqrt5)`$, and $`-1`$ for the reverse. All other primes get 0. Thus $`2a_d(p)=\chi_d(p)-\chi_5(p)`$ away from $`5d`$. Throughout use the critical-line property for $`\zeta,L(s,\chi_5),L(s,\chi_d)`$. The comparison covers squarefree $`d=m^2+4`$ with $`m`$ odd. [Critical-line verification](https://math.mit.edu/~drew/grh/)
+Let $`d>1`$ be a positive fundamental discriminant different from 5. At an ordinary prime unramified in both fields, assign $`a_d(p)=1`$ for split in $`\mathbb Q(\sqrt d)`$ and inert in $`\mathbb Q(\sqrt5)`$, and $`-1`$ for the reverse. All other primes get 0. Thus $`2a_d(p)=\chi_d(p)-\chi_5(p)`$ away from $`5d`$. Throughout use the critical-line property for $`\zeta,L(s,\chi_5),L(s,\chi_d)`$. The comparison covers squarefree $`d=m^2+4`$ with $`m`$ odd. Alpöge's announced Dirichlet GRH theorem supplies the critical-line property. [Announcement](https://alpo.ge/remark.pdf) · [Independent formal checks](https://math.mit.edu/~drew/grh/)
 
 Write $`u=\log y,\ N_y=\sqrt y\log y,\ L=\log(3d),\ h=\log 8`$, and put
 
@@ -12,7 +12,7 @@ Write $`u=\log y,\ N_y=\sqrt y\log y,\ L=\log(3d),\ h=\log 8`$, and put
 
 Sum in increasing prime order. Convergence follows from the prime number theorem for the two fixed characters at each $`d`$.
 
-**Theorem.** There are absolute $`A,c>0`$ such that for every sufficiently large $`d`$ the interval $`L^{3/2}\le y\le d^A/8`$ contains a start with $`q(\log y)>0.46`$ and another with $`q(\log y)<-0.46`$. Somewhere in this range $`|q(\log y)|>c\sqrt L`$. More precisely, for every sufficiently large fixed absolute $`B`$, with $`H=BL,\ U=(3/2)\log L`$ and $`\mu_H(u)=2(1-u/H)/H`$ on $`[0,H]`$,
+**Theorem.** There are absolute $`A,c>0`$ such that for every sufficiently large $`d`$, beyond a bound the argument does not make effective, the interval $`L^{3/2}\le y\le d^A/8`$ contains a start with $`q(\log y)>0.46`$ and another with $`q(\log y)<-0.46`$. Somewhere in this range $`|q(\log y)|>c\sqrt L`$. More precisely, for every sufficiently large fixed absolute $`B`$, with $`H=BL,\ U=(3/2)\log L`$ and $`\mu_H(u)=2(1-u/H)/H`$ on $`[0,H]`$,
 
 ```math
  \int_U^H |q(u)|^2\mu_H(u)\,du\ \ge\ c^2 L .
