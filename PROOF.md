@@ -4,7 +4,7 @@ Let $d=5$ or $13$, $K=\mathbb Q(\sqrt d)$, and write $q=N\mathfrak p$ with one e
 
 $$
  B_d(t)=\sum_{q\le t}\ell(q)-\gamma-\log\kappa-\log\log t,
- \qquad F_d(y)=\int_y^\infty B_d(t)\frac{y}{t^2}\,dt .
+ \qquad F_d(y)=\int_y^\infty B_d(t)\frac{y}{t^2}\thinspace{}dt .
 $$
 
 **Theorem.** Use RH for $\zeta$ and the critical-line property for $L(s,\chi_d)$ for the two indicated characters. Then $N_y F_{13}(y)>1/40$ for every real $y\ge2$. For $d=5$, $N_yF_5(y)$ has a unique global minimum. Its argument lies in $(2.64281618,2.64281620)$ and its value in $(0.183894,0.183896)$. For $y\ge4$ it exceeds $1/5$. Thus neither field has a negative start for this weight. The critical-line input is the case of the announced Dirichlet GRH theorem specified here. [Alpöge](https://alpo.ge/remark.pdf) · [Sutherland’s verification record](https://math.mit.edu/~drew/grh/)
@@ -32,11 +32,11 @@ $$
  W''=2/u+3/2+(4+3u/2)A .
 $$
 
-The chord calculation encloses $W''>0$ on 128 intervals and $W(\log 2)<0$. Strict convexity and opposite signs at the two stated endpoints for the minimiser give exactly one root on $[\,\log 2,\log 4\,]$. The other calculation encloses $W<0$ through $y=2.4$ and $W'>0$ thereafter, and encloses the value at the same root. The rest of the half-line lies above $1/5$.
+The chord calculation encloses $W''>0$ on 128 intervals and $W(\log 2)<0$. Strict convexity and opposite signs at the two stated endpoints for the minimiser give exactly one root on $`[\,\log 2,\log 4\,]`$. The other calculation encloses $W<0$ through $y=2.4$ and $W'>0$ thereafter, and encloses the value at the same root. The rest of the half-line lies above $1/5$.
 
 ## From one million to infinity
 
-Write $\langle f\rangle=\int_y^\infty f(t)y\,dt/t^2$, $\psi_K(v)=\sum_{q^j\le v}\log q$ and $Q(t)=\sum_{q\le t,\ q^j>t}1/(jq^j)$. Separating the prime powers at their own cutoff gives $F_d=J+\langle Q\rangle$, where $J$ is the averaged error of $\sum_{q^j\le t}1/(jq^j)$. The integrated explicit formula gives $N_yJ\ge -V_d$ with
+Write $`\langle f\rangle=\int_y^\infty f(t)y\,dt/t^2`$, $\psi_K(v)=\sum_{q^j\le v}\log q$ and $Q(t)=\sum_{q\le t,\ q^j>t}1/(jq^j)$. Separating the prime powers at their own cutoff gives $F_d=J+\langle Q\rangle$, where $J$ is the averaged error of $\sum_{q^j\le t}1/(jq^j)$. The integrated explicit formula gives $N_yJ\ge -V_d$ with
 
 $$
  V_d=\sum_{\zeta_K(1/2+i\lambda)=0}^{*}\frac{1}{1/4+\lambda^2}
@@ -56,10 +56,10 @@ This expression decreases for $h>4$, and at $M$ it is below the indicated $\delt
 Keep only the even indices in $Q(t)$. Adding the omitted $q>t$ costs at most $\sum_{n>t}1/(n^2-1)\le2/t$. With $z=\sqrt t$ and $h(v)=1/(v^2\log v)$, this gives
 
 $$
- Q(t)\ \ge\ \frac12\int_{(z,\infty)}h(v)\,d\psi_K(v)-2/t .
+ Q(t)\ \ge\ \frac12\int_{(z,\infty)}h(v)\thinspace{}d\psi_K(v)-2/t .
 $$
 
-Replacing $d\psi_K$ by $dv$ costs at most $\tfrac12\delta(zh(z)+\int_z^\infty v|h'(v)|dv)\le3\delta/(2z\log z)$ by parts. After averaging and normalising this costs at most $2\delta$. The allowance $2/t$ costs $u e^{-u/2}$. Substitute $t=ye^r$, $v=\sqrt t\,e^s$ in the main integral. Its normalised value is $\int_0^\infty\int_0^\infty e^{-3r/2-s}u/(u+r+2s)\,ds\,dr$. The measure has mass $2/3$ and the mean of $r+2s$ under its probability normalisation is $8/3$. Jensen's inequality for the reciprocal now gives
+Replacing $d\psi_K$ by $dv$ costs at most $\tfrac12\delta(zh(z)+\int_z^\infty v|h'(v)|dv)\le3\delta/(2z\log z)$ by parts. After averaging and normalising this costs at most $2\delta$. The allowance $2/t$ costs $u e^{-u/2}$. Substitute $t=ye^r$, $`v=\sqrt t\,e^s`$ in the main integral. Its normalised value is $`\int_0^\infty\int_0^\infty e^{-3r/2-s}u/(u+r+2s)\,ds\,dr`$. The measure has mass $2/3$ and the mean of $r+2s$ under its probability normalisation is $8/3$. Jensen's inequality for the reciprocal now gives
 
 $$
  N_y F_d(y)\ \ge\ \frac{2u}{3u+8}-2\delta-u e^{-u/2}-V_d .
