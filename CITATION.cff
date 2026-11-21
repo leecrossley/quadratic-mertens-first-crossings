@@ -5,7 +5,7 @@ abstract: "First Mertens-product crossings in two real quadratic fields and an e
 authors:
   - family-names: Crossley
     given-names: Lee
-version: 1.0.2
+version: 1.0.3
 license: CC-BY-4.0
 repository-code: https://github.com/leecrossley/quadratic-mertens-first-crossings
 type: software
