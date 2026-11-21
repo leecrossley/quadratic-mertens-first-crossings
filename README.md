@@ -1,5 +1,7 @@
 # How long can a prime product stay above its Mertens curve?
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24410811.svg)](https://doi.org/10.5281/zenodo.24410811)
+
 As more prime ideals enter a product, its value rises in jumps. Mertens' theorem predicts a smooth curve for its growth. Daniel R. Johnston asked how far you may have to go before that curve overtakes the product in a family of number fields. He posed the question during Ethan Lee's talk at the 2024 Comparative Prime Number Theory Symposium. [Problem 8, pp. 4–5](https://arxiv.org/pdf/2407.03530#page=4)
 
 **For every real quadratic field of discriminant $d$, the curve overtakes the product before**
