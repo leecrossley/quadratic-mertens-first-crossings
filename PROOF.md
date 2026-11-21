@@ -1,10 +1,10 @@
 # Bounds for the first crossing of the prime-ideal Mertens product in Yokoi’s family
 
-Let $\mathcal D(D)=\{m^2+4\le D:m\ge1\text{ odd},\ m^2+4\text{ squarefree}\}$. Each member is a positive fundamental discriminant. For $K_d=\mathbb Q(\sqrt d)$, write $L_d=L(1,\chi_d)=\operatorname{res}_{s=1}\zeta_{K_d}(s)$, where $\chi_d$ is the primitive quadratic character of conductor $d$. For real $x\ge2$ set
+Let $\mathcal D(D)=\lbrace m^2+4\le D:m\ge1\text{ odd},\ m^2+4\text{ squarefree}\rbrace$. Each member is a positive fundamental discriminant. For $K_d=\mathbb Q(\sqrt d)$, write $L_d=L(1,\chi_d)=\mathrm{res}_ {s=1}\zeta_{K_d}(s)$, where $\chi_d$ is the primitive quadratic character of conductor $d$. For real $x\ge2$ set
 
 $$
 P_d(x)=\prod_{N\mathfrak p\le x}(1-1/N\mathfrak p)^{-1},\qquad
-S_d=\inf\{x\ge2:P_d(x)<e^\gamma L_d\log x\}.
+S_d=\inf\lbrace x\ge2:P_d(x) < e^\gamma L_d\log x\rbrace.
 $$
 
 An empty set gives $S_d=+\infty$. All ideals of norm exactly $x$ enter the product. Density and lower density refer to the limit and lower limit of the proportion in $\mathcal D(D)$ as $D\to\infty$.
@@ -20,7 +20,7 @@ For a rational prime $p$, the value $s=\chi_d(p)$ records whether $p$ splits ($+
 $$
 P_d(t)=P_{\mathbb Q}(t)
 \prod_{p\le t}(1-\chi_d(p)/p)^{-1}
-\prod_{\substack{\sqrt t<p\le t\\\chi_d(p)=-1}}(1-p^{-2}).
+\prod_{\substack{\sqrt t < p\le t\\\chi_d(p)=-1}}(1-p^{-2}).
 \tag{1}
 $$
 
@@ -45,7 +45,7 @@ $$
 
 This counts residues of $m$ modulo $p^2$ with $p^2\nmid m^2+4$. There are $c_p$ roots modulo $p$, each with one lift to a root modulo $p^2$. The character sum of $m^2+4$ modulo $p$ is $-1$, since $(z-m)(z+m)=4$ has $p-1$ solutions. The resulting law has $\mathbb E X_p=-p/(p^2-c_p)$ and $\mathbb E X_p^2=1-O(1/p)$. [Dahl and Kala, §3 and Proposition 14](https://arxiv.org/pdf/1611.02424#page=11)
 
-Put $Y_p=-\log(1-X_p/p)$. Uniformly at odd primes, $Y_p=X_p/p+O(p^{-2})$, so $|\mathbb E Y_p|\ll p^{-2}$ and $\operatorname{Var}Y_p=(1+O(1/p))p^{-2}$. The centered series converges almost surely and in mean square by independence and its summable variances. The means converge absolutely. Hence $Z=\exp(\sum_pY_p)$ is finite and strictly positive almost surely.
+Put $Y_p=-\log(1-X_p/p)$. Uniformly at odd primes, $Y_p=X_p/p+O(p^{-2})$, so $|\mathbb E Y_p|\ll p^{-2}$ and $\mathrm{Var}Y_p=(1+O(1/p))p^{-2}$. The centered series converges almost surely and in mean square by independence and its summable variances. The means converge absolutely. Hence $Z=\exp(\sum_pY_p)$ is finite and strictly positive almost surely.
 
 **Joint approximation.** For every fixed finite set of primes $H$, the distribution over $\mathcal D(D)$ of
 
@@ -55,21 +55,21 @@ $$
 
 converges weakly to that of $((X_p)_{p\in H},\log Z)$. Keeping the local signs alongside the residue is necessary because both determine the crossing.
 
-For the proof, Dahl and Kala’s Proposition 14 gives $\#\mathcal D(D)\asymp\sqrt D$ and, for each integer $n\ge1$,
+For the proof, Dahl and Kala’s Proposition 14 gives $|\mathcal D(D)|\asymp\sqrt D$ and, for each integer $n\ge1$,
 
 $$
 \mathbb E_D\chi_d(n)=\mathbb E X(n)+O(n^{2/3}D^{-1/6}\log D).
 \tag{3}
 $$
 
-Here $\mathbb E_D$ is the uniform average and $X$ is extended completely multiplicatively in this family. The paper includes the Yokoi polynomial $(2k-1)^2+4$. Indicators of any specified finite pattern of signs are polynomials in those signs (interpolate on $\{-1,0,1\}$). Equation (3) gives convergence for each such pattern.
+Here $\mathbb E_D$ is the uniform average and $X$ is extended completely multiplicatively in this family. The paper includes the Yokoi polynomial $(2k-1)^2+4$. Indicators of any specified finite pattern of signs are polynomials in those signs (interpolate on $\lbrace-1,0,1\rbrace$). Equation (3) gives convergence for each such pattern.
 
 For the full residue we use Proposition 2.2, equation (2.1), of Granville and Soundararajan with $Q=D$, $A=8$, $y=(\log D)^{64}$. These parameters satisfy $A\le\log\log D$ and $y\le D/2$ eventually. Outside at most $D^{1/4}$ primitive characters of conductor at most $D$ the multiplicative error in their product through $y$ is $O(1/\log D)$. Since every $d$ gives a distinct primitive character and the family has order $\sqrt D$, discarding these exceptions costs a proportion tending to zero. [Granville and Soundararajan, Proposition 2.2](https://arxiv.org/pdf/math/0206031#page=7)
 
 For fixed $w$ and $w<p\le y$, replacing the logarithmic factors by $\chi_d(p)/p$ costs $O(\sum_{p>w}p^{-2})$ uniformly. The empirical second moment of $\sum_{w<p\le y}\chi_d(p)/p$ differs from its model second moment by at most
 
 $$
-O\!\left(D^{-1/6}\log D\left(\sum_{p\le y}p^{-1/3}\right)^2\right)=o(1)
+O\left(D^{-1/6}\log D\left(\sum_{p\le y}p^{-1/3}\right)^2\right)=o(1)
 $$
 
 by (3) applied to $pq$, including $p=q$. In the model, independence and $\mathbb E X_p=O(1/p)$ bound that second moment by $O(\sum_{p>w}p^{-2})$. For each fixed tolerance, Chebyshev’s inequality now shows that the upper limiting proportion where the truncation at $w$ misses $\log L_d$ by that tolerance tends to zero as $w\to\infty$. The random truncation converges to $\log Z$ in mean square. Applying these estimates first at fixed $w\ge\max H$ to bounded Lipschitz test functions, then sending $w$ to infinity, proves the joint approximation. In particular, the lower limiting proportion for an open condition on these variables is at least its model probability.
@@ -83,19 +83,19 @@ Define $P_X(t)$ by the same ideal-norm rule with $X_p$ in place of $\chi_d(p)$, 
 $$
 \log\frac{P_X(t)}{e^\gamma Z\log t}
 =\log\frac{P_{\mathbb Q}(t)}{e^\gamma\log t}
-+\sum_{\substack{\sqrt t<p\le t\\X_p=-1}}\log(1-p^{-2})-T_t.
++\sum_{\substack{\sqrt t < p\le t\\X_p=-1}}\log(1-p^{-2})-T_t.
 \tag{4}
 $$
 
 The middle term is nonpositive. Diamond and Pintz’s Theorem 1.1 supplies a deterministic sequence $t_j\to\infty$ on which the first term is strictly negative. It suffices to show that $T_{t_j}>0$ infinitely often with probability one. [Diamond and Pintz, Theorem 1.1](https://www.numdam.org/article/JTNB_2009__21_3_523_0.pdf)
 
-Let $s_t^2=\operatorname{Var}T_t$. The local estimates and the prime number theorem give $s_t^2\asymp1/(t\log t)$, $|\mathbb ET_t|\ll s_t^2$ and $\sup_{p>t}|Y_p-\mathbb E Y_p|\ll 1/t=o(s_t)$. For $V_t=(T_t-\mathbb ET_t)/s_t$ the independent fourth-moment expansion gives $\mathbb E V_t^4\le3+o(1)$. Indeed the sum of individual fourth moments is at most the squared maximum increment times the sum of the variances, and the cross terms are at most $3s_t^4$ before normalization. This computation passes to the infinite tail by convergence in fourth mean, using the same bound on differences of partial sums.
+Let $s_t^2=\mathrm{Var}T_t$. The local estimates and the prime number theorem give $s_t^2\asymp1/(t\log t)$, $|\mathbb ET_t|\ll s_t^2$ and $\sup_{p>t}|Y_p-\mathbb E Y_p|\ll 1/t=o(s_t)$. For $V_t=(T_t-\mathbb ET_t)/s_t$ the independent fourth-moment expansion gives $\mathbb E V_t^4\le3+o(1)$. Indeed the sum of individual fourth moments is at most the squared maximum increment times the sum of the variances, and the cross terms are at most $3s_t^4$ before normalization. This computation passes to the infinite tail by convergence in fourth mean, using the same bound on differences of partial sums.
 
-For large $t$, interpolation between the first and fourth absolute moments yields $\mathbb E|V_t|\ge1/\sqrt{\mathbb E V_t^4}\ge1/2$. Since $V_t$ is centered, $\mathbb E(V_t)_+\ge1/4$. Cauchy–Schwarz gives $\mathbb E(V_t)_+\le1/8+\Pr(V_t>1/8)^{1/2}$. Thus $\Pr(T_t>0)\ge1/64$ for large $t$, since $|\mathbb ET_t|/s_t<1/8$. As a check, the bounded increments also satisfy Lindeberg’s condition, which gives $\Pr(T_t>0)\to1/2$.
+For large $t$, interpolation between the first and fourth absolute moments yields $\mathbb E|V_t|\ge1/\sqrt{\mathbb E V_t^4}\ge1/2$. Since $V_t$ is centered, $\mathbb E\max(V_t,0)\ge1/4$. Cauchy–Schwarz gives $\mathbb E\max(V_t,0)\le1/8+\Pr(V_t>1/8)^{1/2}$. Thus $\Pr(T_t>0)\ge1/64$ for large $t$, since $|\mathbb ET_t|/s_t<1/8$. As a check, the bounded increments also satisfy Lindeberg’s condition, which gives $\Pr(T_t>0)\to1/2$.
 
-The probability of the limsup of $\{T_{t_j}>0\}$ is at least the limsup of their probabilities. This limsup event is unchanged by changing any finite set of local signs, so Kolmogorov’s zero–one law makes its probability one. No independence between tails at different $t_j$ is required.
+The probability of the limsup of $\lbrace T_{t_j}>0\rbrace$ is at least the limsup of their probabilities. This limsup event is unchanged by changing any finite set of local signs, so Kolmogorov’s zero–one law makes its probability one. No independence between tails at different $t_j$ is required.
 
-By (4), almost every model realization has strict negative error at some $t_j$. Given $\epsilon>0$, the union of the first $k$ such tests has model probability greater than $1-\epsilon$ for some **finite** $k$. This union is an open condition in the joint variables of §2 with $H=\{p:p\le\max_{j\le k}t_j\}$. The fraction of actual fields hitting one of these negative values has lower limit at least $1-\epsilon$. Thus for a fixed $M>\max_{j\le k}t_j$ the lower density of $S_d<M$ is at least $1-\epsilon$. Since $f(d)>M$ eventually and $\epsilon$ is arbitrary, $S_d<f(d)$ has density one. The transfer here only requires a finite union at each tolerance.
+By (4), almost every model realization has strict negative error at some $t_j$. Given $\epsilon>0$, the union of the first $k$ such tests has model probability greater than $1-\epsilon$ for some **finite** $k$. This union is an open condition in the joint variables of §2 with $H=\lbrace p:p\le\max_{j\le k}t_j\rbrace$. The fraction of actual fields hitting one of these negative values has lower limit at least $1-\epsilon$. Thus for a fixed $M>\max_{j\le k}t_j$ the lower density of $S_d<M$ is at least $1-\epsilon$. Since $f(d)>M$ eventually and $\epsilon$ is arbitrary, $S_d<f(d)$ has density one. The transfer here only requires a finite union at each tolerance.
 
 ## 4. First crossings beyond any prescribed cutoff
 
@@ -116,7 +116,7 @@ For the narrower multiplicative interval, $(1-x^{-1/2})/\log x$ decreases on $x>
 Write $\log_j D$ for the $j$-fold iterated logarithm. For all sufficiently large $D$ there is a $d\in\mathcal D(D)$ that has no negative value through
 
 $$
-c\,\frac{\log D}{(\log_2 D)^2\log_3 D}
+c\thinspace\frac{\log D}{(\log_2 D)^2\log_3 D}
 \tag{5}
 $$
 
@@ -128,7 +128,7 @@ To see this, Dahl and Kala’s Theorem 2 gives a relative-error approximation to
 
 Enumerate each positive odd $m$ with $m^2+4\le10000$ and retain the squarefree discriminants. The two calculations agree on all 45 rows. The largest boundary belongs to $d=9413$ and lies strictly between 525.474356978253 and 525.474356978254, in the prime-ideal norm window $[509,547)$. The other 44 boundaries are below 37. [Certified table](evidence/census.tsv)
 
-The first calculation uses $\epsilon=(m+\sqrt d)/2$, a unit of norm $-1$. A unit $u>1$ has $u-u'=b\sqrt d$ for an integer $b\ge1$, with $u'=\pm1/u$. If $1<u<\epsilon$ then $0<u-u'\le u+1/u<\epsilon+1/\epsilon=\sqrt d$, impossible. The real quadratic class number formula gives $L_d=h_d\,2\log(\epsilon)/\sqrt d$ with positive integral $h_d$.
+The first calculation uses $\epsilon=(m+\sqrt d)/2$, a unit of norm $-1$. A unit $u>1$ has $u-u'=b\sqrt d$ for an integer $b\ge1$, with $u'=\pm1/u$. If $1<u<\epsilon$ then $0<u-u'\le u+1/u<\epsilon+1/\epsilon=\sqrt d$, impossible. The real quadratic class number formula gives $L_d=h_d\thinspace2\log(\epsilon)/\sqrt d$ with positive integral $h_d$.
 
 To isolate $h_d$, sum the periodic Dirichlet series for $L_d$ through an integer number of periods, bounding each summand by lower and upper rationals. If $N$ is the final index and $H$ is the maximum absolute character partial sum within a period, partial summation bounds the remainder by $H/(N+1)$. Repeat periods until the interval for $h_d$ contains just one positive integer. The exact class number now yields a tight enclosure for $L_d$. Integer square roots bound $\sqrt d$. Monotone rational endpoints and outward-rounded exponentials and logarithms enclose the continuous quantities. The Euler–Maclaurin expansion at 128 bounds $\gamma$ with a remainder between zero and $1/(132\cdot128^{10})$ after the term $-1/(240\cdot128^8)$. [Standard-library verifier](verify.py) · [NIST DLMF §5.11](https://dlmf.nist.gov/5.11)
 
