@@ -82,7 +82,7 @@ Indeed all these discriminants are $5\bmod 8$, so the product is 1 throughout $[
 Dahl and Kala’s Theorem 2 gives the limiting proportion of $L(1,\chi_d)<\zeta(2)e^{-\gamma}/\tau$ in this family as the lower-tail probability for their random Euler product $L(1,\mathbb X_D)$. They include Yokoi’s polynomial explicitly. For fixed $2<z<3$ take $\tau=\zeta(2)\log z>1$, which is in their stated range for all sufficiently large $X$. Subtracting the two strict distribution functions gives
 
 $$
-\lim_{X\to\infty}\frac{\#\lbrace d\in\mathcal D(X):u < S_d\le v\rbrace}{\#\mathcal D(X)}
+\lim_{X\to\infty}\frac{|\lbrace d\in\mathcal D(X):u < S_d\le v\rbrace|}{|\mathcal D(X)|}
 =\Pr\bigl(g(v)\le L(1,\mathbb X_D) < g(u)\bigr).
 $$
 
@@ -112,13 +112,13 @@ $$
 
 One can reproduce this fraction by starting with the pair $(2/3,1)$. For each successive odd $p\le31$, replace each pair $(v,w)$ by $(vp/(p-s),\thinspace w\Pr(X_p=s))$ for every allowed $s$. Of the resulting 5,184 configurations sum the weights whose product is in the displayed interval. [Exact enumeration](family_bound.py)
 
-For $p>31$ put $Y_p=-\log(1-X_p/p)$ and $T=\sum_{p>31}Y_p$. We have $|Y_p|\le1/(p-1)$ and $|Y_p-X_p/p|\le1/[p(p-1)]$ by the logarithm series. The local law gives $\mathbb E X_p=-p/(p^2-c_p)$. Consequently $|\mathbb E Y_p|\le2/(p-1)^2$ and $\operatorname{Var}(Y_p)\le1/(p-1)^2$. Independence and summability give an $L^2$ limit for $T$. Set
+For $p>31$ put $Y_p=-\log(1-X_p/p)$ and $T=\sum_{p>31}Y_p$. We have $|Y_p|\le1/(p-1)$ and $|Y_p-X_p/p|\le1/[p(p-1)]$ by the logarithm series. The local law gives $\mathbb E X_p=-p/(p^2-c_p)$. Consequently $|\mathbb E Y_p|\le2/(p-1)^2$ and $\mathrm{Var}(Y_p)\le1/(p-1)^2$. Independence and summability give an $L^2$ limit for $T$. Set
 
 $$
 \nu=\sum_{31 < p\le4000,\ p\ {\rm prime}}\frac1{(p-1)^2}+\frac1{3999}<\frac1{150}.
 $$
 
-The last summand bounds even the sum over all integers greater than 4000 by the integral test. The displayed finite inequality is checked by rational arithmetic. It follows that $|\mathbb ET|<2/150$ and $\operatorname{Var}(T)<1/150$. Chebyshev’s inequality with $r=7/50$ gives
+The last summand bounds even the sum over all integers greater than 4000 by the integral test. The displayed finite inequality is checked by rational arithmetic. It follows that $|\mathbb ET|<2/150$ and $\mathrm{Var}(T)<1/150$. Chebyshev’s inequality with $r=7/50$ gives
 
 $$
 \Pr(|T| < r)\ \ge\ 1-\frac{1/150}{(7/50-2/150)^2}=\frac{211}{361}.
