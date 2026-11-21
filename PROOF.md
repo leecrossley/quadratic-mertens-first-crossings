@@ -11,7 +11,9 @@ $$
 
 Use $\inf\varnothing=+\infty$. The product includes its jumps. A first crossing can be an infimum where the two sides are equal.
 
-**There exists a real $x$ with $2\le x<2^{2^{d^{30000}}}$ and $P_K(x)<e^{\gamma_E}\kappa_K\log x$.** In particular $S_d<2^{2^{d^{30000}}}$. This applies to every squarefree $d=m^2+4$ with $m$ positive and odd, the Yokoi family in the earlier prime-window calculation.
+Assume the nontrivial zeros of $\zeta(s)L(s,\chi_d)$ have real part $1/2$ (GRH for this field). Alpöge's announced Dirichlet GRH theorem supplies this hypothesis for both factors. [Announcement](https://alpo.ge/remark.pdf) [Formal verification](https://math.mit.edu/~drew/grh/)
+
+**There exists a real $x$ with $e^2<x<2^{2^{d^{30000}}}$ and $P_K(x)<e^{\gamma_E}\kappa_K\log x$.** In particular $S_d<2^{2^{d^{30000}}}$. This applies to every squarefree $d=m^2+4$ with $m$ positive and odd, the Yokoi family in the earlier prime-window calculation.
 
 The proof gives the smaller integer cutoff $U_\ast=2^{8Q^N}$, where
 
@@ -141,7 +143,7 @@ $$
 \tag{8}
 $$
 
-The averaging window is now $[Y+\delta,Y+3\delta]$, contained in $u\ge2$. Equations (7)–(8) and the bound on $b$ show that the average of $\Phi$ there is strictly less than $-H$. A set of positive measure in that window has $\Phi(u)<-H$. Removing the countable set of prime-power jumps leaves a point to which (6) applies. For that point $P_K(e^u)<e^{\gamma_E}\kappa_K u$ and $e^u<e^{2Q^N+1}<2^{8Q^N}=U_\ast$. This proves the sharper cutoff.
+The averaging window is now $[Y+\delta,Y+3\delta]$, contained in $u\ge2$. Equations (7)–(8) and the bound on $b$ show that the average of $\Phi$ there is strictly less than $-H$. A set of positive measure in that window has $\Phi(u)<-H$. Removing the countable set of prime-power jumps leaves a point to which (6) applies. The translated window starts beyond $u=2$, so the constructed point is beyond the smallest ideal norm, which is at most 4. For that point $P_K(e^u)<e^{\gamma_E}\kappa_K u$ and $e^u<e^{2Q^N+1}<2^{8Q^N}=U_\ast$. This proves the sharper cutoff.
 
 ## 5. A single formula in the discriminant
 
