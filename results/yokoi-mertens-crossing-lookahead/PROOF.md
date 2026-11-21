@@ -13,7 +13,7 @@ Let $A_\ast$ denote the least possible integral $\int_2^\infty B(t)\thinspace dt
 **Theorems.** The following statements concern actual fields.
 
 1. As $S_d\to\infty$ over fields with $W_d<\infty$, the lower limit of $\log(W_d/S_d)/\sqrt{\log S_d}$ is exactly $\sqrt{2A_\ast}$. For each individual such field with $S_d>2$ there is the finite inequality $\log(W_d/S_d)\ge\sqrt{2A_{S_d}\log S_d}$.
-2. Put $L=\log\log d$. For every $\kappa<2\sqrt{2A_\ast}$ and all sufficiently large fields with $W_d<\infty$,
+2. Assume the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ for the quadratic discriminants in the theorem (field GRH). Put $L=\log\log d$. For every $\kappa<2\sqrt{2A_\ast}$ and all sufficiently large fields with $W_d<\infty$,
 
 $$
  S_d\le(\log d)^2\exp(-\kappa\sqrt L).
@@ -21,9 +21,9 @@ $$
 $$
 
 In particular the finite certificate $A_\ast>0.4829182931$ permits $\kappa=1.965$. This improves the previous $O((\log d/\log\log d)^2)$ bound for fields admitting a decreasing average at 2.
-3. Conversely, for every $\kappa>2\sqrt{A_\ast}$, set $L=\log\log D$ and $N=(\log D)\exp(-\kappa\sqrt L)$. In each sufficiently large shell $D/2<d\le D$ there are at least $D^{1/2-o(1)}$ such fields with $N<S_d=N(1+O_\kappa(1/\log N))$ and $W_d<\infty$. In these fields all power averages starting at 2 with $0<s\le\lambda_\kappa/L$ are strictly negative, for some $\lambda_\kappa>0$. Thus the earliest possible start works in a large set of examples with a first crossing this late. The exponents one and two on $\log d$ in the lower and upper statements are distinct.
+3. Conversely, for every $\kappa>2\sqrt{A_\ast}$, set $L=\log\log D$ and $N=(\log D)\exp(-\kappa\sqrt L)$. In each sufficiently large shell $D/2<d\le D$ there are at least $D^{1/2-o(1)}$ such fields with $N<S_d=N(1+O_\kappa(1/\log N))$ and $W_d<\infty$. Under field GRH, in these fields all power averages starting at 2 with $0<s\le\lambda_\kappa/L$ are strictly negative, for some $\lambda_\kappa>0$. Thus the earliest possible start works in a large set of examples with a first crossing this late. The exponents one and two on $\log d$ in the lower and upper statements are distinct.
 
-The first assertion and the finite-prefix construction in the third use classical results on primes and residues in the family. The upper conductor bound and the estimate for the infinite tail of the simultaneous power averages use the ordinary and quadratic critical-line estimates indicated below.
+The first assertion, and the count with the stated $S_d$ and $W_d<\infty$ in the third, are unconditional. They use classical results on primes and residues in the family. The second assertion and the infinite tail of the simultaneous power averages in the third assume field GRH, through the bounds (2) below. Alpöge's announced Dirichlet GRH theorem supplies this input. [Announcement](https://alpo.ge/remark.pdf)
 
 ## 1. A one-sided bound and its sharpness
 
@@ -45,7 +45,7 @@ The signed area on this interval tends to $-b^2/2$, by integrating the expansion
 
 ## 2. A smaller worst case in terms of the discriminant
 
-Put $R=(\log d)^2 L^4$ with $L=\log\log d$. For $R$ sufficiently large the real quadratic bounds
+Put $R=(\log d)^2 L^4$ with $L=\log\log d$. Under field GRH, for $R$ sufficiently large the real quadratic bounds
 
 $$
  |B_d(R)|\ll(\log d+\log R)/\sqrt R,\qquad
@@ -53,7 +53,7 @@ $$
  \tag{2}
 $$
 
-give $|B_d(R)|\ll L^{-2}$ and a possible future loss $O(L^{-3})$. The first estimate follows by partial summation of the prime ideal theorem. The second follows by integrating the quadratic explicit formula. Its constant is uniform in $d$. [Derivation, §2](https://github.com/leecrossley/yokoi-mertens-optimal-starts/blob/v1.0.0/PROOF.md) · [Grenié and Molteni](https://arxiv.org/abs/1312.4463) · [Critical-line verification](https://math.mit.edu/~drew/grh/)
+give $|B_d(R)|\ll L^{-2}$ and a possible future loss $O(L^{-3})$. The first estimate follows by partial summation of the prime ideal theorem. The second follows by integrating the quadratic explicit formula. Its constant is uniform in $d$. [Derivation, §2](https://github.com/leecrossley/yokoi-mertens-optimal-starts/blob/v1.0.0/PROOF.md) · [Grenié and Molteni](https://arxiv.org/abs/1312.4463) · [Independent formal checks](https://math.mit.edu/~drew/grh/)
 
 Suppose $W_d<\infty$. Some endpoint has negative $J_d$. Truncating it at $R$ gives an endpoint $T\le R$ with $J_d(T)\le O(L^{-3})$. If $S_d\ge R$, a negative endpoint would be beyond $R$ and $J_d(R)\ge A_R$ would contradict (2). Hence $S_d<R$. If the negative endpoint lies before $R$ it lies after $S_d$. In all cases we may use a $T$ in $[S_d,R]$ with the asserted upper bound.
 

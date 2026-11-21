@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: If you use this work, please cite it as below.
 title: "From the first dip to the first negative average"
-abstract: "Sharp delay from a first prime-product dip to a negative average in Yokoi fields."
+abstract: "Sharp delay from a first prime-product dip to a negative average in Yokoi fields. The conductor bound and the power-average tail assume ordinary RH and quadratic Dirichlet GRH."
 authors:
   - family-names: Crossley
     given-names: Lee
