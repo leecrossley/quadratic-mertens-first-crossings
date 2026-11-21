@@ -1,0 +1,12 @@
+{
+  "title": "Mertens crossings in real quadratic fields and Yokoi families",
+  "creators": [
+    {
+      "name": "Crossley, Lee"
+    }
+  ],
+  "description": "<p>The collection includes the first crossings for discriminants 5 and 13, the Yokoi field estimates and the real-axis sign certificates. The individual proofs distinguish results for actual fields from comparison models and specify where RH and quadratic Dirichlet GRH are used.</p><p><a href=\"https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/b875c7699f1deb1e1605aeee01259cbca88ff759/RESULTS.md\">Proofs and verification</a>.</p>",
+  "license": "cc-by-4.0",
+  "upload_type": "software",
+  "version": "collection-2026-11-21"
+}
