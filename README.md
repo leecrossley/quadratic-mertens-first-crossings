@@ -1,5 +1,7 @@
 # First Mertens crossings in two real quadratic fields
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24410876.svg)](https://doi.org/10.5281/zenodo.24410876)
+
 Daniel R. Johnston asked where the Mertens product over prime ideals first falls below its main term in the fields $\mathbb Q(\sqrt 5)$ and $\mathbb Q(\sqrt{13})$. He posed the question during Ethan Lee’s talk at the University of British Columbia in June 2024. Both crossings happen before the first prime ideal enters the product. [Problem 8, pp. 4–5](https://arxiv.org/pdf/2407.03530#page=4)
 
 | Field | First real crossing lies between | First negative integer argument | First negative prime-ideal norm |
