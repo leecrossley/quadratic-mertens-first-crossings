@@ -4,7 +4,7 @@ Fix any interval of positive exponents, for example $1/2\le s\le20$. There are m
 
 For a large discriminant cutoff $D$, the scale $X$ is $2^{\lfloor c\sqrt{\log D/\log\log D}\rfloor}$. It grows faster than every fixed power of $\log D$ and slower than every fixed positive power of $D$. The fields lie in $(D/2,D]$. Their actual prime-ideal Mertens products stay above the main term through $T$, which can be as large as $\exp(c'(\log D)^{1/5})$ up to dyadic rounding. Their first dips occur before $8X$.
 
-The theorem gives a lower count of $\sqrt D\exp[-C((\log T)^4+\log X\log\log X)]$ such fields. The proof allows every real start through $X$ and every real exponent in the chosen interval. The first raw crossing can occur before $X$. Other decreasing weights can detect a dip earlier. The universal polynomial starting-point question remains open. [Theorem and proof](PROOF.md) · [Prior work](PRIOR-WORK.md)
+The theorem gives a lower count of $\sqrt D\exp[-C((\log T)^4+\log X\log\log X)]$ such fields. The proof allows every real start through $X$ and every real exponent in the chosen interval. The theorem places the first raw crossing in $(T,8X)$ and does not exclude one before $X$. Other decreasing weights can detect a dip earlier. The universal polynomial starting-point question remains open. [Theorem and proof](PROOF.md) · [Prior work](PRIOR-WORK.md)
 
 The proof uses a short, stronger bias in the splitting of primes to keep the raw product positive. A longer, weaker bias controls the averages. Reversing that bias in a final block makes them all negative at the same start. The field can already contain large numbers of both split and inert primes in every doubled interval above $(\log d)^4$ while these signs persist.
 
