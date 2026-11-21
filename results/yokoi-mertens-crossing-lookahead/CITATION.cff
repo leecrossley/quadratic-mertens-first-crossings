@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: "From the first dip to the first negative average"
+abstract: "Sharp delay from a first prime-product dip to a negative average in Yokoi fields."
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: 1.0.1
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/yokoi-mertens-crossing-lookahead
+type: software
