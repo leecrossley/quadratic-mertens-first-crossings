@@ -30,7 +30,7 @@ In the first calculation, with $`C_s=\sum_p\chi_q(p)/p^s`$ one has
 
 ```math
  C_s=\log L(s,\chi_q)-\tfrac12\log\left(\zeta(2s)\prod_{p\mid q}(1-p^{-2s})\right)
-       -\sum_p\chi_q(p)\bigl(\operatorname{atanh}(p^{-s})-p^{-s}\bigr).
+       -\sum_p\chi_q(p)\bigl(\mathrm{atanh}(p^{-s})-p^{-s}\bigr).
 ```
 
 Terms beyond $`M`$ in the last sum cost at most $`2/M^{3s-1}`$. Subtract the two finite prime prefixes from $`C_1,C_2`$ and form their tapered difference. The second calculation directly removes $`\log(1-\chi_q(p)/p^s)^{-1}-\chi_q(p)/p^s`$ with absolute tail at most $`1/((2s-1)M^{2s-1})`$ after $`M=3d`$. It uses Euler's criterion and an odd-only sieve. In the raw prime window it compares exact integer products by correctly rounded decimal logarithms. The secondary intervals from its different Euler remainder are coarser than the printed primary intervals and suffice to check all the strict magnitude comparisons. [First calculation](scripts/verify.py) · [Theta integral](scripts/weighted.py) · [Second calculation](scripts/independent.py)

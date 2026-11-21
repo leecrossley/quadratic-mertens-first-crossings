@@ -35,13 +35,13 @@ At least $`\sqrt D\exp[-C(\log X)^2(\log\log X)^2]`$ distinct Yokoi discriminant
 3. For $`B\le x\le X`$ the ordinary log-weighted bias on $`(x,2x]`$ obeys
 
 ```math
- \sum_{x<p\le2x}\chi_d(p)\log p\le-b\sqrt x\log x\log\log x.
+ \sum_{x\lt p\le2x}\chi_d(p)\log p\le-b\sqrt x\log x\log\log x.
 ```
 
 For every nonprincipal quadratic reference as above with $`q\le x^{K_0}`$, every subinterval $`[s,t]\subset[x,2x]`$ satisfies
 
 ```math
- \left|\sum_{s<p\le t}\chi_d(p)\psi(p)\log p\right|\le C\sqrt x\log x .
+ \left|\sum_{s\lt p\le t}\chi_d(p)\psi(p)\log p\right|\le C\sqrt x\log x .
 ```
 
 
@@ -51,7 +51,7 @@ In particular even a reference chosen after seeing the field and the start has c
 
 ## The family measure
 
-Use Dahl and Kala's independent prime variables $`Z_p`$ for this polynomial and extend them completely multiplicatively. At 2 the value is $`-1`$. For odd $`p`$, put $`b_p=1+(\frac{-1}p)`$. The two probabilities at $`s=\pm1`$ are $`p(p-b_p-s)/(2(p^2-b_p))`$. The rest is mass at 0. Write $`\mu_p=\mathbb EZ_p=-p/(p^2-b_p)`$, $`v_p=\operatorname{Var} Z_p`$. In particular $`|\mu_p|\ll 1/p`$ and $`v_p=1+O(1/p)`$ for odd $`p`$. With uniform probability on the shell,
+Use Dahl and Kala's independent prime variables $`Z_p`$ for this polynomial and extend them completely multiplicatively. At 2 the value is $`-1`$. For odd $`p`$, put $`b_p=1+(\frac{-1}p)`$. The two probabilities at $`s=\pm1`$ are $`p(p-b_p-s)/(2(p^2-b_p))`$. The rest is mass at 0. Write $`\mu_p=\mathbb EZ_p=-p/(p^2-b_p)`$, $`v_p=\mathrm{Var} Z_p`$. In particular $`|\mu_p|\ll 1/p`$ and $`v_p=1+O(1/p)`$ for odd $`p`$. With uniform probability on the shell,
 
 ```math
  \mathbb E_D\chi_d(n)=\mathbb E Z(n)+O(n^{2/3}D^{-1/6}\log D),\qquad
@@ -104,7 +104,7 @@ Take $`h=\lceil(K_0+6)\log(4z)\rceil+2`$. Markov at $`e`$ times the norm makes t
 For a nonprincipal $`\psi`$ in a block's bank, the deterministic mean has on each subinterval the bound
 
 ```math
- \left|\sum_{s<p\le t}\psi(p)\nu_p/p\right|\ll_{K_0,A_0}(\log z)^3/z .
+ \left|\sum_{s\lt p\le t}\psi(p)\nu_p/p\right|\ll_{K_0,A_0}(\log z)^3/z .
  \tag{5}
 ```
 
