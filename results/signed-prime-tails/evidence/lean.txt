@@ -1,0 +1,2 @@
+'QuadraticMertens.positive_weight_bounds_frequency' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticMertens.coefficient_forces_negative_set' depends on axioms: [propext, Classical.choice, Quot.sound]

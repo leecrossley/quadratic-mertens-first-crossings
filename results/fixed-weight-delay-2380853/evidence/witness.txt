@@ -1,0 +1,2 @@
+Gaussian quadrature independently confirms every quadratic bracket.
+Direct Laplace integrals give signed tail > [0.26745901 +/- 1.16e-9], field average < [-0.22769381 +/- 2.38e-9] (normalised).
