@@ -1,0 +1,7 @@
+central flips 4096 old signed mass 4096 twisted mass 0
+central first-packet rise between 5.9010 5.9012
+mixed flips 3276 old signed mass 2458 twisted mass -3276
+mixed first-packet rise between 3.5134 3.5136
+1.2815 < L(1/2,chi_65) < 1.2816
+Independent integer sieve and rational intervals certify both first-packet rises.
+Direct periodic Dirichlet series gives L(1/2,chi_65) > 6/5.
