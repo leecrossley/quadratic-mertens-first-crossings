@@ -1,12 +1,12 @@
 # The earliest start for a negative Mertens average
 
-In the field $\mathbb Q(\sqrt{2{,}380{,}853})$, the prime-ideal Mertens product first dips below its main term at about 143,054.04. A decreasing weighted average of its log error can detect that dip from a little earlier. The infimum of all successful starting points lies between **137,123.79815 and 137,123.79818**. Every earlier start at or below the lower endpoint fails for every bounded nonnegative decreasing weight, however far the average runs.
+In the field $\mathbb Q(\sqrt{2{,}380{,}853})$, the prime-ideal Mertens product first dips below its main term at about 143,054.04. This first crossing is certified directly. To exclude all earlier starts for a negative weighted average, including weights extending to infinity, the tail bound assumes GRH for $\zeta(s)L(s,\chi_d)$. The infimum of all successful starting points lies between **137,123.79815 and 137,123.79818**. Every earlier start at or below the lower endpoint fails for every bounded nonnegative decreasing weight, however far the average runs.
 
 The field gives the unique largest value of $\log Y_d/\log d$ across all 8,950 squarefree $d=m^2+4$ with odd $m\le20001$, where $Y_d$ is the starting-point infimum. Its exponent is between 0.80560267 and 0.80560269. Each other field in that range has a successful start below $d^{4/5}$. This is a finite obstruction to the coefficient-one bound $Y_d\le d^{4/5}$. The asymptotic question for sufficiently large fields remains open.
 
 Two interval-arithmetic implementations recover the same minimum at prime-ideal norm 154,877. They check 3,554,753 norm jumps through 125 million. An explicit formula bounds the total area that can be lost between that cutoff and **any** later point. For $d=9{,}413$ the same method puts the infimum between 337.87434 and 337.87436.
 
-The tail estimate also has a general consequence. For any real quadratic field, a negative decreasing-weight average from a start $y\le d^a$ implies a first crossing by $C_a d^{2a}$, regardless of how slight the negative average is. Finding such a start for every field would suffice to obtain a polynomial first-crossing bound. [Proof](PROOF.md) · [Prior work](PRIOR-WORK.md) · [Full census](crossings.txt)
+The tail estimate also has a general consequence. For any real quadratic field satisfying this GRH hypothesis, a negative decreasing-weight average from a start $y\le d^a$ implies a first crossing by $C_a d^{2a}$, regardless of how slight the negative average is. Finding such a start for every field would suffice to obtain a polynomial first-crossing bound. [Proof](PROOF.md) [Prior work](PRIOR-WORK.md) [Full census](crossings.txt)
 
 ## Reproducing the numbers
 
