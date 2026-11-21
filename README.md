@@ -2,13 +2,15 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24412112.svg)](https://doi.org/10.5281/zenodo.24412112)
 
+Assume the critical-line property for the Riemann zeta function (RH). Alpöge's announced Dirichlet GRH theorem supplies this input. The theorem uses it only for the ordinary Mertens product, through the estimates of Cramér and Schoenfeld. It needs no critical-line hypothesis for $L(s,\chi_d)$. [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/)
+
 Fix any interval of positive exponents, for example $1/2\le s\le20$. There are many Yokoi real quadratic fields in which every average with weight $(y/t)^s$ is positive at every real start from $2$ through $X$. Move the start to $4X$ and all those same averages are negative. The interval from $4X$ to $8X$ alone already gives a negative average for each exponent.
 
 For a large discriminant cutoff $D$, the scale $X$ is $2^{\lfloor c\sqrt{\log D/\log\log D}\rfloor}$. It grows faster than every fixed power of $\log D$ and slower than every fixed positive power of $D$. The fields lie in $(D/2,D]$. Their actual prime-ideal Mertens products stay above the main term through $T$, which can be as large as $\exp(c'(\log D)^{1/5})$ up to dyadic rounding. Their first dips occur before $8X$.
 
 The theorem gives a lower count of $\sqrt D\exp[-C((\log T)^4+\log X\log\log X)]$ such fields. The proof allows every real start through $X$ and every real exponent in the chosen interval. The theorem places the first raw crossing in $(T,8X)$ and does not exclude one before $X$. Other decreasing weights can detect a dip earlier. The universal polynomial starting-point question remains open. [Theorem and proof](PROOF.md) · [Prior work](PRIOR-WORK.md)
 
-The proof uses a short, stronger bias in the splitting of primes to keep the raw product positive. A longer, weaker bias controls the averages. Reversing that bias in a final block makes them all negative at the same start. The field can already contain large numbers of both split and inert primes in every doubled interval above $(\log d)^4$ while these signs persist.
+The proof uses a short, stronger bias in the splitting of primes to keep the raw product positive. A longer, weaker bias controls the averages. Reversing that bias in a final block makes them all negative at the same start. Assuming the critical-line property for $L(s,\chi_d)$ as well, the field can already contain large numbers of both split and inert primes in every doubled interval above $(\log d)^4$ while these signs persist.
 
 ## Replaying the checks
 
