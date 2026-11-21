@@ -1,4 +1,8 @@
 """Separate check with trial division, Euler's criterion and incomplete gamma integrals."""
+
+if not __debug__:
+    raise SystemExit("Run with assertions enabled.")
+
 from decimal import Decimal, localcontext
 from math import isqrt
 from flint import arb, ctx
