@@ -98,7 +98,7 @@ Thus a mild negative bias per prime supplies the required margin on each scale.
 
 ## 3. Transferring the weight to actual fields
 
-Let $N=\lfloor D^{1/1000}\rfloor$. Expand $R$ as a multilinear polynomial in the centered $z_p$, indexed by squarefree products of the chosen primes. Retain terms with product $n\le N$ and call the result $R_N$. The centered monomials are mutually orthogonal in the original model. Consequently the relative squared norm discarded from $R$ is exactly the probability that a random product exceeds $N$, where each prime is included independently with probability $a_p^2v_p/(1+a_p^2v_p)$. This follows by expanding $\|R\|_2^2=\prod_p(1+a_p^2v_p)$.
+Let $N=\lfloor D^{1/1000}\rfloor$. Expand $R$ as a multilinear polynomial in the centered $z_p$, indexed by squarefree products of the chosen primes. Retain terms with product $n\le N$ and call the result $R_N$. The centered monomials are mutually orthogonal in the original model. Consequently the relative squared norm discarded from $R$ is exactly the probability that a random product exceeds $N$, where each prime is included independently with probability $a_p^2v_p/(1+a_p^2v_p)$. This follows by expanding $`\|R\|_2^2=\prod_p(1+a_p^2v_p)`$.
 
 With $\theta=1/\log(4X)$, Markov's inequality bounds that probability by
 
@@ -110,7 +110,7 @@ $$
 
 Indeed $p^\theta\le e$ for every selected prime. Partial summation and $\pi(t)\ll t/\log t$ give $\sum a_p^2\ll A^2(\log(4X))^4$. Choose $c_0$ small after $A$ so the negative term dominates by a fixed factor. This is possible since $(\log X)^5\le(c_0\log2)^5\log D$. Then $\varepsilon\le\exp(-c_2(\log X)^4)$ for some $c_2>0$. In particular $\sqrt\varepsilon\le Y^{-100}$ eventually. The fifth power here pays both for the squared coefficients and the lengths of the integers carrying them.
 
-By Cauchy–Schwarz, $\mathbb E|R_N^2-R^2|\le2\sqrt\varepsilon\thinspace\mathbb E R^2$. The initial indicator is independent of both polynomials. Expectations of a bounded function under the two normalized weights $IR_N^2$ and $IR^2$ therefore differ by $O(\sqrt\varepsilon)\|F\|_\infty$. Also $\mathbb E(IR_N^2)=p_B(1-\varepsilon')\mathbb E R^2\ge p_B/2$ for large $D$, where $0\le\varepsilon'\le\varepsilon$.
+By Cauchy–Schwarz, $\mathbb E|R_N^2-R^2|\le2\sqrt\varepsilon\thinspace\mathbb E R^2$. The initial indicator is independent of both polynomials. Expectations of a bounded function under the two normalized weights $IR_N^2$ and $IR^2$ therefore differ by $`O(\sqrt\varepsilon)\|F\|_\infty`$. Also $\mathbb E(IR_N^2)=p_B(1-\varepsilon')\mathbb E R^2\ge p_B/2$ for large $D$, where $0\le\varepsilon'\le\varepsilon$.
 
 Evaluate $IR_N^2$ at the actual characters and normalize it to a probability measure on $\mathcal D(D)$. The following fourth-moment comparison is uniform over all intervals $H\subset(B,Y]$. Write $S_H=\sum_{p\in H}(\chi_d(p)-\nu_p)/p$ on the field side, with $X_p$ in its place on the model side. Then
 
@@ -136,11 +136,11 @@ Take any dyadic integer $z$ with $B\le z<Y$ and an interval of $h$ consecutive i
 
 Write $M_z$ for the largest absolute centered sum from $z$ to any endpoint up to $2z$. A prefix of $(z,2z]$ partitions into at most one dyadic interval from each subdivision level. At level $j$ there are $2^j$ intervals of size $z/2^j$. Bounding the fourth moment of the maximum there by the sum of the fourth moments and applying Minkowski across levels gives
 
-$$
+```math
 \|M_z\|_4\ll \sum_{j=0}^{\log_2 z}
   \left(2^j\frac{(z/2^j)^2}{z^4}\right)^{1/4}
  \ll z^{-1/2}.
-$$
+```
 
 The probability that $M_z>(\log z)/\sqrt z$ is at most $C/(\log z)^4$. The sum of these bounds over powers of two $z\ge B$ is less than $1/4$ if the fixed $B$ is large enough. The constants here are absolute. This choice of $B$ is consistent with §2. Since the exceptional fields in (3) have weight tending to zero, at least one nonexceptional field satisfies every one of the prefix bounds and the condition $I=1$.
 

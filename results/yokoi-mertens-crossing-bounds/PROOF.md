@@ -17,12 +17,12 @@ In particular a constant upper bound fails even among fields with finite first c
 
 For a rational prime $p$, the value $s=\chi_d(p)$ records whether $p$ splits ($+1$), ramifies ($0$), or is inert ($-1$). The respective contributions are two prime ideals of norm $p$, one of norm $p$, or one of norm $p^2$. For $p=2$ the value is always $-1$, since $d\equiv5\bmod8$. Let $P_{\mathbb Q}(t)=\prod_{p\le t}(1-1/p)^{-1}$. Comparing the three possible factors gives the exact identity
 
-$$
+```math
 P_d(t)=P_{\mathbb Q}(t)
 \prod_{p\le t}(1-\chi_d(p)/p)^{-1}
 \prod_{\substack{\sqrt t < p\le t\\\chi_d(p)=-1}}(1-p^{-2}).
 \tag{1}
-$$
+```
 
 The last product removes an inert factor whose norm $p^2$ has not yet entered. Each local contribution is at least the all-inert contribution. In particular
 
@@ -80,12 +80,12 @@ We also need that after fixing any finite allowed pattern, the conditional law o
 
 Define $P_X(t)$ by the same ideal-norm rule with $X_p$ in place of $\chi_d(p)$, and $T_t=\sum_{p>t}Y_p$. Taking logarithms in (1) gives
 
-$$
+```math
 \log\frac{P_X(t)}{e^\gamma Z\log t}
 =\log\frac{P_{\mathbb Q}(t)}{e^\gamma\log t}
 +\sum_{\substack{\sqrt t < p\le t\\X_p=-1}}\log(1-p^{-2})-T_t.
 \tag{4}
-$$
+```
 
 The middle term is nonpositive. Diamond and Pintz’s Theorem 1.1 supplies a deterministic sequence $t_j\to\infty$ on which the first term is strictly negative. It suffices to show that $T_{t_j}>0$ infinitely often with probability one. [Diamond and Pintz, Theorem 1.1](https://www.numdam.org/article/JTNB_2009__21_3_523_0.pdf)
 
