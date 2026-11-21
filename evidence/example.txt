@@ -1,0 +1,4 @@
+d = 82864613 = 9103^2+4, class number 192, independently enclosed by the quadratic theta integral.
+First product dip in (7.00521788, 7.00521789).
+First negative cumulative area has infimum in (1011.53408514, 1011.53408515).
+Primitive checked at all preceding norm endpoints and on both sides of its zero.

@@ -1,0 +1,3 @@
+'CrossingLookahead.one_sided_area' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CrossingLookahead.recovered_area' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CrossingLookahead.accessible_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
