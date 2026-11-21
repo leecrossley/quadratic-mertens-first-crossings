@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: If you use this work, please cite it as below.
 title: "A sharp deadline for a negative prime-product average"
-abstract: "Sharp first-crossing deadlines from a negative power average of the prime-ideal Mertens error."
+abstract: "Unconditional sharp first-crossing deadlines from a negative power average of the prime-ideal Mertens error, with a real quadratic discriminant bound under field GRH."
 authors:
   - family-names: Crossley
     given-names: Lee

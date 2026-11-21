@@ -14,7 +14,9 @@ $$
 
 Here $A_\ast$ is the least area under an admissible nonnegative error curve in log coordinates. It is positive, finite, attained and approximable by finite patterns. Exhausting 46,656 assignments through 43 gives $A_\ast>0.4829182931$. The proof gives the rate at which finite minima converge. [Small-exponent theorem](SLOW-WEIGHTS.md) · [Construction and convergence](PATHS.md) · [Finite minima](evidence/areas.txt)
 
-For the original all-field question the sign at the start remains to be proved. If a real quadratic field has a negative $y/t$ average at some $y\le d^a$, its first crossing is $O_a(d^{4a/3})$, using the one-sided critical-line estimate in §2. The sharp family deadline and its small-exponent law use the family residue distribution and the ordinary prime number theorem. [Discriminant-dependent bound](PROOF.md) · [Prior work and scope](PRIOR-WORK.md)
+For the original all-field question the sign at the start remains to be proved. Assume the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ (field GRH). If a real quadratic field has a negative $y/t$ average at some $y\le d^a$, its first crossing is then $O_a(d^{4a/3})$, using the one-sided critical-line estimate in §2. Alpöge's announced Dirichlet GRH theorem supplies this input. [Discriminant-dependent bound](PROOF.md) [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/)
+
+Only that bound uses the hypothesis. The sharp family deadline and its small-exponent law use the family residue distribution and the ordinary prime number theorem. They and the number-field bound above are unconditional. [Prior work and scope](PRIOR-WORK.md)
 
 ## Reproducing the checks
 
