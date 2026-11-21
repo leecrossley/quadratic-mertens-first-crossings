@@ -1,6 +1,6 @@
 # A lower bound for the longest wait in Yokoi's family
 
-Let $\mathcal D(D)=\lbrace d=m^2+4\le D:m\ge1\text{ odd},\ d\text{ squarefree}\rbrace$. For $K_d=\mathbb Q(\sqrt d)$ put $L_d=L(1,\chi_d)=\mathrm{res}_{s=1}\zeta_{K_d}(s)$. Define
+Let $\mathcal D(D)=\lbrace d=m^2+4\le D:m\ge1\text{ odd},\ d\text{ squarefree}\rbrace$. For $K_d=\mathbb Q(\sqrt d)$ put $L_d=L(1,\chi_d)=\mathrm{res}_ {s=1}\zeta_{K_d}(s)$. Define
 
 $$
 P_d(t)=\prod_{N\mathfrak p\le t}(1-1/N\mathfrak p)^{-1},\qquad
