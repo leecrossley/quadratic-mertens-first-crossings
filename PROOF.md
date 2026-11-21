@@ -15,7 +15,7 @@ For a real Dirichlet character $`\psi`$, including the trivial character $`1`$ o
  T_{d,\psi}(y)=\sum_{p>y}\chi_d(p)\psi(p)(1-y/p)/p.
 ```
 
-Matching split or inert signs contribute positively. Opposite signs contribute negatively, and a ramified factor contributes zero. Tails are ordered by increasing prime. Use RH for $`\zeta`$ and GRH for the primitive quadratic Dirichlet functions concerned, including the twists. [Critical-line statements](https://math.mit.edu/~drew/grh/)
+Matching split or inert signs contribute positively. Opposite signs contribute negatively, and a ramified factor contributes zero. Tails are ordered by increasing prime. Use RH for $`\zeta`$ and GRH for the primitive quadratic Dirichlet functions concerned, including the twists. Alpöge's announced Dirichlet GRH theorem supplies this input. [Announcement](https://alpo.ge/remark.pdf) · [Independent formal checks](https://math.mit.edu/~drew/grh/)
 
 **Theorem.** Fix $`K_0>0`$. There are positive constants $`B,c,C,b`$ depending at most on $`K_0`$, with $`B`$ a fixed sufficiently large dyadic integer. For every sufficiently large $`D`$, let
 
