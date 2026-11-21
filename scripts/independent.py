@@ -1,4 +1,8 @@
 """Integer per-bin interpolation and rounding; periodic central-value enclosure."""
+
+if not __debug__:
+    raise SystemExit("Run with assertions enabled.")
+
 from fractions import Fraction
 from math import isqrt
 from decimal import Decimal, localcontext
