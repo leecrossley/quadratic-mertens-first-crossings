@@ -42,3 +42,5 @@ GitHub shows the current status and subsequent replies at each original link.
 - [yokoi-mertens-geometric-starts PR 4](https://github.com/leecrossley/yokoi-mertens-geometric-starts/pull/4) · [Maintained discussion](https://github.com/leecrossley/quadratic-mertens-first-crossings/pull/16)
 - [yokoi-mertens-power-start-delays PR 4](https://github.com/leecrossley/yokoi-mertens-power-start-delays/pull/4) · [Maintained discussion](https://github.com/leecrossley/quadratic-mertens-first-crossings/pull/18)
 - [mertens-power-average-deadlines PR 4](https://github.com/leecrossley/mertens-power-average-deadlines/pull/4) · [Maintained discussion](https://github.com/leecrossley/quadratic-mertens-first-crossings/pull/17)
+- [yokoi-mertens-crossing-lookahead PR 4](https://github.com/leecrossley/yokoi-mertens-crossing-lookahead/pull/4) · [Maintained discussion](https://github.com/leecrossley/quadratic-mertens-first-crossings/pull/20)
+- [yokoi-mertens-late-crossing-density PR 3](https://github.com/leecrossley/yokoi-mertens-late-crossing-density/pull/3) · [Maintained discussion](https://github.com/leecrossley/quadratic-mertens-first-crossings/pull/21)
