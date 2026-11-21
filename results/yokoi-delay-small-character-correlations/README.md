@@ -1,0 +1,6 @@
+# Delayed Yokoi averages with small quadratic twist correlations
+
+In many genuine Yokoi fields the decreasing Mertens average stays positive at every start through a range exceeding every fixed power of the logarithm of the discriminant. In that range the untwisted inert bias dominates all secondary quadratic correlations, even if the comparison conductor is selected after observing the field and start. The argument uses RH and quadratic Dirichlet GRH. The uniform question through a fixed positive power of the field discriminant remains open. [Versioned proof](https://github.com/leecrossley/yokoi-delay-small-character-correlations/blob/f8299c764f0994c4a64c7a2d5264f6259ef4b3a7/PROOF.md) · [Prior work](https://github.com/leecrossley/yokoi-delay-small-character-correlations/blob/f8299c764f0994c4a64c7a2d5264f6259ef4b3a7/PRIOR-WORK.md)
+
+The stand-alone release contains the proof and two calculations of the complete weighted tails for the discriminant 2,380,853. In the unpacked release run `sh verify-release.sh` with the pinned dependency installed. Three supporting lemmas have separate Lean checks. [Verification instructions](https://github.com/leecrossley/yokoi-delay-small-character-correlations/blob/f8299c764f0994c4a64c7a2d5264f6259ef4b3a7/CHECKS.md) · [Archived release](https://doi.org/10.5281/zenodo.24417505)
+

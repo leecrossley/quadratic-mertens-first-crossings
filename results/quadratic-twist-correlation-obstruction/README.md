@@ -1,0 +1,6 @@
+# A positive prime model that passes every fixed quadratic twist test
+
+One assignment on ordinary primes keeps its future Mertens average positive at all starts in the central-zero case while the untwisted bias grows. Every fixed secondary quadratic correlation stays bounded through any prescribed finite horizon. The continued products reproduce the expected conductor terms in their zero counts. A close pair permits positivity through any fixed power of the scale. The proof uses RH and quadratic Dirichlet GRH. The assignment has no associated Yokoi field. [Versioned proof](https://github.com/leecrossley/quadratic-twist-correlation-obstruction/blob/0a8c67d3b36768de83c47ee765d0c169436005c5/PROOF.md) · [Prior work](https://github.com/leecrossley/quadratic-twist-correlation-obstruction/blob/0a8c67d3b36768de83c47ee765d0c169436005c5/PRIOR-WORK.md)
+
+In the unpacked stand-alone release run `sh verify-release.sh` with the pinned dependency installed. Two programs check the class interpolation, the shorter periods and the central value for conductor 17. Five supporting lemmas have separate Lean checks. [Verification instructions](https://github.com/leecrossley/quadratic-twist-correlation-obstruction/blob/0a8c67d3b36768de83c47ee765d0c169436005c5/CHECKS.md) · [Archived release](https://doi.org/10.5281/zenodo.24417500)
+
