@@ -30,4 +30,4 @@ The census enumeration uses integer cycles of reduced quadratic irrationals. The
 lake env lean -R "$NOTE" "$NOTE/TailLoss.lean"
 ~~~
 
-The tail estimate is a written analytic proof using the critical-line theorem for the two Dirichlet factors of the quadratic Dedekind zeta function. [Primary output](evidence/optimal.txt) · [Independent output](evidence/independent.txt) · [Census verification](evidence/census.txt) · [Lean axioms](evidence/lean.txt) · [Upstream audit](https://math.mit.edu/~drew/grh/)
+The tail estimate is a written analytic proof using the critical-line theorem for the two Dirichlet factors of the quadratic Dedekind zeta function. [Primary output](evidence/optimal.txt) · [Independent output](evidence/independent.txt) · [Census verification](evidence/census.txt) · [Lean axioms for the three auxiliary inequalities](evidence/lean.txt) · [Upstream audit](https://math.mit.edu/~drew/grh/)
