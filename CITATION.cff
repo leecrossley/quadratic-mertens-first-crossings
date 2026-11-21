@@ -4,7 +4,7 @@ title: "Delayed Yokoi averages with small quadratic twist correlations"
 authors:
   - family-names: Crossley
     given-names: Lee
-version: 1.0.2
+version: 1.0.3
 date-released: 2026-11-21
 license: CC-BY-4.0
 repository-code: https://github.com/leecrossley/yokoi-delay-small-character-correlations
