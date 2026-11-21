@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: Please cite this release when using its results or verification code.
+title: "How close must averaging start to a late Mertens crossing?"
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: 1.0.0
+repository-code: https://github.com/leecrossley/yokoi-mertens-prescribed-crossings
+type: software

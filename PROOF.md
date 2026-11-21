@@ -7,7 +7,7 @@ $$
 $$
 Let $S_d=\inf\{t\ge2:B_d(t)<0\}$. Let $Y_d$ be the infimum of $y\ge2$ for which some bounded, measurable, nonnegative, nonincreasing $w$ on $[y,\infty)$ has negative integral against $B_d(t)\,dt/t$. All integrals in this definition converge absolutely by the bound in §1. We allow an infimum of $+\infty$. A factor at a jump is included in the product.
 
-**Theorem.** Fix $0<r\le1$ and $0<\eta\le r/4$. There exist $c,C>0$, depending only on these choices, such that for every sufficiently large $D$, setting $X=2^{\lfloor c(\log D)^{1/5}\rfloor}$, at least
+**Theorem.** Assume the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ for the quadratic discriminants in the theorem (field GRH). Fix $0<r\le1$ and $0<\eta\le r/4$. There exist $c,C>0$, depending only on these choices, such that for every sufficiently large $D$, setting $X=2^{\lfloor c(\log D)^{1/5}\rfloor}$, at least
 $$
  \sqrt D\,\exp\{-C(\log D)^{4/5}\}
 $$
