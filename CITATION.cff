@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: If you use this work, please cite it as below.
 title: "How long can a prime product stay above its predicted curve?"
-abstract: "A lower bound for the latest first prime-ideal Mertens crossing in Yokoi's family, with a certified example."
+abstract: "A lower bound under the Riemann hypothesis for the latest first prime-ideal Mertens crossing in Yokoi's family, with a certified example."
 authors:
   - family-names: Crossley
     given-names: Lee
