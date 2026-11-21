@@ -46,7 +46,7 @@ Both satisfy the required inequality. The initial negative intervals are exactly
 
 ### After first entry
 
-Write $q_d$ for the smallest prime-ideal norm and put $S_d^{\mathrm{ideal}}=\inf\{x\ge q_d:\Delta_K(x)<0\}$. For $d=5$ the product is $4/3$ on $[4,5)$ and $5/3$ on $[5,9)$. For $d=13$ it is $9/4$ on $[3,4)$ and $3$ on $[4,13)$. The curve increases on each interval. In each field it stays below the first of the two products up to the next jump. In the second interval it meets the product $P$ at $\exp(P/(e^\gamma\kappa_K))$, then exceeds it until the next jump. The respective strict enclosures are $(8.794547206823,8.794547206824)$ and $(12.699403270702,12.699403270703)$. Both verifiers check the signs at the preceding jumps and the enclosures. [Verification output](evidence/check.txt)
+Write $q_d$ for the smallest prime-ideal norm and put $S_d^{\mathrm{ideal}}=\inf\lbrace x\ge q_d:\Delta_K(x)<0\rbrace$. For $d=5$ the product is $4/3$ on $[4,5)$ and $5/3$ on $[5,9)$. For $d=13$ it is $9/4$ on $[3,4)$ and $3$ on $[4,13)$. The curve increases on each interval. In each field it stays below the first of the two products up to the next jump. In the second interval it meets the product $P$ at $\exp(P/(e^\gamma\kappa_K))$, then exceeds it until the next jump. The respective strict enclosures are $(8.794547206823,8.794547206824)$ and $(12.699403270702,12.699403270703)$. Both verifiers check the signs at the preceding jumps and the enclosures. [Verification output](evidence/check.txt)
 
 ### Integer arguments and prime-ideal norms
 
