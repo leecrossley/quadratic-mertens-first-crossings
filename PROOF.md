@@ -34,8 +34,8 @@ This is the signed log-product average. A negative value implies a point of nega
 
 ```math
  W_K(\log z)=N_z\left[
- \sum_{z<p\le Kz} \frac{a_d(p)}p(1-z/p)
- +(1-1/K)\sum_{Kz<p\le 2Kz}\frac{a_d(p)}p(2Kz/p-1)\right].
+ \sum_{z\lt p\le Kz} \frac{a_d(p)}p(1-z/p)
+ +(1-1/K)\sum_{Kz\lt p\le 2Kz}\frac{a_d(p)}p(2Kz/p-1)\right].
  \tag{2}
 ```
 
