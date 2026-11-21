@@ -1,0 +1,5 @@
+'QuadraticTwistModel.gram_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticTwistModel.quota_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticTwistModel.quota_twist' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticTwistModel.special_quota' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticTwistModel.periods_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
