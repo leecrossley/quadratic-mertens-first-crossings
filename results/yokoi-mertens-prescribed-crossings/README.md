@@ -11,7 +11,7 @@ The fields are $\mathbb Q(\sqrt d)$ with $d=m^2+4$ squarefree and $m$ odd. Write
 Choose $0<r\le1$ and $0<\eta\le r/4$. For every sufficiently large $D$ there is a scale $X=2^{\lfloor c(\log D)^{1/5}\rfloor}$ fixed before choosing the field. At least $\sqrt D\exp[-C(\log D)^{4/5}]$ family discriminants in $(D/2,D]$ satisfy
 
 $$
- (r-\eta)X\le Y_d\le rX,\qquad X<S_d<(1+\eta)X.
+ (r-\eta)X\le Y_d\le rX,\qquad X\lt S_d<(1+\eta)X.
 $$
 
 At $y=rX$, the single weight $y/t$ succeeds, and so does the finite interval ending at $(1+\eta)X$. At every start up to $(r-\eta)X$, all bounded nonnegative decreasing weights have nonnegative average, even if extended to infinity. The positive constants $c,C$ depend on $r,\eta$. Every point of $[0,1]$ occurs as a limit of $Y_d/S_d$ along waits exceeding every fixed power of $\log d$.
