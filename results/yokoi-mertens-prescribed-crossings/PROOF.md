@@ -93,9 +93,9 @@ The analogous denominator error leaves $\mathbb E_{\rm shell}W\ge p_B/3$. Normal
 
 For a dyadic integer $z\ge B$, $2z\le V$, and an interval of $h$ integers in $(z,2z]$, the model fourth moment is $O(h^2/z^4)$ by independence, centering and $|T_p-\nu_p|\le2$. The same holds for the weighted fields by the preceding comparison. Call the maximum absolute prefix sum $M_z$. Each prefix uses at most one dyadic interval per subdivision level. Bounding the fourth power of the maximum on a level by the sum and using Minkowski across levels gives
 
-$$
+```math
  \|M_z\|_4\ll\sum_{j\ge0}(2^j(z/2^j)^2/z^4)^{1/4}\ll z^{-1/2}.
-$$
+```
 
 By Markov the chance under the shell weight of any $M_z>G(z)$ is at most $\sum_{z=2^k\ge B}O((\log z)^{-4})<1/4$ after enlarging $B$. All constants here are absolute. On the good event the incomplete first block costs at most twice its prefix maximum. Summing the geometric tail of $G(2^kz)$ gives $|\sum_{t<p\le V}(\chi_d(p)-\nu_p)/p|\ll G(t)$ uniformly for $B\le t\le X^2$. Also $\sum_{p>t}|\mu_p|/p\ll1/t$.
 
@@ -113,8 +113,8 @@ with an absolute $C_0$, since $|z_p|\le2$ and $|a_p|\le1/16$. This argument perm
 Set $K=16/(r\eta)$ and $H=16K$. Define a continuous piecewise linear $f$ on $[r/2,2]$ by successive vertices
 
 $$
- (r/2,H),\ (r-\eta/2,H),\ (r,1),\ (1,1),\
- (1+\eta/4,-K),\ (1+\eta,-K),\ (1+2\eta,0),\ (2,0).
+ (r/2,H),\ (r-\eta/2,H),\ (r,1),\ (1,1),
+ \ (1+\eta/4,-K),\ (1+\eta,-K),\ (1+2\eta,0),\ (2,0).
 $$
 
 When $r=1$ the duplicate vertex is used once. Take positive constants $M_0,M$ and prescribe
