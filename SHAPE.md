@@ -1,6 +1,6 @@
 # The shape conditional on a late first crossing
 
-Set $E_X=\lbrace S\ge X,\ W<\infty\rbrace$, $u=\log X$ and $\Lambda=2\sqrt{A_\ast}$. We prove the shape statement of the [frequency theorem](PROOF.md). Every deterministic estimate here applies to the independent model and to the true quadratic fields.
+Set $E_X=\lbrace S\ge X,\ W<\infty\rbrace$, $u=\log X$ and $\Lambda=2\sqrt{A_\ast}$. We prove the shape statement of the [frequency theorem](PROOF.md). Like that theorem, it assumes field GRH, which enters through the tail bound on actual fields. Every deterministic estimate here applies to the independent model and to the true quadratic fields.
 
 Fix a small $\eta>0$. Put $a=\Lambda+\eta$, $R=X\exp(a\sqrt u)$, and call the endpoint good when
 

@@ -11,7 +11,7 @@ Write $S_d=\inf\lbrace t\ge2:B_d(t)<0\rbrace$, $W_d=\inf\lbrace T\ge2:J_d(T)<0\r
 
 Define $A_\ast$ as the least possible integral of an everywhere nonnegative log error in the space of admissible splitting patterns with a free positive benchmark, and put $\Lambda=2\sqrt{A_\ast}$. The finite minima $A_X$ for the same problem through $X$ increase to $A_\ast>0$. They give $A_\ast>0.4829182931$ by a finite certificate. [Definition, existence and finite approximation](https://github.com/leecrossley/mertens-power-average-deadlines/blob/v1.0.0/SLOW-WEIGHTS.md) · [Finite certificates](https://github.com/leecrossley/mertens-power-average-deadlines/blob/v1.0.0/evidence/areas.txt)
 
-**Frequency theorem.** For each fixed $X>2$ the fraction $p_D(X)$ converges to a positive natural density $p(X)$. As $X\to\infty$,
+**Frequency theorem.** Assume the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ for the quadratic discriminants in the theorem (field GRH). For each fixed $X>2$ the fraction $p_D(X)$ converges to a positive natural density $p(X)$. As $X\to\infty$,
 
 $$
  \log\log(1/p(X))=\log X+\big(\Lambda+o(1)\big)\sqrt{\log X}.
@@ -27,13 +27,15 @@ $$
 
 The logarithmic scale in (1) matters. It does not specify a multiplicative equivalent for $p(X)$.
 
-**Conditional shape.** Among the fields counted by $p_D(X)$, put $u=\log X$. Uniformly over $0\le w\le\Lambda$ the rescaled error
+**Conditional shape.** Under the same hypothesis, among the fields counted by $p_D(X)$, put $u=\log X$. Uniformly over $0\le w\le\Lambda$ the rescaled error
 
 $$
  f_d(w)=\sqrt u\thinspace B_d(Xe^{w\sqrt u})
 $$
 
 converges in conditional probability to $-\min(w,\Lambda-w)$. Also $J_d(X)\to A_\ast$ in conditional probability. These limits hold first with $D$ tending to infinity and then $X$ tending to infinity, or along any of the growing ranges (2). [Concentration and its proof](SHAPE.md)
+
+Field GRH enters through the pointwise bound beyond $V$ in [MOMENTS.md](MOMENTS.md). Every statement above uses it, including the existence of $p(X)$ for each fixed $X$, through the tightness step in §1. Alpöge's announced Dirichlet GRH theorem supplies this input. [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/)
 
 ## 1. The limit over fields
 
@@ -46,7 +48,7 @@ $$
 
 The model log product converges almost surely. Its summands have a convergent series of means and variances since $\mathbb E T_p=O(1/p)$ and $|T_p|\le1$. Define $S,W$ from this $B,J$. The local product $P(t)$ uses the same norm rules as in real fields. The vector of any fixed finite list of signs together with $c_d$ converges in law to the corresponding model vector and $C$. This follows from Dahl and Kala's moment comparison and the short Euler product approximation to $L(1,\chi_d)$, by truncating the centred prime tail in mean square. [Details of the joint residue limit](https://github.com/leecrossley/mertens-power-average-deadlines/blob/v1.0.0/PROOF.md) · [Dahl and Kala, Proposition 14](https://arxiv.org/pdf/1611.02424#page=11) · [Granville and Soundararajan, Proposition 2.2](https://arxiv.org/pdf/math/0206031#page=7)
 
-Define the two errors at $R$ by $|B_d(R)|$ and $\int_R^\infty |B_d(t)|\thinspace dt/t$. The estimates in [MOMENTS.md](MOMENTS.md) show that the latter converges to zero in probability uniformly in the limit $D\to\infty$, followed by $R\to\infty$. The model tail has expectation tending to zero and is absolutely integrable almost surely. Therefore the laws of $J_d$ on the compactified interval $[2,\infty]$ with the supremum norm converge to the law of $J$. Indeed truncate every primitive at a fixed $R$, keeping it constant thereafter. Truncated functions depend continuously on finite discrete signs and the log benchmark. The uniform distance to the original is bounded by its absolute tail integral. Apply the triangle inequality to bounded Lipschitz tests and then take $R\to\infty$. This convergence holds jointly with the signs through $X$ and the benchmark.
+Define the two errors at $R$ by $|B_d(R)|$ and $\int_R^\infty |B_d(t)|\thinspace dt/t$. The estimates in [MOMENTS.md](MOMENTS.md), which use field GRH for the far tail, show that the latter converges to zero in probability uniformly in the limit $D\to\infty$, followed by $R\to\infty$. The model tail has expectation tending to zero and is absolutely integrable almost surely. Therefore the laws of $J_d$ on the compactified interval $[2,\infty]$ with the supremum norm converge to the law of $J$. Indeed truncate every primitive at a fixed $R$, keeping it constant thereafter. Truncated functions depend continuously on finite discrete signs and the log benchmark. The uniform distance to the original is bounded by its absolute tail integral. Apply the triangle inequality to bounded Lipschitz tests and then take $R\to\infty$. This convergence holds jointly with the signs through $X$ and the benchmark.
 
 Two absence-of-atoms observations handle the boundary of the event. The model log benchmark has no atoms even conditional on finitely many signs. Also $J(\infty)$ has no atoms. To see this, use primes $p\equiv3\bmod4$ beyond any finite prescribed set. Each has two possible signs, both of probability bounded below. Switching from inert to split strictly increases $\log C$. For $J(\infty)$ the switch changes its value by
 

@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: If you use this work, please cite it as below.
 title: "How rare is a late crossing that an average from 2 can still detect?"
-abstract: "The frequency and limiting shape of late Mertens crossings detectable from 2."
+abstract: "The frequency and limiting shape of late Mertens crossings detectable from 2, under ordinary RH and quadratic Dirichlet GRH."
 authors:
   - family-names: Crossley
     given-names: Lee

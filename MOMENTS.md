@@ -7,7 +7,7 @@ $$
  \tag{5}
 $$
 
-for some fixed $c_0>0$. Every use of this estimate in the main proof or the conditional shape satisfies (5). The model estimate holds for all large $u$.
+for some fixed $c_0>0$. Every use of this estimate in the main proof or the conditional shape satisfies (5). The model estimate holds for all large $u$. The estimate for actual fields assumes the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ (field GRH), through the pointwise bound beyond $V$ below. The model estimate needs no such hypothesis.
 
 In the independent model subtract $\mu_p=\mathbb E T_p=O(1/p)$ from each sign. A centred sign obeys $\mathbb E\exp(v(T_p-\mu_p))\le \exp(v^2/2)$ for real $v$. Indeed the second derivative of its log moment-generating function is the variance under exponential tilting, at most 1 for a variable in $[-1,1]$. Integrate twice from zero. By independence, exponential Markov and optimisation over $v$, a sum over $t<p\le V$ with coefficients $1/p$ has two-sided tail at level $z$ at most $2\exp(-z^2/(2\sum p^{-2}))$. Integrate this probability against $2k z^{2k-1}\thinspace dz$ and use $k!\le k^k$. For $k\ge1$
 
@@ -43,7 +43,7 @@ $$
  |B_d(t)|\le |Z_t|+C\big(e^{-c\sqrt{\log t}}+t^{-1/2}+(\log D)^{-3}\big).
 $$
 
-This is obtained by truncating the quadratic Euler product via Granville and Soundararajan and using the rational norm factorisation. Beyond $V$, the quadratic pointwise bound gives $\int_V^\infty |B_d(t)|\thinspace dt/t\ll(\log D+\log V+1)/\sqrt V$ for every field. [Euler products, Proposition 2.2](https://arxiv.org/pdf/math/0206031#page=7) · [Details of both error estimates](https://github.com/leecrossley/yokoi-mertens-crossing-lookahead/blob/v1.0.0/FAMILY.md)
+This is obtained by truncating the quadratic Euler product via Granville and Soundararajan and using the rational norm factorisation. Beyond $V$, the quadratic pointwise bound, which assumes field GRH, gives $\int_V^\infty |B_d(t)|\thinspace dt/t\ll(\log D+\log V+1)/\sqrt V$ for every field. [Euler products, Proposition 2.2](https://arxiv.org/pdf/math/0206031#page=7) · [Details of both error estimates](https://github.com/leecrossley/yokoi-mertens-crossing-lookahead/blob/v1.0.0/FAMILY.md)
 
 Multiply either controlled quantity by the indicator of the nonexceptional set. Applying Minkowski over $R\le t\le V$ gives (7) with the additional error
 
@@ -54,4 +54,4 @@ $$
 
 Here $\log D/k$ grows faster than $L$ and $u=O(L)$. The nonexceptional indicator can be used inside the integral and discarded on the nonnegative $|Z_t|$ bound. Choose $c_2$ smaller if necessary and apply Markov. The exceptional set has proportion $O(D^{-1/4})$ in the shell, since the discriminants give distinct primitive characters and their shell count is $\asymp\sqrt D$. This proves the asserted probability bound including that error.
 
-For the fixed-$`R`$ tightness step, repeat the calculation with $k=1$ and let $D\to\infty$. Equation (8) tends to zero even after taking a square root and multiplying by $\log V$. The remaining norms are bounded by $C_1(R^{-1/2}+\exp(-c_1\sqrt{\log R}))$ on the nonexceptional set. Its complement has vanishing proportion. This gives exactly the uniform-in-probability tail statement used to pass from a finite prime prefix to the whole primitive.
+For the fixed-$`R`$ tightness step, repeat the calculation with $k=1$ and let $D\to\infty$. Equation (8) tends to zero even after taking a square root and multiplying by $\log V$. The remaining norms are bounded by $C_1(R^{-1/2}+\exp(-c_1\sqrt{\log R}))$ on the nonexceptional set. Its complement has vanishing proportion. This gives exactly the uniform-in-probability tail statement used to pass from a finite prime prefix to the whole primitive. It therefore also rests on the field GRH bound beyond $V$.
