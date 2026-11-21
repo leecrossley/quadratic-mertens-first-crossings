@@ -1,4 +1,8 @@
 """Certified signed Gaussian masses and exact sieve data in one Yokoi field."""
+
+if not __debug__:
+    raise SystemExit("Run with assertions enabled.")
+
 from itertools import combinations
 from math import ceil, prod
 from flint import arb, ctx, fmpz

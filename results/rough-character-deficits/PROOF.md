@@ -162,7 +162,7 @@ Use $`J=V_q`$. Increase $`A_0`$ until (2) gives $`N(V_q)\ge c_0/2`$ and $`gbL\le
 Put $`\tau=\log m_-`$. Test the sharp transform with the real function
 
 ```math
- W(x)=(\tau-\log x)\operatorname{sinc}(g(\tau-\log x)),\qquad \operatorname{sinc}(0)=1,\quad \operatorname{sinc}(t)=\sin(t)/t\ \ (t\ne0).
+ W(x)=(\tau-\log x)\mathrm{sinc}(g(\tau-\log x)),\qquad \mathrm{sinc}(0)=1,\quad \mathrm{sinc}(t)=\sin(t)/t\ \ (t\ne0).
 ```
 
 Its signed integral against $`V_q(x)\,dx/x`$ is exactly zero. For $`g>0`$ this is the imaginary part of (3c) multiplied by $`e^{ig\tau}/g`$. For $`g=0`$ use both the value and the first derivative of the transform at the double or higher central zero.
