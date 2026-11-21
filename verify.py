@@ -62,7 +62,7 @@ def check_packet(j, c):
                 before += sign**k*w
                 after += (-sign)**k*w
         direct = -2*(after-before)/H
-        # The floor, displacement and odd powers dominate the difference.
+        # The coefficients below are fixed for these finite packet checks.
         u = arb(x).log()
         ideal = 4*arb(256).log()/H*(1-u/H)*(t*u).cos()*arb(c.numerator)/c.denominator
         allowance = (12*arb(256).log()/arb(x).sqrt().sqrt()+8*u/arb(x).sqrt())/H
@@ -78,7 +78,7 @@ def check():
         counts = [check_packet(j,cosine_multiple(first,j)) for j in (2,3,4)]
         print(f"cos(theta)={first}, selected {counts} ordinary primes in packets 2, 3 and 4.")
     print("Direct local product changes equal the signed tails at six cutoffs per packet.")
-    print("Weighted prime powers at two frequencies meet the computed packet error bounds.")
+    print("The prime-power errors in packets 2, 3 and 4 meet the fixed allowances at both tested frequencies.")
     print("The uniform limiting scalar bound is below -0.53.")
 
 
