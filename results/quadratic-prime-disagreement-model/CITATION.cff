@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Cite the versioned proof and certificates."
+title: "A prime disagreement model with two prescribed zero patterns"
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: 1.0.2
+date-released: 2026-11-21
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/quadratic-prime-disagreement-model
+type: software

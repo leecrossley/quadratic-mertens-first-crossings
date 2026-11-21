@@ -1,5 +1,17 @@
 # A positive prime model that passes every fixed quadratic twist test
 
-Under RH and quadratic Dirichlet GRH, which Alpöge's announced Dirichlet GRH theorem supplies, one assignment on ordinary primes keeps the future Mertens average positive at every real start from 2 onwards with a double central zero. The untwisted bias grows at a specified start, while every fixed secondary quadratic correlation stays bounded from 2 through the prescribed finite horizon, for an assignment chosen for that horizon. A sufficiently close pair of zeros gives positivity from 2 through any fixed power of the scale. The model reproduces the conductor terms in the zero counts of the twisted products. [Maintained proof](https://github.com/leecrossley/quadratic-twist-correlation-obstruction/blob/main/PROOF.md) [Prior work](https://github.com/leecrossley/quadratic-twist-correlation-obstruction/blob/04587c274916993e26777b5a72807d1a884db404/PRIOR-WORK.md)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24417499.svg)](https://doi.org/10.5281/zenodo.24417499)
 
-In the unpacked stand-alone release run `sh verify-release.sh` with the pinned dependency installed. Two programs check the class interpolation, the shorter periods and the central value for conductor 17. Five supporting lemmas have separate Lean checks. [Verification instructions](https://github.com/leecrossley/quadratic-twist-correlation-obstruction/blob/main/CHECKS.md) [Versioned proof](https://github.com/leecrossley/quadratic-twist-correlation-obstruction/blob/04587c274916993e26777b5a72807d1a884db404/PROOF.md) [Archived releases](https://doi.org/10.5281/zenodo.24417499)
+The field of discriminant 13 exposed the earlier prime model because that model still copied its splitting pattern. This construction changes the signs on ordinary primes so that testing against 13 gives the prime sums of a nonprincipal character. The same assignment handles every other fixed quadratic reference.
+
+At the start $`y=e^P/3`$, with $`D=13e^{2P}`$, the magnitude of the untwisted prime bias grows in proportion to $`\log D`$. Its decreasing Mertens average stays positive for every real start from 2 onwards in the central-zero case. At the same time, the normalised correlation with each fixed secondary character stays bounded from 2 through **any prescribed finite cutoff**, with the assignment chosen for that cutoff. With a close pair of zeros in place of the central zero, positivity can last through any prescribed power of $`D`$. The statement uses RH and quadratic Dirichlet GRH, which Alpöge's announced Dirichlet GRH theorem supplies. [Proof](PROOF.md) · [Announcement](https://alpo.ge/remark.pdf) · [Independent formal checks](https://math.mit.edu/~drew/grh/)
+
+The continued products even have the degree-one zero counts with the expected change in the conductor term when twisting an odd discriminant whose only possible common prime factor with the reference conductor is 13. Adjusting when finitely many secondary coefficients begin leaves their zeros fixed. There is also a version where the added coefficients start immediately and each fixed secondary bias is $`O(\sqrt{\log D\,\log\log D})`$ through every fixed power of $`D`$. These are statements about a constructed prime assignment. The implication at a polynomial scale in genuine Yokoi fields remains open. [Comparison with earlier results](PRIOR-WORK.md)
+
+To replay the finite prime construction and the arithmetic checks, install [requirements.txt](requirements.txt) and run
+
+```sh
+sh verify-release.sh
+```
+
+Two programs check the interpolated moments and period bounds on one finite instance, which illustrates the construction, and enclose $`L(1/2,\chi_{17})`$. The release includes the Lean source for five supporting lemmas. [Verification](CHECKS.md) · [File hashes](SHA256SUMS)

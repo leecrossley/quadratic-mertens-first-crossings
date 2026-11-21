@@ -1,0 +1,9 @@
+Bin (20000,30000]: 983 primes, eight target moments exactly matched.
+Bin (30000,40000]: 958 primes, eight target moments exactly matched.
+1941 ordinary primes, both bins share the same four rounding accumulators; every class prefix has error below two.
+32 periods, S=9850, largest integer period=401. Both sequences checked through index 49728.
+Special and ordinary conductor factors agree with the twist rule. Immediate and postponed class quotas reproduce all four coefficients.
+L(1/2, chi_17) lies in (0.7216, 0.7218).
+Integer normal equations, residue-square tables and in-place rounding reproduce all sixteen moments.
+Direct divisibility search confirms both shorter-period envelopes.
+Elementary period summation without special functions puts the central value between 0.70 and 0.75.

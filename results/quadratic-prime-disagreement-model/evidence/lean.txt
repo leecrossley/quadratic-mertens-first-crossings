@@ -1,0 +1,5 @@
+'QuadraticPackets.recover_signs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticPackets.allocation_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticPackets.rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticPackets.two_zero_factors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticPackets.signed_tail' depends on axioms: [propext, Classical.choice, Quot.sound]

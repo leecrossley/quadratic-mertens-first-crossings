@@ -1,0 +1,2 @@
+'SplitInert.cosine_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SplitInert.cosine_times_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]

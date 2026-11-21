@@ -1,0 +1,9 @@
+spectral interval: 0.4660719 < endpoint lower bound < 0.4660720
+d=533, W(log 240)-W(log 30) in (-1.033,-1.030)
+d=533, W(log 4096)-W(log 512) in (0.818,0.822)
+d=533, -0.071674 < sqrt(30) log(30) F(30) < -0.071672
+y=30, oriented W in (0.5142549,0.5142550), corrected lead in (0.329780,0.329783)
+y=30, reference crossing threshold in (0.293944,0.293946)
+d=533, finite Fourier values and odd-power sums certify both eightfold changes.
+d=533, direct sum over ideal norms certifies -0.073 < sqrt(30) log(30) F(30) < -0.070.
+At y=30, corrected disagreement lead > 0.327 exceeds the reference threshold < 0.295.

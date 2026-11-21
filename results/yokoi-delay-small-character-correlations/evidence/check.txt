@@ -1,0 +1,16 @@
+Window character   1: weighted log sum in (-174081/100, -174080/100).
+Window character   5: weighted log sum in (-58202/100, -58201/100).
+Window character  13: weighted log sum in (79015/100, 79016/100).
+Window character -11: weighted log sum in (87994/100, 87995/100).
+3103 primes. Strongest of the 20 secondary characters: discriminant -11.
+y=163, character 1: normalised full tail in (-1755/1000, -1754/1000).
+y=2380853, character 1: normalised full tail in (-1139/1000, -1138/1000).
+y=7142559, character 1: normalised full tail in (-2997/1000, -2996/1000).
+y=163, character 5: normalised full tail in (249/1000, 250/1000).
+y=2380853, character 5: normalised full tail in (1677/1000, 1678/1000).
+y=7142559, character 5: normalised full tail in (1046/1000, 1047/1000).
+y=163, character 13: normalised full tail in (-13/1000, -12/1000).
+y=2380853, character 13: normalised full tail in (-1683/1000, -1682/1000).
+y=7142559, character 13: normalised full tail in (-912/1000, -911/1000).
+Exact prime products reproduce all four window intervals and the maximising character.
+Three infinite tails at three starts pass a separate theta split and direct Euler remainder.
