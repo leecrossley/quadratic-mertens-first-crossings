@@ -15,7 +15,7 @@ $$
 
 The finite upper endpoint uses the grid ratio $K$ in the theorem. The infinite integral is absolutely convergent, for instance by the bound $1\le P_d(t)\le P_{\mathbb Q}(t)^2$ for the corresponding products.
 
-**Theorem.** There are absolute $y_0\ge 3$, integer $K\ge 4$ and constants $c,a,\beta,C>0$ with the following property. Let $D$ be sufficiently large, $b\ge y_0$, $J\ge1$ an integer and $R=bK^J$. Suppose
+**Theorem.** Assume the critical-line property for the Riemann zeta function (RH). There are absolute $y_0\ge 3$, integer $K\ge 4$ and constants $c,a,\beta,C>0$ with the following property. Let $D$ be sufficiently large, $b\ge y_0$, $J\ge1$ an integer and $R=bK^J$. Suppose
 
 $$
  J(\log R+\log\log D)\le a\log D.
@@ -24,7 +24,7 @@ $$
 
 Apart from a proportion at most $C e^{-cJ}$ of the squarefree Yokoi discriminants in $(D/2,D]$, at least $\beta J$ of the starts $y_j=bK^j$, $0\le j<J$, have **both** $F_d(y_j)<0$ and $G_d(y_j)<0$. At each such start the prime product lies below its main term at some point of $[y_j,Ky_j)$. The starting points are the same for every field in the shell.
 
-**Corollary.** For absolute $\theta,c_1>0$, uniformly for $2\le X\le \exp(c_1\sqrt{\log D})$, the proportion of fields for which **none** of the grid windows with $b=y_0$ and $K y_j\le X$ succeeds is $O(X^{-\theta})$. This bounds the proportion with $S_d\ge X$ as well. Choose $J=\lfloor\log(X/y_0)/\log K\rfloor$ and reduce $c_1$ if necessary to obtain (1). The bounded initial range is absorbed into the implied constant. At the top of this range there are $O(\sqrt D\thinspace e^{-c_2\sqrt{\log D}})$ possible exceptions, for some $c_2>0$. They include every field that could fail a given fixed positive polynomial starting-point bound for sufficiently large $D$. The theorem leaves open whether any such failures occur.
+**Corollary.** Assume RH. For absolute $\theta,c_1>0$, uniformly for $2\le X\le \exp(c_1\sqrt{\log D})$, the proportion of fields for which **none** of the grid windows with $b=y_0$ and $K y_j\le X$ succeeds is $O(X^{-\theta})$. This bounds the proportion with $S_d\ge X$ as well. Choose $J=\lfloor\log(X/y_0)/\log K\rfloor$ and reduce $c_1$ if necessary to obtain (1). The bounded initial range is absorbed into the implied constant. At the top of this range there are $O(\sqrt D\thinspace e^{-c_2\sqrt{\log D}})$ possible exceptions, for some $c_2>0$. They include every field that could fail a given fixed positive polynomial starting-point bound for sufficiently large $D$. The theorem leaves open whether any such failures occur.
 
 ## 1. A deterministic bound for the rational average
 
