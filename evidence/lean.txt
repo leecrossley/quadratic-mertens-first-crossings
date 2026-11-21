@@ -1,0 +1,3 @@
+'MertensStart.future_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MertensStart.kernel_denominator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MertensStart.positive_area' depends on axioms: [propext, Classical.choice, Quot.sound]

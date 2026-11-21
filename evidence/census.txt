@@ -1,0 +1,6 @@
+8950 squarefree Yokoi discriminants checked from 5 through 400040005
+152951 successive norm windows checked; 2214 fields already strictly below at 2
+Largest absolute wait: d=98346893=9917^2+4, h=196, window 89343 [2447161, 2447327)
+2447298.07830027 < first crossing < 2447298.07830028
+Largest log(first crossing)/log(d) occurs at d=5: 0.8105184587 < exponent < 0.8105184588
+Every other field in this finite range has first crossing strictly before d^(81/100)

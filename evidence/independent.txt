@@ -1,0 +1,4 @@
+d=9413, 141781 norms, first crossing [525.4743569782534 +/- 4.68e-14], least post-crossing area at 2017.
+Earliest start in (337.87434, 337.87436); direct window integrals leave [0.001789954079 +/- 2.44e-13] beyond the tail allowance.
+d=2380853, 3554753 norms, first crossing [143054.0395302220 +/- 4.68e-11], least post-crossing area at 154877.
+Earliest start in (137123.79815, 137123.79818); direct window integrals leave [0.0001789992864 +/- 1.22e-14] beyond the tail allowance.
