@@ -32,7 +32,7 @@ In fact for $j_0=\lceil u/P\rceil$ the first two cosines are at least $1/2$. Div
 Use the critical-line property for the ordinary and conductor-five factors. To include the higher zeros of an even degree-one function, take as the model's completed quadratic factor
 
 $$
-  \Lambda^\#(s)=2\big(\cosh(P(s-1/2))-\cos\theta\big)\Lambda(s,\chi_5),
+  \Lambda^{\sharp}(s)=2\big(\cosh(P(s-1/2))-\cos\theta\big)\Lambda(s,\chi_5),
 $$
 
 and use the ordinary zeta function for the other factor. This is an entire function of order one with symmetry $s\mapsto1-s$. It has the ordinary even gamma factor, a conductor parameter $D=5e^{2P}$ and the stated critical-line zeros alongside those of $\Lambda(s,\chi_5)$. In $0 < \Im s\le T$ the added lattices supply $PT/\pi+O(1)$ ordinates uniformly in $P,T,\theta$. This is precisely the change of the linear conductor term from 5 to $D$ in the degree-one zero count.
