@@ -2,3 +2,5 @@
 'RoughCharacterSums.prefix_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
 'RoughCharacterSums.ordered_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
 'RoughCharacterSums.exponent_eight_margins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RoughCharacterSums.negative_prefix_of_dilates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RoughCharacterSums.mass_ratio_order' depends on axioms: [propext, Classical.choice, Quot.sound]

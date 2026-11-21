@@ -1,5 +1,7 @@
 # Verification
 
+The extension to all small-prime selections, its two full integer sweeps, its two new supporting Lean lemmas and the optimum Gaussian mass are covered in [the sieve-choice checks](SIEVE-CHECKS.md).
+
 The proof specifies its hypotheses on the Riemann zeta function and the primitive quadratic Dirichlet function. The bounds on the ordinary sums, including the exponent 8, are analytic. The finite calculations below use character values and Gaussian sums directly and have no zero-location input.
 
 ## A late field

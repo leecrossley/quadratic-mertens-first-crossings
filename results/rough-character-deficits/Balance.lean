@@ -57,9 +57,31 @@ theorem exponent_eight_margins :
     (33/80 : ℝ) < 1/2 ∧ 11/4 - (27/4)/2 + 1/2 < (-1/16 : ℝ)
     ∧ (1/2 : ℝ) + (27/4 - 8)/2 = -1/8 := by norm_num
 
+/-- A negative prefix after nonnegative dilation forces an earlier negative prefix. -/
+theorem negative_prefix_of_dilates {ι : Type*} (terms : Finset ι)
+    (weight : ι → ℝ) (index : ι → ℕ) (count : ℕ → ℝ) (limit : ℕ)
+    (hw : ∀ i ∈ terms, 0 ≤ weight i) (hi : ∀ i ∈ terms, index i ≤ limit)
+    (h : ∑ i ∈ terms, weight i * count (index i) < 0) :
+    ∃ j ≤ limit, count j < 0 := by
+  obtain ⟨i, hit, hneg⟩ := prefix_witness terms weight (fun i => count (index i))
+    (fun _ => 0) hw (by simpa using h)
+  exact ⟨index i, hi i hit, hneg⟩
+
+/-- A positive convolution contracts the mass ratio when its signed mass is nonnegative. -/
+theorem mass_ratio_order {p n pStar nStar k : ℝ}
+    (hp : 0 < p) (hStar : 0 < pStar) (hsign : n ≤ p)
+    (hpos : pStar ≤ k * p) (hs : pStar - nStar = k * (p - n)) :
+    nStar / pStar ≤ n / p := by
+  apply (div_le_div_iff₀ hStar hp).mpr
+  have hbound := mul_le_mul_of_nonneg_right hpos (sub_nonneg.mpr hsign)
+  have heq := congrArg (fun v : ℝ => v * p) hs
+  nlinarith only [hbound, heq]
+
 end RoughCharacterSums
 
 #print axioms RoughCharacterSums.cosine_mass
 #print axioms RoughCharacterSums.prefix_witness
 #print axioms RoughCharacterSums.ordered_budget
 #print axioms RoughCharacterSums.exponent_eight_margins
+#print axioms RoughCharacterSums.negative_prefix_of_dilates
+#print axioms RoughCharacterSums.mass_ratio_order

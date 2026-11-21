@@ -12,12 +12,14 @@ For $`d=2{,}380{,}853`$, remove all 47 primes through 215. The count first reach
 
 For any fixed $`K>0`$ the proof also permits a deletion modulus as large as $`\exp(K(\log d)^2)`$ with a witness exponent depending on $`K`$. It gives a second test using the relative positive and negative mass of a signed sum. [Related work and novelty search](PRIOR-WORK.md)
 
+Among all choices an exact rule delays the first negative count as long as possible. Remove the multiples of every eligible inert prime and keep the split primes. In $`d=2{,}380{,}853`$ all $`2^{47}`$ choices go negative by 49,937 and recover by $`d^6`$, with no zero-location hypothesis. The optimal choice for the first dip recovers six integers later. Keeping just one more prime, 43, moves the first recovery to **137,705,720,539**. The sharp and Gaussian mass tests have the same extremal choice when the central value is nonnegative. [Sieve comparison and proof](SIEVE-CHOICE.md) · [Independent checks](SIEVE-CHECKS.md)
+
 ## Verification
 
-Install the dependency in [requirements.txt](requirements.txt) in a Python environment and run
+Install the dependency in [requirements.txt](requirements.txt) in a Python 3.11+ environment and run with a C++20 compiler available
 
 ```sh
 sh verify-release.sh
 ```
 
-Lean checks four supporting lemmas. The complete number-theoretic argument is in the written proof. [What each check covers](CHECKS.md) · [File hashes](SHA256SUMS)
+Lean checks six supporting lemmas. The number-theoretic arguments are in the written proofs. [Original checks](CHECKS.md) · [Sieve-choice checks](SIEVE-CHECKS.md) · [File hashes](SHA256SUMS)
