@@ -1,0 +1,4 @@
+Gaussian replay [d^4, d^10] sign -1, margin > 1.3.
+Gaussian replay [d^11, d^18] sign +1, margin > 1.8.
+Gaussian replay [d^19, d^27] sign -1, margin > 0.5.
+Gaussian replay [d^28, d^36] sign +1, margin > 0.25.

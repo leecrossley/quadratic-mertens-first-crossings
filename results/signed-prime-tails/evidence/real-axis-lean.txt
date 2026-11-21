@@ -1,0 +1,6 @@
+'RealAxisCrossings.three_resolvents' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RealAxisCrossings.conductor_offset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RealAxisCrossings.window_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RealAxisCrossings.double_grid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RealAxisCrossings.crowding_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RealAxisCrossings.prime_square_bias' depends on axioms: [propext, Classical.choice, Quot.sound]
