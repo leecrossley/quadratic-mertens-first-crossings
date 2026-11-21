@@ -1,0 +1,2 @@
+Five signed local tilts and six truncations: exact normalization, discarded mass and fourth-moment envelope.
+Twenty exact profile enclosures: both prescribed averages are negative and the earlier area covers the entire negative part.
