@@ -2,13 +2,13 @@
 
 Lee Crossley
 
-Take the real quadratic characters $`\chi_5,\chi_{13}`$, and $`\chi_{65}=\chi_5\chi_{13}`$. Assume the critical-line property for $`\zeta`$ and these three fixed Dirichlet functions. Use the real critical strip convention $`0<\Re s<1`$. [Critical-line input](https://math.mit.edu/~drew/grh/)
+Take the real quadratic characters $`\chi_5,\chi_{13}`$, and $`\chi_{65}=\chi_5\chi_{13}`$. Assume the critical-line property for $`\zeta`$ and these three fixed Dirichlet functions. Use the real critical strip convention $`0<\Re s<1`$. Alpöge's announced Dirichlet GRH theorem supplies this input. [Announcement](https://alpo.ge/remark.pdf) · [Independent formal checks](https://math.mit.edu/~drew/grh/)
 
 **Theorem.** Let $`P`$ be sufficiently large, $`D=13e^{2P},\ 0\le\theta<\pi/3,\ 0\le\beta\le\pi`$. There is a real completely multiplicative prime assignment $`\xi`$, ramified only at 13, for which the following hold.
 
 * Both Euler products, for $`\xi`$ and $`\xi\chi_5`$, continue to $`\Re s>1/4`$. Their additional zero ordinates relative to $`L(s,\chi_{13})`$ and $`L(s,\chi_{65})`$ are respectively $`(2\pi k\pm\theta)/P`$ and $`(2\pi k\pm\beta)/P`$, all on the critical line with the indicated multiplicities. Each adds $`PT/\pi+O(1)`$ positive ordinates through $`T`$, giving the change in the conductor term from 13 to $`D`$ and 65 to $`5D`$. $`D`$ is a scale parameter.
 * All four joint prime counts for $`\xi,\chi_5`$ have their natural main term with the smoothed error $`O_\varphi(\sqrt x\log(3D))`$, uniformly in $`x\ge2`$. In particular the two opposite disagreement classes both occur on every dyadic scale above $`C_\varphi\log^2(3D)`$ for a fixed nonnegative bump of positive integral.
-* Define $`N_y=\sqrt y\log y`$. With the quadratic local norms and the same weight $`y\,dt/t^2`$ as in the real-field question, $`N_yF_\xi(y)>1/100`$ for all $`y\ge2`$ when $`\theta=0`$. For $`0<\theta<\pi/3`$ this holds throughout $`\log2\le\log y\le P(\pi/(3\theta)-2)`$. For any fixed exponent $`a>0`$ one can first choose $`\theta>0`$ and then take arbitrarily large $`P`$ so that this includes $`2\le y\le D^a`$.
+* Define $`N_y=\sqrt y\log y`$. With the quadratic local norms and the same weight $`y\,dt/t^2`$ as in the real-field question, $`N_yF_\xi(y)>1/100`$ for all $`y\ge2`$ when $`\theta=0`$. For $`0<\theta<\pi/6`$ this holds throughout $`\log2\le\log y\le P(\pi/(3\theta)-2)`$. For larger $`\theta`$ this interval is empty. For any fixed exponent $`a>0`$ one can first choose $`\theta>0`$ and then take arbitrarily large $`P`$ so that this includes $`2\le y\le D^a`$.
 * Give primes split for $`\xi`$ and inert for 5 weight $`+1`$, the opposite class weight $`-1`$, and the rest weight zero, with ramified primes excluded. Write $`W_{\xi,5}(\log y)=N_y\sum_{p>y}a(p)(1-y/p)/p`$. Then
 
 ```math

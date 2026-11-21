@@ -4,7 +4,7 @@ The infinite construction and its quantifiers are proved in [the paper](PROOF.md
 
 The first program sieves a single packet and evaluates the change of the weighted discrepancy and the exact change of the prime-ideal log average for that packet, at $`X_1/3`$ and $`X_1`$. Arb interval arithmetic encloses its contribution to the rise. A Dirichlet-function evaluation encloses the central value for the base twist. The second program uses a different prime sieve, modular exponentiation and rational intervals. It bounds $`\log2,\log3`$ by the series for $`\mathrm{atanh}`$ and bounds square roots by integer square roots. A direct sum of the periodic series at $`s=1/2`$, with its Abel remainder, independently proves that the base twist has positive central value. [First calculation](scripts/verify.py) [Standard-library calculation](scripts/independent.py) [Outputs](evidence/check.txt)
 
-The reported numerical rises are contributions of the first finite packet. The estimates for every subsequent packet and the positive all-start bound are analytic. The base bound for field 13 has its own two interval verifiers. [Base certificate](https://github.com/leecrossley/yokoi-mertens-positive-averages-5-13/releases/tag/v1.0.0)
+The reported numerical rises are contributions of the first finite packet. That packet illustrates the construction and is not itself an instance of the theorem, which needs $`P`$ beyond an unquantified threshold. The estimates for every subsequent packet and the positive all-start bound are analytic. The base bound for field 13 has its own two interval verifiers. [Base certificate](https://github.com/leecrossley/yokoi-mertens-positive-averages-5-13/blob/f7233ab4e1c85b9b37bffdaa11c4559d7713bd62/PROOF.md)
 
 ## Replay the Lean lemmas
 
