@@ -60,7 +60,7 @@ For each profile the sign of the signed mass is the sign of $`L(1/2,\chi)`$ by i
 Take $`d=2{,}380{,}853`$, $`L=\log d`$, $`X=d^6`$ and $`c=1/1000`$. For each allowable $`Q`$, let $`m`$ be its first strictly negative index and put $`\tau=\log m`$. Then some integer $`n`$ satisfies
 
 ```math
- 3\le m\le49{,}937,\quad m<n\le X,\quad
+ 3\le m\le49{,}937,\quad m\lt n\le X,\quad
  S_Q(m)<-c\sqrt m/L,\qquad S_Q(n)>c\tau\sqrt n/L^2.
  \tag{4}
 ```
