@@ -154,14 +154,14 @@ def main():
     u = 7*arb(DISCRIMINANT).log()/3
     gamma_term = (-u/2).exp()/(2*u.tanh())
     upper = (full.bound(u)+gamma_term+prime_power_upper(u,2,DISCRIMINANT)).upper()
-    assert upper < -arb(1)/10, upper
+    assert upper < -arb("0.22"), upper
     character = ZeroSum(quadratic,mass-ordinary)
     check_local_sums(quadratic,character.missing)
     derivatives = curvature_sum(nodes,quadratic[0])/(3*arb(DISCRIMINANT)).log()**2
     assert derivatives > 0 and derivatives < 16
     print(f"Two Taylor expansions independently put the unweighted local sums at {derivatives.str(8)} times log(3d)^2.")
     signed = -(character.bound(u)+gamma_term+prime_power_upper(u,1,1)).upper()
-    assert signed > arb(1)/10, signed
+    assert signed > arb("0.26"), signed
     print(f"At y=d^(7/3), sqrt(y) log(y) F(y) < {upper.str(8)}.")
     print(f"At the same start the normalised signed split-minus-inert tail exceeds {signed.str(8)}.")
     # Subtract the continuous square contribution before bounding the two errors.
