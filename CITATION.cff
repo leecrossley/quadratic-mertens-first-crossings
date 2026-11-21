@@ -4,7 +4,7 @@ title: "Split and inert prime tests in the presence of central zeros"
 authors:
   - family-names: Crossley
     given-names: Lee
-version: 1.0.1
+version: 1.0.2
 date-released: 2026-11-21
 license: CC-BY-4.0
 repository-code: https://github.com/leecrossley/split-inert-prime-test-obstruction
