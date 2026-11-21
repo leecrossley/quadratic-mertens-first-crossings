@@ -45,7 +45,7 @@ Initially take $`\Re s>1`$. In the quotient of either new Euler product by its b
  Q_{\alpha,P}=1-2\cos\alpha\,e^{-P(s-1/2)}+e^{-2P(s-1/2)}
 ```
 
-for holomorphic $`G_1,G_2`$. Factoring $`Q`$ proves the zero formulas. At $`\theta=0`$ its central order is two. The base $`L_{13}`$ has a fixed gap around zero by its inverse-square mass certificate. For sufficiently large $`P`$ the added near pair is the closest pair of the first product. [Base-field zero estimate](https://github.com/leecrossley/yokoi-mertens-positive-averages-5-13/blob/f7233ab4e1c85b9b37bffdaa11c4559d7713bd62/PROOF.md)
+for holomorphic $`G_1,G_2`$. Factoring $`Q`$ proves the zero formulas. At $`\theta=0`$ its central order is two. The base $`L_{13}`$ has a fixed gap around zero by its inverse-square mass certificate. For sufficiently large $`P`$ the added near pair is the closest pair of the first product. [Base-field zero estimate](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-positive-averages-5-13/PROOF.md)
 
 Precisely, for $`\varphi\in C_c^\infty((1,2))`$ the sum of $`\log p\,\varphi(p/x)`$ in each joint class is
 
@@ -53,7 +53,7 @@ Precisely, for $`\varphi\in C_c^\infty((1,2))`$ the sum of $`\log p\,\varphi(p/x
  \frac{x}{4}\int_1^2\varphi(v)\,dv+O_\varphi(\sqrt x\log(3D)).
 ```
 
-The fixed base pair has error $`O_\varphi(\sqrt x)`$ by its smoothed explicit formulas. The Mellin transforms decay rapidly and prime powers of order at least two contribute $`O_\varphi(\sqrt x)`$ by Chebyshev. The interval $`[x,2x]`$ intersects at most one packet. With $`X_j\asymp x`$ its total changed weight is $`O_\varphi((\sqrt{X_j}/j)\log X_j)=O_\varphi(P\sqrt x)`$. This proves the stated bound at every scale. The same two-sided counts for genuine quadratic characters follow by expanding their four class indicators. [Prime tests for actual fields](https://github.com/leecrossley/split-inert-prime-test-obstruction/blob/v1.0.2/PROOF.md)
+The fixed base pair has error $`O_\varphi(\sqrt x)`$ by its smoothed explicit formulas. The Mellin transforms decay rapidly and prime powers of order at least two contribute $`O_\varphi(\sqrt x)`$ by Chebyshev. The interval $`[x,2x]`$ intersects at most one packet. With $`X_j\asymp x`$ its total changed weight is $`O_\varphi((\sqrt{X_j}/j)\log X_j)=O_\varphi(P\sqrt x)`$. This proves the stated bound at every scale. The same two-sided counts for genuine quadratic characters follow by expanding their four class indicators. [Prime tests for actual fields](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/split-inert-prime-test-obstruction/PROOF.md)
 
 ## Testing the zeros against the two prime sums
 
@@ -80,7 +80,7 @@ For the genuine base character the first sum equals its prime expression. The ch
  (2P/H)\left[1+2\sum_{jP\le H}(1-jP/H)\cos(j\alpha)\cos(jPt)\right].
 ```
 
-Poisson summation of the triangular weight identifies this with the second sum, counting a coincident pair twice. The error estimate is for these finite tests. The analytic factors $`e^{G_1},e^{G_2}`$ need not obey the global functional equations of Dirichlet characters. [Single-character triangular test](https://github.com/leecrossley/split-inert-prime-test-obstruction/blob/v1.0.2/PROOF.md)
+Poisson summation of the triangular weight identifies this with the second sum, counting a coincident pair twice. The error estimate is for these finite tests. The analytic factors $`e^{G_1},e^{G_2}`$ need not obey the global functional equations of Dirichlet characters. [Single-character triangular test](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/split-inert-prime-test-obstruction/PROOF.md)
 
 ## The moving discrepancy and the Mertens average
 
@@ -111,7 +111,7 @@ Indeed an averaged jump has weight $`\min(1,y/v)`$ and the change of normalisati
 
 For a packet at $`X`$, the functions $`\ell(p)(1-y/p)_+`$ and $`p^{-1}(1-y/p)_+`$ have Lipschitz constant $`O(1/X)`$ in $`\log p`$, uniformly even across the cutoff. They vanish for $`y>X+X^{3/4}`$, so $`N_y\ll\sqrt X\log X`$ on their support. Replacing $`p`$ by $`X`$ has normalised cost $`O(PX^{-1/4})`$, replacing $`\ell(X)`$ by $`1/X`$ costs $`O(P/X)`$, and rounding both counts costs $`O(jP/\sqrt X)`$. The square-norm term vanishes for $`y>(X+X^{3/4})^2`$, giving normalised cost $`O(P/\sqrt X)`$ for the packet. Sum in $`j`$ to get (2).
 
-At $`\theta=0`$ every summand of $`S`$ is nonnegative. If $`0<\theta<\pi/3`$ and $`u\le P(\pi/(3\theta)-2)`$, the first two cosines starting at $`j_0=\lceil u/P\rceil`$ are at least $`1/2`$. The absolute tail from $`j_0+2`$ is bounded by the unsigned weight of $`j_0+1`$ times $`e^{-P/2}/[(1-e^{-P/2})(1-e^{-P})]<1/2`$; this includes $`u=j_0P`$. The certified base estimate $`N_y F_{13}>1/40`$ and the uniform error now give the claimed margin $`1/100`$. For fixed $`a`$ take, for example, $`0<\theta<\pi/[3(2a+3)]`$ and increase $`P`$ to absorb the fixed $`\log13`$. [All-start base estimate](https://github.com/leecrossley/yokoi-mertens-positive-averages-5-13/blob/f7233ab4e1c85b9b37bffdaa11c4559d7713bd62/PROOF.md)
+At $`\theta=0`$ every summand of $`S`$ is nonnegative. If $`0<\theta<\pi/3`$ and $`u\le P(\pi/(3\theta)-2)`$, the first two cosines starting at $`j_0=\lceil u/P\rceil`$ are at least $`1/2`$. The absolute tail from $`j_0+2`$ is bounded by the unsigned weight of $`j_0+1`$ times $`e^{-P/2}/[(1-e^{-P/2})(1-e^{-P})]<1/2`$; this includes $`u=j_0P`$. The certified base estimate $`N_y F_{13}>1/40`$ and the uniform error now give the claimed margin $`1/100`$. For fixed $`a`$ take, for example, $`0<\theta<\pi/[3(2a+3)]`$ and increase $`P`$ to absorb the fixed $`\log13`$. [All-start base estimate](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-positive-averages-5-13/PROOF.md)
 
 For the fixed pair 13 and 5, $`W_{13,5}=O(1)`$. This follows from the absolutely summable zero kernels for the two fixed conductors, the bounded ramified corrections and the absolutely summable odd prime powers. At $`u=P-\log3`$ the $`j=1`$ contribution to $`S`$ is $`2\cos\theta(P-\log3)/(3\sqrt3)`$ and the remaining terms are $`O(Pe^{-P/2})`$. At $`u=P`$ the first term vanishes. Substitution in (2) gives (1).
 

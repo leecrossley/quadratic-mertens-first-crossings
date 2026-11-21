@@ -17,7 +17,7 @@ $$
 2 < r_K=\exp(e^{-\gamma}/\kappa_K) < q,
 $$
 
-then $S_K=r_K$, the error vanishes at $r_K$, and every $r_K<x<q$ has negative error. In particular a least strictly negative real argument does not exist in this case. This uses the same observation as the earlier prime-window calculation. Partition at the points where the arithmetic term changes, then keep the continuous main term between successive points. [Earlier prime-window calculation](https://github.com/leecrossley/prime-band-critical-all-scales/tree/ecb4538f96452cd25fff0d10fab52f71117d57ea)
+then $S_K=r_K$, the error vanishes at $r_K$, and every $r_K<x<q$ has negative error. In particular a least strictly negative real argument does not exist in this case. This uses the same observation as the earlier prime-window calculation. Partition at the points where the arithmetic term changes, then keep the continuous main term between successive points. [Earlier prime-window calculation](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-critical-all-scales)
 
 ## 2. The two fields in the question
 

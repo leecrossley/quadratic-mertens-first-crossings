@@ -10,7 +10,7 @@ $$
 \log\log U(d)\ll(\log d)^3(\log\log d)^2.
 $$
 
-The earlier proof gave a sharper cutoff as well as the simplified double exponent $d^{30000}$. At $d=5$ the earlier exact double binary logarithm has 17,273 decimal digits, the simplified exponent has 20,970, and the new upper estimate has 89. The proof compares the exact cutoffs for every $d\ge5$. Here it grows at most like the cube of the digit count times the square of its logarithm. The deadline is still far too large for a direct prime search. Whether a fixed power of $d$ always suffices remains open in these bounds. [Full proof and integer formula](PROOF.md) [Earlier cutoff](https://github.com/leecrossley/yokoi-mertens-explicit-upper-bound/releases/tag/v1.0.0) [Problem 8, pp. 4–5](https://arxiv.org/pdf/2407.03530#page=4)
+The earlier proof gave a sharper cutoff as well as the simplified double exponent $d^{30000}$. At $d=5$ the earlier exact double binary logarithm has 17,273 decimal digits, the simplified exponent has 20,970, and the new upper estimate has 89. The proof compares the exact cutoffs for every $d\ge5$. Here it grows at most like the cube of the digit count times the square of its logarithm. The deadline is still far too large for a direct prime search. Whether a fixed power of $d$ always suffices remains open in these bounds. [Full proof and integer formula](PROOF.md) [Earlier cutoff](https://doi.org/10.5281/zenodo.24410811) [Problem 8, pp. 4–5](https://arxiv.org/pdf/2407.03530#page=4)
 
 ## Where the improvement comes from
 

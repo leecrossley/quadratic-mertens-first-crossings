@@ -10,7 +10,7 @@ $$
  a\thinspace S/(\log S)^8 \ <\ Y\ \le S
 $$
 
-for an absolute $a>0$, in the discriminant ranges of the theorem. Thus the first successful start and the first dip have the same exponent on the logarithmic scale. Exceptional fields exist: yokoi-mertens-crossing-lookahead realises $D^{1/2-o(1)}$ fields in each shell with $Y=2$ and $S$ near $(\log D)e^{-\kappa\sqrt{\log\log D}}$, under the hypotheses stated there. [Late fields with an early start](https://github.com/leecrossley/yokoi-mertens-crossing-lookahead/blob/082e8ebb7f4456c4c22ce6a53891ae4e73af4885/FAMILY.md) The asserted exponent 8 is an upper bound on the logarithmic loss. [Theorem and proof](PROOF.md)
+for an absolute $a>0$, in the discriminant ranges of the theorem. Thus the first successful start and the first dip have the same exponent on the logarithmic scale. Exceptional fields exist: yokoi-mertens-crossing-lookahead realises $D^{1/2-o(1)}$ fields in each shell with $Y=2$ and $S$ near $(\log D)e^{-\kappa\sqrt{\log\log D}}$, under the hypotheses stated there. [Late fields with an early start](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-crossing-lookahead/FAMILY.md) The asserted exponent 8 is an upper bound on the logarithmic loss. [Theorem and proof](PROOF.md)
 
 RH and GRH enter in the bound for the future error, through the rational and quadratic prime number estimates. The count of late fields uses RH alone. The deadlines in §5 assume field GRH for the discriminant concerned. The contrasts and their moment comparison are unconditional. [Use of the estimates](TAIL.md) [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/)
 

@@ -41,7 +41,7 @@ $$
  \tag{2}
 $$
 
-Here $B$ is any sufficiently large fixed constant. Replacing each logarithmic local factor by $\chi_d(p)/p$ costs $O(1/y)$. Terms beyond $V$ for the infinite average are bounded by $O_{s_0}((y/V)^s)$ using $\sum_{n>V} n^{-1-s}$, and vanish for the finite window. These and the short-product error are $o(H(4X))$. The estimate is uniform in $s$ in the stated interval. [Granville and Soundararajan, Proposition 2.2](https://arxiv.org/pdf/math/0206031#page=7) · [Exact quadratic factorisation](https://github.com/leecrossley/yokoi-mertens-crossing-bounds/blob/v1.0.0/PROOF.md)
+Here $B$ is any sufficiently large fixed constant. Replacing each logarithmic local factor by $\chi_d(p)/p$ costs $O(1/y)$. Terms beyond $V$ for the infinite average are bounded by $O_{s_0}((y/V)^s)$ using $\sum_{n>V} n^{-1-s}$, and vanish for the finite window. These and the short-product error are $o(H(4X))$. The estimate is uniform in $s$ in the stated interval. [Granville and Soundararajan, Proposition 2.2](https://arxiv.org/pdf/math/0206031#page=7) · [Exact quadratic factorisation](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-crossing-bounds/PROOF.md)
 
 For the ordinary rational error in (2), Cramér's estimate $\int_z^{2z}|\psi(t)-t|dt\ll z^{3/2}$ and partial summation give $\int_z^{2z}|B_{\mathbb Q}(t)|\thinspace dt/t\ll1/(\sqrt z\log z)$. Indeed the boundary term is $(\psi(t)-t)/(t\log t)$, the integral remainder is bounded by dyadically summing $|\psi(v)-v|(1+\log v)/(v^2\log^2v)$, and omitted prime powers cost $O(1/(\sqrt t\log t))$. Summing these bounds over doubled intervals gives the uniform averaged error in (2). We also use the pointwise rational bound $B_{\mathbb Q}(t)=O(\log t/\sqrt t)$ from Schoenfeld, by the same partial summation. It gives the pointwise version for nonexceptional fields,
 
@@ -72,7 +72,7 @@ $$
  +A_+h_p\thinspace{\bf1}_{8X < p\le16X}.
 $$
 
-For large $D$, $T=o(X)$. In the independent model weight by $IR^2$ with $R=\prod_{B<p\le16X}(1+a_p z_p)$. Under its normalisation the means above $B$ can be made exactly $\nu_p=\mu_p+\Delta_p$, with $|a_p|\le2|\Delta_p|$ and $|a_p|\le1/16$. Indeed the shift for coefficient $a$ is $(2av_p+a^2\mathbb E z_p^3)/(1+a^2v_p)$. For $|a|\le1/16$ its signed ratio to $a$ is at least $1/2$, since $|\mathbb E z_p^3|\le2v_p$ and $1/2\le v_p\le1$ eventually. Increase $B$ so that all shifts have size at most $1/32$ and apply continuity. Independence above $B$ survives the full tilt. [Signed tilt and its algebraic checks](https://github.com/leecrossley/yokoi-mertens-prescribed-crossings/blob/v1.0.0/PROOF.md)
+For large $D$, $T=o(X)$. In the independent model weight by $IR^2$ with $R=\prod_{B<p\le16X}(1+a_p z_p)$. Under its normalisation the means above $B$ can be made exactly $\nu_p=\mu_p+\Delta_p$, with $|a_p|\le2|\Delta_p|$ and $|a_p|\le1/16$. Indeed the shift for coefficient $a$ is $(2av_p+a^2\mathbb E z_p^3)/(1+a^2v_p)$. For $|a|\le1/16$ its signed ratio to $a$ is at least $1/2$, since $|\mathbb E z_p^3|\le2v_p$ and $1/2\le v_p\le1$ eventually. Increase $B$ so that all shifts have size at most $1/32$ and apply continuity. Independence above $B$ survives the full tilt. [Signed tilt and its algebraic checks](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-prescribed-crossings/PROOF.md)
 
 Partial summation over primes gives two separate estimates, with implied constants depending on the amplitudes:
 
@@ -113,7 +113,7 @@ $$
 for every real $y$ in this range and every nondecreasing $k(p)\in[0,1]$, including $k=1$. This single event handles the continuum of power exponents. No union over those exponents is taken.
 
 For the unweighted count, expanding $R_N^4$ in the independent model kills any quadruple with a singleton prime. After taking absolute values drop all four truncation restrictions. This bounds the moment by
-$\prod_p(1+6a_p^2v_p+4|a_p|^3\mathbb E|z_p|^3+a_p^4\mathbb E|z_p|^4)\le\exp(C\sum a_p^2)$. Transfer $W^2=IR_N^4$ by (4), with coefficient norm $O_B(N^8)$ and indices $O_B(N^4)$, at cost $O_B(D^{-1/6}N^{32/3}\log D)=o(1)$. Cauchy–Schwarz shows that the unweighted probability of (7) together with $I=1$ is at least $(3\mathbb E_D W/4)^2/\mathbb E_D W^2$. Using (5), subtracting the at most $D^{1/4}$ short-product exceptions, and absorbing fixed factors proves the count (1). [Signed fourth-moment count](https://github.com/leecrossley/yokoi-mertens-prescribed-crossings/blob/v1.0.0/PROOF.md)
+$\prod_p(1+6a_p^2v_p+4|a_p|^3\mathbb E|z_p|^3+a_p^4\mathbb E|z_p|^4)\le\exp(C\sum a_p^2)$. Transfer $W^2=IR_N^4$ by (4), with coefficient norm $O_B(N^8)$ and indices $O_B(N^4)$, at cost $O_B(D^{-1/6}N^{32/3}\log D)=o(1)$. Cauchy–Schwarz shows that the unweighted probability of (7) together with $I=1$ is at least $(3\mathbb E_D W/4)^2/\mathbb E_D W^2$. Using (5), subtracting the at most $D^{1/4}$ short-product exceptions, and absorbing fixed factors proves the count (1). [Signed fourth-moment count](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-prescribed-crossings/PROOF.md)
 
 ## 4. Signs and the actual first crossing
 

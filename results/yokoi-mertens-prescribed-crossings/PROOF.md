@@ -106,7 +106,7 @@ $$
  \le\exp(C_0\sum a_p^2)
 $$
 
-with an absolute $C_0$, since $|z_p|\le2$ and $|a_p|\le1/16$. This argument permits both signs of the coefficients. In transferring $W^2=IR_N^4$, the index and coefficient bounds are $O_B(N^4)$ and $O_B(N^8)$. Equation (4) costs $O_B(D^{-1/6}N^{32/3}\log D)=o(1)$. By Cauchy–Schwarz the unweighted probability of the good event with $I=1$ is at least $(3\mathbb E_{\rm shell}W/4)^2/\mathbb E_{\rm shell}W^2$. This gives $\gg_B\exp[-O_A((\log X)^4)]$. Removing the at most $D^{1/4}$ exceptions in (1) leaves the claimed count, because $(\log X)^4=o(\log D)$. Combining the estimates proves (3). [Earlier one-sided construction, §§2–4](https://github.com/leecrossley/yokoi-mertens-long-positive-intervals/blob/v1.0.0/PROOF.md)
+with an absolute $C_0$, since $|z_p|\le2$ and $|a_p|\le1/16$. This argument permits both signs of the coefficients. In transferring $W^2=IR_N^4$, the index and coefficient bounds are $O_B(N^4)$ and $O_B(N^8)$. Equation (4) costs $O_B(D^{-1/6}N^{32/3}\log D)=o(1)$. By Cauchy–Schwarz the unweighted probability of the good event with $I=1$ is at least $(3\mathbb E_{\rm shell}W/4)^2/\mathbb E_{\rm shell}W^2$. This gives $\gg_B\exp[-O_A((\log X)^4)]$. Removing the at most $D^{1/4}$ exceptions in (1) leaves the claimed count, because $(\log X)^4=o(\log D)$. Combining the estimates proves (3). [Earlier one-sided construction, §§2–4](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-long-positive-intervals/PROOF.md)
 
 ## 3. Choosing the shape of the error
 

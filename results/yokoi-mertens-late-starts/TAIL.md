@@ -15,7 +15,7 @@ $$
  O\left(D^{-1/6}\log D\thinspace V^{4k/3}\big(\sum_{p\le V}1/p\big)^{2k}\right)\le D^{-1/8}.
 $$
 
-The inequality follows because $k\log V\ll H u^4(u+\log\log D)$ with $u=\log X$. If $u\ge\log\log D$, reduce $c$, and if $u<\log\log D$ this is $o(\log D)$. [Family moment comparison](https://arxiv.org/pdf/1611.02424#page=11) · [Moment argument in detail](https://github.com/leecrossley/yokoi-mertens-late-crossing-density/blob/v1.0.0/MOMENTS.md)
+The inequality follows because $k\log V\ll H u^4(u+\log\log D)$ with $u=\log X$. If $u\ge\log\log D$, reduce $c$, and if $u<\log\log D$ this is $o(\log D)$. [Family moment comparison](https://arxiv.org/pdf/1611.02424#page=11) · [Moment argument in detail](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-late-crossing-density/MOMENTS.md)
 
 Outside $O(D^{1/4})$ primitive characters, throughout $X\le t\le V$,
 
@@ -24,7 +24,7 @@ $$
   +O\left(\log t/\sqrt t+(\log D)V^{-1/32}\right).
 $$
 
-Use RH for the Riemann zeta function and partial summation for the rational Mertens product. Delayed inert squares cost $O(t^{-1/2})$. The short Euler product gives the residue error in this display. Beyond $V$ the total absolute integral is $O((\log D+\log V+1)/\sqrt V)$ by the pointwise quadratic estimate, which also assumes GRH for $L(s,\chi_d)$. [Ordinary and quadratic error bounds](https://github.com/leecrossley/yokoi-mertens-prescribed-crossings/blob/v1.0.0/PROOF.md) · [Short Euler products](https://arxiv.org/pdf/math/0206031#page=7) · [Independent formal checks](https://math.mit.edu/~drew/grh/)
+Use RH for the Riemann zeta function and partial summation for the rational Mertens product. Delayed inert squares cost $O(t^{-1/2})$. The short Euler product gives the residue error in this display. Beyond $V$ the total absolute integral is $O((\log D+\log V+1)/\sqrt V)$ by the pointwise quadratic estimate, which also assumes GRH for $L(s,\chi_d)$. [Ordinary and quadratic error bounds](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-prescribed-crossings/PROOF.md) · [Short Euler products](https://arxiv.org/pdf/math/0206031#page=7) · [Independent formal checks](https://math.mit.edu/~drew/grh/)
 
 Apply Minkowski's integral inequality after restricting to nonexceptional fields. The $L^{2k}$ norm of their absolute tail from $X$ is at most
 

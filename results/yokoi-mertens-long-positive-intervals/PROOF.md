@@ -8,7 +8,7 @@ S_d=\inf\lbrace t\ge2:P_d(t) < e^{\gamma_E}L_d\log t\rbrace,\qquad
 M(D)=\max_{d\in\mathcal D(D)}S_d .
 $$
 
-The first crossing is the infimum of the strictly negative set, with value $+\infty$ for an empty set. GRH for $\zeta(s)L(s,\chi_d)$ gives finiteness for each field by the earlier all-field upper bound. This additional input gives infinitely many distinct fields with finite waits in the corollary. [Finiteness theorem](https://github.com/leecrossley/yokoi-mertens-explicit-upper-bound/blob/v1.0.0/PROOF.md) Logarithms are natural except for $\log_2$ denoting base 2.
+The first crossing is the infimum of the strictly negative set, with value $+\infty$ for an empty set. GRH for $\zeta(s)L(s,\chi_d)$ gives finiteness for each field by the earlier all-field upper bound. This additional input gives infinitely many distinct fields with finite waits in the corollary. [Finiteness theorem](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-explicit-upper-bound/PROOF.md) Logarithms are natural except for $\log_2$ denoting base 2.
 
 **Theorem.** Assume the ordinary Riemann hypothesis, or just the prime estimate (2) below. There exists an absolute $c>0$ such that, for every sufficiently large $D$,
 
@@ -16,7 +16,7 @@ $$
 M(D)>\exp\lbrace c(\log D)^{1/5}\rbrace.
 $$
 
-In particular no fixed power of $\log d$ can bound $S_d$ for every member of the family. The statement is about the largest crossing below a discriminant cutoff. It allows most fields to cross much earlier, as the density-one theorem proves. The proof gives an asymptotic bound. The numerical value of $c$ and the starting $D$ are not evaluated here. [Earlier worst-case obstruction, §5](https://github.com/leecrossley/yokoi-mertens-crossing-bounds/blob/v1.0.0/PROOF.md)
+In particular no fixed power of $\log d$ can bound $S_d$ for every member of the family. The statement is about the largest crossing below a discriminant cutoff. It allows most fields to cross much earlier, as the density-one theorem proves. The proof gives an asymptotic bound. The numerical value of $c$ and the starting $D$ are not evaluated here. [Earlier worst-case obstruction, §5](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-crossing-bounds/PROOF.md)
 
 ## 1. What would keep the product positive?
 
@@ -37,7 +37,7 @@ $$
 \tag{2}
 $$
 
-For example, the ordinary Riemann hypothesis gives $\psi(t)-t=O(\sqrt t\log^2t)$ by von Koch's estimate in Schoenfeld's explicit form. Partial summation against $1/(t\log t)$ then gives (2) for the prime-power sum $\sum_{p^j\le t}1/(jp^j)$. The boundary term is $O(\log t/\sqrt t)$, and the integral tail is bounded by a constant times $\int_t^\infty(\log v)v^{-3/2}\thinspace dv$. The omitted powers in the product cost $O(1/\sqrt t)$, by splitting at $p=\sqrt t$. We use the ordinary zeta zero-location theorem announced by Levent Alpöge for this input. The character approximation below uses the unconditional exceptional-set theorem of Granville and Soundararajan. [Schoenfeld](https://doi.org/10.1090/S0025-5718-1976-0457374-X) · [Formal statement and independent verification](https://math.mit.edu/~drew/grh/) · [Prime-power correction](https://github.com/leecrossley/yokoi-mertens-explicit-upper-bound/blob/v1.0.0/PROOF.md)
+For example, the ordinary Riemann hypothesis gives $\psi(t)-t=O(\sqrt t\log^2t)$ by von Koch's estimate in Schoenfeld's explicit form. Partial summation against $1/(t\log t)$ then gives (2) for the prime-power sum $\sum_{p^j\le t}1/(jp^j)$. The boundary term is $O(\log t/\sqrt t)$, and the integral tail is bounded by a constant times $\int_t^\infty(\log v)v^{-3/2}\thinspace dv$. The omitted powers in the product cost $O(1/\sqrt t)$, by splitting at $p=\sqrt t$. We use the ordinary zeta zero-location theorem announced by Levent Alpöge for this input. The character approximation below uses the unconditional exceptional-set theorem of Granville and Soundararajan. [Schoenfeld](https://doi.org/10.1090/S0025-5718-1976-0457374-X) · [Formal statement and independent verification](https://math.mit.edu/~drew/grh/) · [Prime-power correction](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-explicit-upper-bound/PROOF.md)
 
 Choose $K=\lfloor c_0(\log D)^{1/5}\rfloor$, $X=2^K$, and $Y=X^{128}$, with a fixed sufficiently small $c_0>0$ chosen in §3. All estimates henceforth concern sufficiently large $D$. By Proposition 2.2 (2.1) of Granville and Soundararajan with $Q=D$ and $A=8$, all but at most $D^{1/4}$ primitive characters of conductor up to $D$ satisfy
 
