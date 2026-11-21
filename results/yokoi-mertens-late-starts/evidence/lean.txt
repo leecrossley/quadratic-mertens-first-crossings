@@ -1,0 +1,3 @@
+'LateStarts.interval_majorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LateStarts.model_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LateStarts.aggregate_reserve' depends on axioms: [propext, Classical.choice, Quot.sound]

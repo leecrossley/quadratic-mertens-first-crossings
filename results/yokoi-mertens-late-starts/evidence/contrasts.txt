@@ -1,0 +1,4 @@
+d=2380853, z=1000, 8 contrasts, sum of absolute contrasts [0.000555203676769 +/- 2.09e-16].
+Conditional crossing deadline 106850843, compared with 73639882736 from the uniform norm-gap reserve.
+d=82864613, z=4096, 16 contrasts, sum of absolute contrasts [0.000123771781059 +/- 3.48e-16].
+Conditional crossing deadline 2281654003, compared with 1424149173458 from the uniform norm-gap reserve.
