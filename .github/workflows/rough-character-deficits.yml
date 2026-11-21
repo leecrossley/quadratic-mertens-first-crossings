@@ -1,0 +1,27 @@
+name: Rough character deficits
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'results/rough-character-deficits/**'
+      - '.github/workflows/rough-character-deficits.yml'
+  pull_request:
+    paths:
+      - 'results/rough-character-deficits/**'
+      - '.github/workflows/rough-character-deficits.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  replay:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Replay the interval and integer certificates
+        working-directory: results/rough-character-deficits
+        run: |
+          python3 -m venv "$RUNNER_TEMP/rough-venv"
+          "$RUNNER_TEMP/rough-venv/bin/pip" install -r requirements.txt
+          PYTHON="$RUNNER_TEMP/rough-venv/bin/python" sh verify-release.sh
