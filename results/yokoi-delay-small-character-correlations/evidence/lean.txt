@@ -1,0 +1,3 @@
+'YokoiCorrelations.ratio_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'YokoiCorrelations.tilt_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'YokoiCorrelations.transfer_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
