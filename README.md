@@ -1,5 +1,7 @@
 # First Mertens crossings in Yokoi’s family
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24410813.svg)](https://doi.org/10.5281/zenodo.24410813)
+
 Daniel R. Johnston’s Problem 8 asks for an upper bound on the first negative value of the prime-ideal Mertens error in a family of number fields. Here the family is $\mathbb Q(\sqrt d)$ with $d=m^2+4$ squarefree and $m$ positive and odd. Write $S_d$ for the first real crossing, with $S_d=+\infty$ if the error stays nonnegative. [2024 problem, pp. 4–5](https://arxiv.org/pdf/2407.03530#page=4)
 
 **No finite constant bounds every field.** For every fixed real $B\ge2$, a positive lower proportion of the family have a finite first crossing strictly between $B$ and $B^2$. This includes arbitrarily late first crossings and holds unconditionally.
