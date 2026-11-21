@@ -82,6 +82,24 @@ def check(discriminant, trace, first_norm, digits, expected_integer, expected_no
     norms = prime_norms(discriminant, expected_norm)
     if min(norms) != first_norm:
         raise ArithmeticError("Unexpected initial prime-ideal norm")
+    post_digits = {5: "8.794547206823", 13: "12.699403270702"}[discriminant]
+    post_lo = Fraction(post_digits)
+    post_hi = post_lo + Fraction(1, 10**12)
+    preceding = Fraction(1)
+    jumps = sorted(norms)
+    for start, stop in zip(jumps, jumps[1:]):
+        preceding *= Fraction(start, start - 1) ** norms[start]
+        if sign_at(preceding, constant, start) < 0:
+            raise ArithmeticError("Unexpected negative error at an ideal norm")
+        if sign_at(preceding, constant, stop) < 0:
+            if not (start < post_lo < post_hi < stop
+                    and sign_at(preceding, constant, post_lo) > 0
+                    and sign_at(preceding, constant, post_hi) < 0):
+                raise ArithmeticError("Post-entry boundary enclosure failed")
+            break
+    else:
+        raise ArithmeticError("Missing post-entry boundary")
+    print(f"D={discriminant}: {post_digits} < first boundary after entry < {Decimal(post_hi.numerator)/Decimal(post_hi.denominator):.12f}")
     product = Fraction(1)
     first_integer = first_at_norm = None
     norms_checked = 0

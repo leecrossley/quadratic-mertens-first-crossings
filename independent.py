@@ -40,6 +40,22 @@ def check(d, digits, expected_integer, expected_norm):
     if not (boundary > 2 and boundary < norms[0]):
         raise ArithmeticError("First crossing is outside the empty-product interval")
 
+    post = {5: "8.794547206823", 13: "12.699403270702"}[d]
+    expected = arb(post)
+    product = arb(1)
+    jumps = sorted(set(norms))
+    for left, right in zip(jumps, jumps[1:]):
+        product *= (arb(left) / (left-1)) ** norms.count(left)
+        boundary = (product / c).exp()
+        if boundary > right:
+            continue
+        if not (boundary > left and boundary < right
+                and expected < boundary and boundary < expected + arb(1)/10**12):
+            raise ArithmeticError("Independent post-entry enclosure failed")
+        break
+    else:
+        raise ArithmeticError("No post-entry interval found")
+
     # Use logarithms of Euler factors here, independently of the exact products.
     log_product = arb(0)
     first_integer = first_at_norm = None

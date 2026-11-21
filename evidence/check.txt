@@ -1,5 +1,7 @@
+D=5: 8.794547206823 < first boundary after entry < 8.794547206824
 D=5: 3.685768810485 < first real boundary < 3.685768810486
   first negative integer 28; first negative at a norm 8581; distinct norms checked 538
+D=13: 12.699403270702 < first boundary after entry < 12.699403270703
 D=13: 2.333070011801 < first real boundary < 2.333070011802
   first negative integer 16; first negative at a norm 101; distinct norms checked 13
 Yokoi family: 5184 finite Euler-factor configurations; good prefix mass > 3/25; tail variance < 1/150.
