@@ -6,7 +6,7 @@ Take a positive fundamental discriminant $`d`$, put $`L=\log(3d)`$, and write $`
 
 Write $`B_d(t)`$ for the logarithm of the prime-ideal Mertens product over norms through $`t`$, less $`\gamma_E+\log L(1,\chi_d)+\log\log t`$. The question concerns the first starting point $`y`$ at which its future average $`F_d(y)=\int_y^\infty B_d(t)y\,dt/t^2`$ is negative.
 
-**An isolated pair.** There are absolute constants $`a,C>1`$ with the following property for every sufficiently large $`d`$. Suppose the interval $`|\gamma|\le 1/L`$ contains a pair, possibly a double zero at zero, and these are the only two ordinates in $`|\gamma|\le C/L`$, counting multiplicity. Then $`F_d(y)<0`$ for some $`2\le y\le d^a`$. The constants are independent of the height of the pair. They and the threshold for $`d`$ are not made explicit. In particular this works along sequences with $`g_dL\to0`$ and the next pair at height $`h_d`$ with $`h_dL\to\infty`$. A second test uses two occupied windows, near $`t`$ and $`3t`$, and two empty windows, near $`2t`$ and $`4t`$. The result leaves open the existence of one exponent for the whole family.
+**An isolated pair.** There are absolute constants $`a,C>1`$ with the following property for every sufficiently large $`d`$. Suppose the interval $`|\gamma|\le 1/L`$ contains a pair, possibly a double zero at zero, and these are the only two ordinates in $`|\gamma|\le C/L`$, counting multiplicity. Then $`F_d(y)<0`$ for some $`2\le y\le d^a`$. The constants are independent of the height of the pair. They and the threshold for $`d`$ are not made explicit. Order the pairs by their nonnegative heights, with multiplicity. A central zero of order $`2r`$ contributes $`r`$ pairs at height zero. Write $`g_d`$ and $`h_d`$ for the first two heights. In particular this works along sequences with $`g_dL\to0`$ and the next pair at height $`h_d`$ with $`h_dL\to\infty`$. A second test uses two occupied windows, near $`t`$ and $`3t`$, and two empty windows, near $`2t`$ and $`4t`$. The result leaves open the existence of one exponent for the whole family.
 
 ## How many other zeros a delay requires
 
@@ -48,7 +48,9 @@ Use $`1-\cos z\le z^2/2`$ and the zeroth and first moments of $`k`$. Thus for fi
 
 ## A uniform count in short intervals
 
-We recall estimates (3)–(7) from the [nearest-zero proof](NEAREST-ZERO.md#a-positive-fourier-weight-for-nearby-zeros). They require $`F_d\ge0`$ through $`e^{2H}`$, with $`H\ge L`$. The frequency $`\lambda`$ runs over both the ordinary and the quadratic ordinates. Set
+The nearest-zero proof bounds the weighted negative part in (3) and gives the Fourier estimates in (4)–(7). Both use $`F_d\ge0`$ through $`e^{2H}`$ with $`H\ge L`$. [Equation (3)](NEAREST-ZERO.md#removing-the-varying-denominator) [Equations (4)–(7)](NEAREST-ZERO.md#a-positive-fourier-weight-for-nearby-zeros)
+
+The frequency $`\lambda`$ runs over both the ordinary and the quadratic ordinates. Set
 
 $$
 c_\lambda=((1/2-i\lambda)(3/2-i\lambda))^{-1},\quad
