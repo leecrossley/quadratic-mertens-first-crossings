@@ -6,14 +6,14 @@ Let $K$ be a real quadratic field of fundamental discriminant $d$. Write $\kappa
 
 $$
 P_K(x)=\prod_{q\le x}(1-q^{-1})^{-1},\qquad
-S_d=\inf\{x\ge2:P_K(x)<e^{\gamma_E}\kappa_K\log x\}.
+S_d=\inf\lbrace x\ge2:P_K(x) < e^{\gamma_E}\kappa_K\log x\rbrace.
 $$
 
 Use $\inf\varnothing=+\infty$. The product includes its jumps. A first crossing can be an infimum where the two sides are equal.
 
 **There exists a real $x$ with $2\le x<2^{2^{d^{30000}}}$ and $P_K(x)<e^{\gamma_E}\kappa_K\log x$.** In particular $S_d<2^{2^{d^{30000}}}$. This applies to every squarefree $d=m^2+4$ with $m$ positive and odd, the Yokoi family in the earlier prime-window calculation.
 
-The proof gives the smaller integer cutoff $U_*=2^{8Q^N}$, where
+The proof gives the smaller integer cutoff $U_\ast=2^{8Q^N}$, where
 
 $$
 \ell=\lceil\log_2 d\rceil,\quad H=512+128\ell,\quad
@@ -41,7 +41,7 @@ $1/(1/4+\lambda^2)\le6(3/2)/(9/4+\lambda^2)$.
 At 2 the logarithmic derivative of the completed function is $3/2+\tfrac12\log d-\log\pi-\gamma_E+\zeta_K'(2)/\zeta_K(2)$. The last term is nonpositive by its Dirichlet series. Hence
 
 $$
-V\le 6\,\Xi'(2)/\Xi(2)\le 9+3\log d .
+V\le 6\thinspace\Xi'(2)/\Xi(2)\le 9+3\log d .
 \tag{1}
 $$
 
@@ -69,7 +69,7 @@ This sign will matter. For small positive $u$ the last logarithm in $b(u)$ gives
 
 ## 3. From a prime-count deficit to a negative product error
 
-For $t\ge2$ let $F(t)=\int_2^t B(w)\,dw$. The integral of the zero terms between 2 and $t$ is
+For $t\ge2$ let $F(t)=\int_2^t B(w)\thinspace dw$. The integral of the zero terms between 2 and $t$ is
 
 $$
 -\sum_\rho\frac{t^{1+\rho}-2^{1+\rho}}{\rho(1+\rho)} .
@@ -82,11 +82,11 @@ $$
 \tag{4}
 $$
 
-Set $f(t)=1/(t\log t)$ and $A(x)=\sum_{q^j\le x}1/(jq^j)$. Then $dA=f\,d\psi_K$. The number-field Mertens product theorem and the vanishing correction estimated below give $A(x)-\log\log x\longrightarrow\gamma_E+\log\kappa_K$. Integration by parts, first up to a finite endpoint and then to infinity, gives
+Set $f(t)=1/(t\log t)$ and $A(x)=\sum_{q^j\le x}1/(jq^j)$. Then $dA=f\thinspace d\psi_K$. The number-field Mertens product theorem and the vanishing correction estimated below give $A(x)-\log\log x\longrightarrow\gamma_E+\log\kappa_K$. Integration by parts, first up to a finite endpoint and then to infinity, gives
 
 $$
 A(x)-\log\log x-\gamma_E-\log\kappa_K
-=f(x)B(x)+\int_x^\infty f'(t)B(t)\,dt .
+=f(x)B(x)+\int_x^\infty f'(t)B(t)\thinspace dt .
 \tag{5}
 $$
 
@@ -99,15 +99,15 @@ If $q\le\sqrt x$, let $j_0$ be the least $j$ with $q^j>x$. Then $1/j_0<\log q/\l
 $$
 \sum_{q>y} q^{-2}
 \le \frac{2}{\log x}\sum_{q>y}\frac{\log q}{q^2}
-\le\frac{2}{\log x}\int_y^\infty\frac{2\theta_K(t)}{t^3}\,dt
+\le\frac{2}{\log x}\int_y^\infty\frac{2\theta_K(t)}{t^3}\thinspace dt
 \le\frac{32}{\sqrt x\log x}.
 $$
 
 Together these bounds give $0\le\log P_K(x)-A(x)\le48/(\sqrt x\log x)$. In particular (5) yields, for $x\ge e$ away from jumps,
 
 $$
-\left|\sqrt x\log x\,\log\frac{P_K(x)}{e^{\gamma_E}\kappa_K\log x}-\Phi(\log x)\right|
-\le16M+48\le496+128\log d<H .
+\left|\sqrt x\log x\thinspace\log\frac{P_K(x)}{e^{\gamma_E}\kappa_K\log x}-\Phi(\log x)\right|
+\le16M+48\le496+128\log d < H .
 \tag{6}
 $$
 
@@ -115,16 +115,16 @@ It suffices to find one such point with $\Phi(\log x)<-H$.
 
 ## 4. A negative average and a bound on when it returns
 
-Use the triangular probability density $k_\delta(t)=(1-|t|/\delta)_+/\delta$. Its Fourier multiplier $w(\lambda)=(\sin(\delta\lambda/2)/(\delta\lambda/2))^2$, with $w(0)=1$, satisfies $0\le w\le1$ and $w(\lambda)\le4/(\delta^2\lambda^2)$ for $\lambda\ne0$. Define the real-valued function
+Use the triangular probability density $k_\delta(t)=\max(1-|t|/\delta,0)/\delta$. Its Fourier multiplier $w(\lambda)=(\sin(\delta\lambda/2)/(\delta\lambda/2))^2$, with $w(0)=1$, satisfies $0\le w\le1$ and $w(\lambda)\le4/(\delta^2\lambda^2)$ for $\lambda\ne0$. Define the real-valued function
 
 $$
-Z(v)=-\sum_\rho w(\lambda)\,\frac{e^{i\lambda v}}{\rho}.
+Z(v)=-\sum_\rho w(\lambda)\thinspace\frac{e^{i\lambda v}}{\rho}.
 $$
 
 The series converges absolutely and uniformly by (1) and the decay of $w$. For $v>\delta$, equation (2) gives
 
 $$
-Z(v)=\int_{\mathbb R} k_\delta(u-v)(\Phi(u)-b(u))\,du .
+Z(v)=\int_{\mathbb R} k_\delta(u-v)(\Phi(u)-b(u))\thinspace du .
 \tag{7}
 $$
 
@@ -134,21 +134,21 @@ For $v_0=2\delta$, the averaging interval is $[\delta,3\delta]$. On it $1<e^u<2$
 
 For $|\lambda|>T$ one has $|\rho|\le2|\lambda|$. The entire high-frequency tail of $Z$ is therefore at most $8V/(\delta^2T)=V/2$ in absolute value. For $|\lambda|\le T$, the sum of $w(\lambda)/|\rho|$ is at most $2TV$, and the number $n$ of ordinates counted with multiplicity is at most $(T^2+1/4)V\le2HT^2=N$. These bounds follow by comparison term by term with $|\rho|^{-2}$.
 
-For each of these $n$ ordinates put $\alpha_j=\lambda_j/\pi$. Partition the unit cube into $Q^n$ half-open boxes of side $1/Q$. Of the $Q^n+1$ points $(\{a\alpha_j\})_j$, $0\le a\le Q^n$, two are in the same box. Subtracting their indices gives an integer $1\le q_0\le Q^n\le Q^N$ with $|e^{2iq_0\lambda_j}-1|\le2\pi/Q$ for every $j$. This includes zero and repeated ordinates. The argument uses no arithmetic hypothesis on their relations. Put $Y=2q_0$. Between $v_0$ and $v_0+Y$, the two high tails cost at most $V$ together. The low terms cost at most $4\pi TV/Q$. Thus
+For each of these $n$ ordinates put $\alpha_j=\lambda_j/\pi$. Partition the unit cube into $Q^n$ half-open boxes of side $1/Q$. Of the $Q^n+1$ points $(\lbrace a\alpha_j\rbrace)_j$, $0\le a\le Q^n$, two are in the same box. Subtracting their indices gives an integer $1\le q_0\le Q^n\le Q^N$ with $|e^{2iq_0\lambda_j}-1|\le2\pi/Q$ for every $j$. This includes zero and repeated ordinates. The argument uses no arithmetic hypothesis on their relations. Put $Y=2q_0$. Between $v_0$ and $v_0+Y$, the two high tails cost at most $V$ together. The low terms cost at most $4\pi TV/Q$. Thus
 
 $$
 |Z(v_0+Y)-Z(v_0)|\le(1+\pi/8)V<2H .
 \tag{8}
 $$
 
-The averaging window is now $[Y+\delta,Y+3\delta]$, contained in $u\ge2$. Equations (7)–(8) and the bound on $b$ show that the average of $\Phi$ there is strictly less than $-H$. A set of positive measure in that window has $\Phi(u)<-H$. Removing the countable set of prime-power jumps leaves a point to which (6) applies. For that point $P_K(e^u)<e^{\gamma_E}\kappa_K u$ and $e^u<e^{2Q^N+1}<2^{8Q^N}=U_*$. This proves the sharper cutoff.
+The averaging window is now $[Y+\delta,Y+3\delta]$, contained in $u\ge2$. Equations (7)–(8) and the bound on $b$ show that the average of $\Phi$ there is strictly less than $-H$. A set of positive measure in that window has $\Phi(u)<-H$. Removing the countable set of prime-power jumps leaves a point to which (6) applies. For that point $P_K(e^u)<e^{\gamma_E}\kappa_K u$ and $e^u<e^{2Q^N+1}<2^{8Q^N}=U_\ast$. This proves the sharper cutoff.
 
 ## 5. A single formula in the discriminant
 
 Since $T=2^{32H+4}$, $Q=2^{32H+9}$ and $N=H2^{64H+9}$, one has
 
 $$
-\log_2\log_2 U_* = 3 + H(32H+9)2^{64H+9}\le2^{65H}.
+\log_2\log_2 U_\ast = 3 + H(32H+9)2^{64H+9}\le2^{65H}.
 $$
 
 For the inequality, $3+512H(32H+9)\le2^H$ for every integer $H\ge64$. It holds at 64 and the polynomial grows by less than a factor of two at each subsequent step. Multiply by $2^{64H}$.
@@ -160,6 +160,6 @@ $$
  \le 4^{20800}d^{8320}\le d^{29120}\le d^{30000}.
 $$
 
-Exponentiating twice gives $U_*\le2^{2^{d^{30000}}}$. The displayed cutoff is far too large to guide a numerical search. It proves that every individual field has a finite first crossing, even when its early prime windows stay on the positive side.
+Exponentiating twice gives $U_\ast\le2^{2^{d^{30000}}}$. The displayed cutoff is far too large to guide a numerical search. It proves that every individual field has a finite first crossing, even when its early prime windows stay on the positive side.
 
 [Prior work and scope](PRIOR-WORK.md) · [Verification and reproduction](README.md#verification)

@@ -5,7 +5,7 @@ As more prime ideals enter a product, its value rises in jumps. Mertens' theorem
 **For every real quadratic field of discriminant $d$, the curve overtakes the product before**
 
 $$
-U(d)=2^{\,2^{\,d^{30000}}}.
+U(d)=2^{\thinspace2^{\thinspace d^{30000}}}.
 $$
 
 For $K=\mathbb Q(\sqrt d)$ of fundamental discriminant $d$, the product is $P_K(x)=\prod_{N\mathfrak p\le x}(1-1/N\mathfrak p)^{-1}$ and the curve is $e^{\gamma_E}\kappa_K\log x$, where $\kappa_K$ is the residue of the Dedekind zeta function at 1. The proof gives a point of strict inequality $P_K(x)<e^{\gamma_E}\kappa_K\log x$ before the cutoff. The same formula covers every member of Yokoi's family, including arbitrarily late first crossings. The choice of Yokoi's family was ours. Johnston asked for a family in general. [Proof](PROOF.md) · [Original problem](https://arxiv.org/pdf/2407.03530#page=5)
