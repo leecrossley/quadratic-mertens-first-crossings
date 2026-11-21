@@ -1,0 +1,12 @@
+Direct product and chord bounds cover [2,1203000] in 2058 intervals.
+L(1) = [0.27595964362016311 +/- 3.63e-18], D = [0.101639195751 +/- 7.16e-13].
+Certified 152 disjoint positive quadratic zero brackets; the first is [0.0284900 +/- 2.01e-8].
+Total inverse-square zero mass [15.53024517373 +/- 2.71e-12]; omitted mass [0.1094786 +/- 6.84e-8].
+Split-prime squares certify the remaining 311 intervals, using primes through 22189573.
+Smallest lower endpoint bound in those intervals exceeds [0.0672949 +/- 1.45e-9] (normalised units).
+All 3046 spectral intervals from log(y)=14 through log(y)=5286/160 are covered.
+The two quadratic local zero sums divided by log(3d)^2 are together below [14.858177 +/- 1.11e-7].
+Two Taylor expansions independently put the unweighted local sums at [11.21237 +/- 4.77e-6] times log(3d)^2.
+At y=d^(7/3), sqrt(y) log(y) F(y) < [-0.22825866 +/- 1.77e-9].
+At the same start the normalised signed split-minus-inert tail exceeds [0.26802385 +/- 4.60e-9].
+Through 10^26 the normalised finite prime sum exceeds 0.23; truncation costs < [0.02927566 +/- 2.43e-9], field correction < [0.1399736 +/- 3.45e-8].
