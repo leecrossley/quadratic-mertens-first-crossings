@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: If you use this work, please cite it as below.
 title: "How often a fixed scan finds a Mertens crossing"
-abstract: "A quantitative bound on the Yokoi fields missed by a fixed scan for negative Mertens averages"
+abstract: "A quantitative bound under ordinary RH on the Yokoi fields missed by a fixed scan for negative Mertens averages"
 authors:
   - family-names: Crossley
     given-names: Lee
