@@ -2,6 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24410876.svg)](https://doi.org/10.5281/zenodo.24410876)
 
+Published edition 1.1.0 has DOI [10.5281/zenodo.24416360](https://doi.org/10.5281/zenodo.24416360). The [edition index](RESULTS.md#edition-dois) lists the other papers.
+
 **Research collection.** [Browse all results on real quadratic Mertens crossings](RESULTS.md), including proofs, certificates and original citations.
 
 Daniel R. Johnston asked where the Mertens product over prime ideals first falls below its main term in the fields $\mathbb Q(\sqrt 5)$ and $\mathbb Q(\sqrt{13})$. He posed the question during Ethan Lee’s talk at the University of British Columbia in June 2024. The answer depends on whether the real argument starts at 2 or at the smallest prime-ideal norm $q_d$. [Problem 8, pp. 4–5](https://arxiv.org/pdf/2407.03530#page=4)

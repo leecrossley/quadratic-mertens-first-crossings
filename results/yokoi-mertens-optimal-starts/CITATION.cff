@@ -8,4 +8,5 @@ authors:
 version: 1.0.2
 license: CC-BY-4.0
 repository-code: https://github.com/leecrossley/quadratic-mertens-first-crossings/tree/main/results/yokoi-mertens-optimal-starts
+doi: 10.5281/zenodo.24412855
 type: software

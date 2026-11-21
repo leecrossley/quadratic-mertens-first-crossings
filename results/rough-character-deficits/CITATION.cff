@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Cite the release below."
+title: "What a late prime average requires after the small primes are removed"
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: "rough-character-deficits-v4"
+date-released: 2026-11-21
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/quadratic-mertens-first-crossings/tree/b875c7699f1deb1e1605aeee01259cbca88ff759/results/rough-character-deficits
+doi: 10.5281/zenodo.24420810
+type: software

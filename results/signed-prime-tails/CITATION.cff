@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Cite the release below."
+title: "A signed-prime test for a negative Mertens average"
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: "signed-prime-tails-v1"
+date-released: 2026-11-21
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/quadratic-mertens-first-crossings/tree/b875c7699f1deb1e1605aeee01259cbca88ff759/results/signed-prime-tails
+doi: 10.5281/zenodo.24413219
+type: software
+references:
+  - type: software
+    title: "Mertens crossings in real quadratic fields and Yokoi families"
+    authors:
+      - family-names: Crossley
+        given-names: Lee
+    version: "collection-2026-11-21"
+    doi: 10.5281/zenodo.24426577
+    url: https://github.com/leecrossley/quadratic-mertens-first-crossings/releases/tag/collection-2026-11-21

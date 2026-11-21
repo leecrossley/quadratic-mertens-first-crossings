@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Cite the release below."
+title: "A prime average that stays positive past 222 trillion"
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: "fixed-weight-delay-2380853-v1"
+date-released: 2026-11-21
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/quadratic-mertens-first-crossings/tree/b875c7699f1deb1e1605aeee01259cbca88ff759/results/fixed-weight-delay-2380853
+doi: 10.5281/zenodo.24413224
+type: software
+references:
+  - type: software
+    title: "Mertens crossings in real quadratic fields and Yokoi families"
+    authors:
+      - family-names: Crossley
+        given-names: Lee
+    version: "collection-2026-11-21"
+    doi: 10.5281/zenodo.24426577
+    url: https://github.com/leecrossley/quadratic-mertens-first-crossings/releases/tag/collection-2026-11-21

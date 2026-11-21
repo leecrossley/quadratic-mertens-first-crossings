@@ -8,4 +8,5 @@ version: 1.0.1
 date-released: 2026-11-21
 license: CC-BY-4.0
 repository-code: https://github.com/leecrossley/quadratic-mertens-first-crossings/tree/main/results/yokoi-mertens-positive-averages-5-13
+doi: 10.5281/zenodo.24416721
 type: software
