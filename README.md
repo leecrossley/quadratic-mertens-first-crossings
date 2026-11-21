@@ -1,5 +1,7 @@
 # How long can a prime product stay above its predicted curve?
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24410796.svg)](https://doi.org/10.5281/zenodo.24410796)
+
 In the field $\mathbb Q(\sqrt{5004173})$, the prime-ideal Mertens product stays ahead until just past 201,402. Two calculations check every interval from 2 to that first crossing.
 
 The theorem concerns the whole family. Write $d=m^2+4$ with $m$ positive and odd and $d$ squarefree. Let $S_d$ be the first crossing, the infimum of the points where the product is strictly below its main term. Define $M(D)$ as the largest $S_d$ among these fields with $d\le D$. For some absolute $c>0$ and every sufficiently large $D$,
