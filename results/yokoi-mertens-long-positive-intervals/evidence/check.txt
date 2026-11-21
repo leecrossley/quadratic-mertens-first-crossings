@@ -1,0 +1,3 @@
+5 local laws from residue counts, 72 joint assignments, 5 length cutoffs
+All tilted means, discarded squared norms and 15 centered fourth moments agree exactly
+263 prefixes partition into aligned dyadic intervals on blocks of size 1 through 128
