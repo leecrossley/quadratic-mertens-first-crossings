@@ -1,0 +1,3 @@
+'GeometricStarts.polynomial_majorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GeometricStarts.failed_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GeometricStarts.contraction' depends on axioms: [propext, Classical.choice, Quot.sound]

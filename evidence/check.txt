@@ -1,0 +1,2 @@
+Exact 16-sign model: cubic mean 3/2 and squared moment 3111/128
+Exact prime-window coefficients and both overlapping-tail variance identities agree.
