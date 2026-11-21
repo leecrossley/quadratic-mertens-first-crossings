@@ -29,25 +29,31 @@ def check(d):
     factors = norm_factors(d, 600)
     previous, i = 2, 0
     acc = arb(0)
+    initial = None
     while i < len(factors):
         n = factors[i]
         # Use logarithms on both sides. All prime ideals at the same norm jump together.
         gap = acc - log_c - arb(n).log().log()
         if gap < 0:
             at_left = acc - log_c - arb(previous).log().log()
-            if previous == 2 and at_left < 0:
-                return previous, n, "2", "2"
-            if not at_left > 0:
-                raise ArithmeticError("Unresolved left endpoint")
-            root = (acc - log_c).exp().exp()
-            k = (root * 10**12).floor().unique_fmpz()
-            if k is None or not (root > arb(k)/10**12 and root < arb(k+1)/10**12):
-                raise ArithmeticError("Unresolved rounding")
-            def endpoint(j):
-                w, f = divmod(int(j), 10**12)
-                return f"{w}.{f:012d}"
-            return previous, n, endpoint(k), endpoint(k + 1)
-        if not gap > 0:
+            if at_left < 0:
+                row = (previous, n, str(previous), str(previous))
+            else:
+                if not at_left > 0:
+                    raise ArithmeticError("Unresolved left endpoint")
+                root = (acc - log_c).exp().exp()
+                k = (root * 10**12).floor().unique_fmpz()
+                if k is None or not (root > arb(k)/10**12 and root < arb(k+1)/10**12):
+                    raise ArithmeticError("Unresolved rounding")
+                def endpoint(j):
+                    w, f = divmod(int(j), 10**12)
+                    return f"{w}.{f:012d}"
+                row = (previous, n, endpoint(k), endpoint(k+1))
+            if initial is None:
+                initial = row
+            if i > 0:
+                return (*initial, factors[0], *row)
+        elif not gap > 0:
             raise ArithmeticError("Unresolved right limit")
         while i < len(factors) and factors[i] == n:
             acc += (arb(n)/(n-1)).log()
@@ -58,7 +64,7 @@ def check(d):
 
 def main():
     ctx.prec = 180
-    print("m\td\twindow_left\twindow_right\tboundary_lower\tboundary_upper")
+    print("m\td\twindow_left\twindow_right\tboundary_lower\tboundary_upper\tfirst_ideal_norm\tpost_window_left\tpost_window_right\tpost_lower\tpost_upper")
     m = 1
     while m*m + 4 <= 10000:
         d = m*m + 4
