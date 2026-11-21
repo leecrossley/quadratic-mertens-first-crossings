@@ -1,0 +1,9 @@
+d=5: constants at 0 and 1 agree, early interval and cutoff pass
+d=8: constants at 0 and 1 agree, early interval and cutoff pass
+d=12: constants at 0 and 1 agree, early interval and cutoff pass
+d=13: constants at 0 and 1 agree, early interval and cutoff pass
+d=17: constants at 0 and 1 agree, early interval and cutoff pass
+d=29: constants at 0 and 1 agree, early interval and cutoff pass
+d=37: constants at 0 and 1 agree, early interval and cutoff pass
+35 nonintegral arguments: prime-power correction and signed transfer pass
+d=9413: 525.474356978253 < first crossing < 525.474356978254
