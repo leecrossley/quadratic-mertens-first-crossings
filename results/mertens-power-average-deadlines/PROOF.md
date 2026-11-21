@@ -14,7 +14,7 @@ $$
  X=C\thinspace y^{1+1/s}/(\log y)^{1/s},\qquad C>(2/s)^{1/s}.
 $$
 
-Section 2 also solves the corresponding extremal problem when jumps are allowed at every integer. For varying $s$ the sharp Yokoi supremum has a further asymptotic. [Slow weights and the extremal area](SLOW-WEIGHTS.md)
+Section 2 also solves the corresponding extremal problem when jumps are allowed at every integer. For varying $s$ the sharp Yokoi supremum has a further asymptotic. These results are unconditional. Only the real quadratic bound at the end of §2 assumes a critical-line hypothesis. [Slow weights and the extremal area](SLOW-WEIGHTS.md)
 
 ## 1. The least possible product under a sign constraint
 
@@ -70,14 +70,14 @@ The bound is uniform over admissible products. Fix $R>1$ and partition $[1,R]$ i
 
 After $N$ monotonicity gives $B(t)\ge-\log(\log t/\log N)$. Apply the same tail estimate as above with $N=C y^{1+1/s}/(\log y)^{1/s}$. The absolute possible loss times $y$ tends to $1/(s(s+1)C^s)$. For $C>(2/s)^{1/s}$ this is strictly smaller than (3), contradicting $F_s(y)<0$. This proves the stated number-field bound. The asymptotic constant is sharp for the integer model (2). No sharpness assertion for the prime-power asymptotic is needed.
 
-In real quadratic fields a second estimate keeps the discriminant $d$ explicit and improves the exponent when the start is known to be polynomial. Write $H(t)=\int_1^t B(v)\thinspace dv/v$. The one-sided bound $H(t)-H(N)\ge-2(9+3\log d)/(\sqrt N\log N)$ for every $t\ge N$ follows from the integrated zero formula. Its input is the critical-line theorem for the ordinary and quadratic factors. Integrating by parts with the decreasing power weight shows that the unnormalised loss after $N$ costs at most $(y/N)^s$ times this bound in absolute size on the adverse side. If $n=\lceil y\rceil$ and $B\ge0$ throughout $[y,N)$ with $N\ge2n$, the unweighted area on $[n,2n]$ is at least $1/(64n)$ by the norm-gap bound in the same proof. The contribution after weighting is at least $(y/(2n))^s/(64n)$. Thus a successful start gives $S<N$ whenever
+In real quadratic fields a second estimate keeps the discriminant $d$ explicit and improves the exponent when the start is known to be polynomial. It assumes the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ (field GRH). Alpöge's announced Dirichlet GRH theorem supplies this input. Write $H(t)=\int_1^t B(v)\thinspace dv/v$. The one-sided bound $H(t)-H(N)\ge-2(9+3\log d)/(\sqrt N\log N)$ for every $t\ge N$ follows from the integrated zero formula. Its input is the critical-line theorem for the ordinary and quadratic factors. Integrating by parts with the decreasing power weight shows that the unnormalised loss after $N$ costs at most $(y/N)^s$ times this bound in absolute size on the adverse side. If $n=\lceil y\rceil$ and $B\ge0$ throughout $[y,N)$ with $N\ge2n$, the unweighted area on $[n,2n]$ is at least $1/(64n)$ by the norm-gap bound in the same proof. The contribution after weighting is at least $(y/(2n))^s/(64n)$. Thus a successful start gives $S<N$ whenever
 
 $$
  N\ge2n,\qquad N^{s+1/2}\log N>128n(2n)^s(9+3\log d).
  \tag{4}
 $$
 
-For fixed $a,s>0$ and $y\le d^a$, this gives $S\ll_{a,s} d^{a(s+1)/(s+1/2)}$, in particular $S\ll_a d^{4a/3}$ for $s=1$. The same bound using $s=s_0$ suffices for any successful $s\ge s_0>0$, since $N/(2n)\ge1$. A proof of such a start in every sufficiently large field remains open. [One-sided loss and gap area, §§2–3](https://github.com/leecrossley/yokoi-mertens-optimal-starts/blob/v1.0.0/PROOF.md)
+For fixed $a,s>0$ and $y\le d^a$, this gives $S\ll_{a,s} d^{a(s+1)/(s+1/2)}$, in particular $S\ll_a d^{4a/3}$ for $s=1$. The same bound using $s=s_0$ suffices for any successful $s\ge s_0>0$, since $N/(2n)\ge1$. A proof of such a start in every sufficiently large field remains open. [One-sided loss and gap area, §§2–3](https://github.com/leecrossley/yokoi-mertens-optimal-starts/blob/v1.0.0/PROOF.md) [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/)
 
 ## 3. The sharp answer for actual Yokoi fields
 
