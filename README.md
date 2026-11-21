@@ -1,5 +1,7 @@
 # From the first dip to the first negative average
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24412165.svg)](https://doi.org/10.5281/zenodo.24412165)
+
 In the quadratic field with discriminant **82,864,613**, the prime-ideal Mertens product first falls below its expected value at **7.00521788…**. Start a running average of its logarithmic error at 2 and it stays positive until **1011.53408514…**. Both endpoints are certified to eight decimal places. [Example and checks](example.py) · [Output](evidence/example.txt)
 
 Write $S$ for the first dip and $W$ for the first endpoint where the accumulated error from 2 becomes negative. In fields with $W$ finite and $S$ tending to infinity, the smallest possible limiting value of $\log(W/S)/\sqrt{\log S}$ is exactly $\sqrt{2A_*}$. The constant $A_*$ is the minimum amount of positive error a product can accumulate while it stays above its benchmark indefinitely. A family of finite splitting patterns approaches the sharp coefficient in genuine fields. [Proof of the sharp waiting time](PROOF.md) · [Definition of the constant](https://github.com/leecrossley/mertens-power-average-deadlines/blob/v1.0.0/SLOW-WEIGHTS.md)
