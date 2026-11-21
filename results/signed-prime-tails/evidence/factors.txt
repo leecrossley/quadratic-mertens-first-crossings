@@ -1,0 +1,2 @@
+432 exact local checks for split, ramified and inert primes.
+The single-frequency and signed-window margins hold in rational arithmetic.
