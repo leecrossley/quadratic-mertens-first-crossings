@@ -43,7 +43,9 @@ Open a result to read its statement, hypotheses and replay instructions. Run its
 
 ## Checking the collection
 
-Run `sh verify-collection.sh` from the repository root to check the result manifests. Each result’s README gives its mathematical replay and environment requirements. [Contribution and publication guidance](AGENTS.md)
+When a collection file changes, stage new paths with Git, then run `python3 tools/collection_manifest.py --write` to refresh `COLLECTION.sha256`.
+
+Run `sh verify-collection.sh` from the repository root to check the collection files and the manifests for every result directory. The index must point to an existing result with a manifest. Each result’s README gives its mathematical replay and environment requirements. [Contribution and publication guidance](AGENTS.md)
 
 ## Review discussions at import
 
