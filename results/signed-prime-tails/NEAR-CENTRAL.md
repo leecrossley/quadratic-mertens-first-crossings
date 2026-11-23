@@ -2,7 +2,7 @@
 
 Lee Crossley
 
-Take a positive fundamental discriminant $`d`$, put $`L=\log(3d)`$, and write $`\gamma`$ for a nontrivial zero ordinate of the primitive quadratic Dirichlet function $`L(s,\chi_d)`$. Assume RH for the Riemann zeta function and GRH for each quadratic character considered (field GRH). Alpöge's announced Dirichlet GRH theorem supplies this input. [Announcement](https://alpo.ge/remark.pdf) · [Independent formal checks](https://math.mit.edu/~drew/grh/) All statements about the fields below use these hypotheses. They apply in particular to the Yokoi fields with $`d=n^2+4`$ squarefree and $`n`$ odd.
+Take a positive fundamental discriminant $`d`$, put $`L=\log(3d)`$, and write $`\gamma`$ for a nontrivial zero ordinate of the primitive quadratic Dirichlet function $`L(s,\chi_d)`$. Assume RH for the Riemann zeta function and GRH for each quadratic character considered (field GRH). All statements about the fields below use these hypotheses. They apply in particular to the Yokoi fields with $`d=n^2+4`$ squarefree and $`n`$ odd.
 
 Write $`B_d(t)`$ for the logarithm of the prime-ideal Mertens product over norms through $`t`$, less $`\gamma_E+\log L(1,\chi_d)+\log\log t`$. The question concerns the first starting point $`y`$ at which its future average $`F_d(y)=\int_y^\infty B_d(t)y\,dt/t^2`$ is negative.
 

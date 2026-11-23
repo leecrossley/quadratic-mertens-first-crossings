@@ -10,7 +10,7 @@ Let $`d>1`$ be a positive fundamental discriminant, $`\chi_d`$ its primitive qua
  F_d(y)=\int_y^\infty B_d(t)\frac y{t^2}\,dt .
 ```
 
-Use RH for the ordinary zeta function and GRH for each primitive quadratic character in the statement in question. These are the zero-location hypotheses in the proofs. Alpöge's announced Dirichlet GRH theorem supplies this input. Yokoi's family consists here of squarefree $d=n^2+4$ with $n$ odd. Daniel R. Johnston's Problem 8 concerns the first crossing of the underlying product. The question here concerns a starting point of its future average. [Problem 8](https://arxiv.org/html/2407.03530v1) · [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/)
+Use RH for the ordinary zeta function and GRH for each primitive quadratic character in the statement in question. These are the zero-location hypotheses in the proofs. Yokoi's family consists here of squarefree $d=n^2+4$ with $n$ odd. Daniel R. Johnston's Problem 8 concerns the first crossing of the underlying product. The question here concerns a starting point of its future average. [Problem 8](https://arxiv.org/html/2407.03530v1)
 
 For $x>0$ let $\Lambda_d(s)=(d/\pi)^{s/2}\Gamma(s/2)L(s,\chi_d)$ and put
 

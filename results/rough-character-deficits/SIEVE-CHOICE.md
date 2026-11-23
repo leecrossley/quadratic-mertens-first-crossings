@@ -98,7 +98,7 @@ For $`Q=Q_*/43`$, the count takes value $`-1`$ at 48,221. It then takes only non
 
 ## Consequence for the family
 
-This section uses RH and quadratic Dirichlet GRH, as in the earlier theorems. Alpöge's announced Dirichlet GRH theorem supplies this input. [Announcement](https://alpo.ge/remark.pdf) · [Independent formal checks](https://math.mit.edu/~drew/grh/)
+This section uses RH and quadratic Dirichlet GRH, as in the earlier theorems.
 
 For the future prime-ideal Mertens average $`F_d(y)=\int_y^\infty B_d(t)y\,dt/t^2`$, the question is whether one absolute $`a`$ supplies a negative value at some $`2\le y\le d^a`$ in every sufficiently large Yokoi field. The extremal sieve answers the first strict-sign selection question in every field. For the mass criterion a fixed gap below 1 for its ratio in every sufficiently large field would suffice, by (3) and the earlier theorem.
 

@@ -4,7 +4,7 @@
 
 Let $S$ be the infimum of $x\ge2$ at which the prime-ideal Mertens product in a Yokoi field lies below its expected value. Since 2 is inert, the product is still 1 near 2, so $S=2$ in fields where it already starts below. Let $Y$ be the earliest possible start for a negative average of its logarithmic error, allowing any bounded nonnegative decreasing weight and any observation length.
 
-Assume the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ for the quadratic discriminants in the theorem (field GRH). Alpöge's announced Dirichlet GRH theorem supplies this input. Among fields with a very late first dip, almost all satisfy
+Assume the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ for the quadratic discriminants in the theorem (field GRH). Among fields with a very late first dip, almost all satisfy
 
 $$
  a\thinspace S/(\log S)^8 \ <\ Y\ \le S
@@ -12,7 +12,7 @@ $$
 
 for an absolute $a>0$, in the discriminant ranges of the theorem. Thus the first successful start and the first dip have the same exponent on the logarithmic scale. Exceptional fields exist: yokoi-mertens-crossing-lookahead realises $D^{1/2-o(1)}$ fields in each shell with $Y=2$ and $S$ near $(\log D)e^{-\kappa\sqrt{\log\log D}}$, under the hypotheses stated there. [Late fields with an early start](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/yokoi-mertens-crossing-lookahead/FAMILY.md) The asserted exponent 8 is an upper bound on the logarithmic loss. [Theorem and proof](PROOF.md)
 
-RH and GRH enter in the bound for the future error, through the rational and quadratic prime number estimates. The count of late fields uses RH alone. The deadlines in §5 assume field GRH for the discriminant concerned. The contrasts and their moment comparison are unconditional. [Use of the estimates](TAIL.md) [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/)
+RH and GRH enter in the bound for the future error, through the rational and quadratic prime number estimates. The count of late fields uses RH alone. The deadlines in §5 assume field GRH for the discriminant concerned. The contrasts and their moment comparison are unconditional. [Use of the estimates](TAIL.md)
 
 More precisely, in each sufficiently large shell $D/2<d\le D$ condition on a finite $S\ge X$. The exceptional fraction is at most $\exp[-b(\log X)^4]$ through $\log X\le c(\log D)^{1/20}$ as $X\to\infty$. A separate estimate at a specified cutoff $X$ holds farther, through $\log X\le c'(\log D)^{1/5}$. The proof counts late fields in the denominator as well as early successful starts in the numerator. [Late-field count](SURVIVAL.md) · [Future-error estimate](TAIL.md)
 

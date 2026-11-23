@@ -1,6 +1,6 @@
 # What the split and inert prime inequalities can detect
 
-Put $L=\log(3d)$ and write $\Phi_H(t)=(\sin(Ht/2)/(Ht/2))^2$, with value 1 at zero. For an even primitive quadratic character $\chi_d$ write $\lambda$ for the ordinates of its nontrivial zeros, with multiplicity. Assume RH for $\zeta$ and the critical-line property for the Dirichlet functions used in each assertion. The construction itself requires just $\zeta$ and $L(s,\chi_5)$. For the final comparison of actual characters one also needs their quadratic twists. Alpöge's announced Dirichlet GRH theorem supplies this input. [Announcement](https://alpo.ge/remark.pdf) · [Independent formal checks](https://math.mit.edu/~drew/grh/)
+Put $L=\log(3d)$ and write $\Phi_H(t)=(\sin(Ht/2)/(Ht/2))^2$, with value 1 at zero. For an even primitive quadratic character $\chi_d$ write $\lambda$ for the ordinates of its nontrivial zeros, with multiplicity. Assume RH for $\zeta$ and the critical-line property for the Dirichlet functions used in each assertion. The construction itself requires just $\zeta$ and $L(s,\chi_5)$. For the final comparison of actual characters one also needs their quadratic twists.
 
 ## The scalar test in genuine fields
 

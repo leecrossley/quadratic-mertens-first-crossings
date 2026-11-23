@@ -1,6 +1,6 @@
 # A signed-prime test for a negative Mertens average
 
-Assume the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ for the quadratic discriminants concerned (field GRH). Alpöge's announced Dirichlet GRH theorem supplies this input. The analytic proofs use it throughout. [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/)
+Assume the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ for the quadratic discriminants concerned (field GRH). The analytic proofs use it throughout.
 
 In a real quadratic field, an ordinary prime can split into two prime ideals or stay inert. Count a split prime positively, an inert prime negatively, and weight each prime above $y$ by $(1-y/p)/p$. At polynomial scales this balance determines the sign of the full $y/t$ average of the Mertens log error up to a correction from ordinary primes. After multiplying by $\sqrt y\log y$, the correction has absolute value at most $0.046192$ plus a term that tends to zero as $d\to\infty$. For an individual field the proof gives a larger explicit allowance, about 0.14 for $d=2{,}380{,}853$ at $y=d^{7/3}$.
 

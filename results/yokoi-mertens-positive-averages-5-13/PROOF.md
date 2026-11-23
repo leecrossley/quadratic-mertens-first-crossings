@@ -7,7 +7,7 @@ $$
  \qquad F_d(y)=\int_y^\infty B_d(t)\frac{y}{t^2}\thinspace{}dt .
 $$
 
-**Theorem.** Use RH for $\zeta$ and the critical-line property for $L(s,\chi_d)$ for the two indicated characters. Then $N_y F_{13}(y)>1/40$ for every real $y\ge2$. For $d=5$, $N_yF_5(y)$ has a unique minimum on $y\ge2$. Its argument lies in $(2.64281618,2.64281620)$ and its value in $(0.183894,0.183896)$. For $y\ge4$ it exceeds $1/5$. Thus neither field has a negative start for this weight. The critical-line input is the case of the announced Dirichlet GRH theorem specified here. [Alpöge](https://alpo.ge/remark.pdf) · [Sutherland’s verification record](https://math.mit.edu/~drew/grh/)
+**Theorem.** Use RH for $\zeta$ and the critical-line property for $L(s,\chi_d)$ for the two indicated characters. Then $N_y F_{13}(y)>1/40$ for every real $y\ge2$. For $d=5$, $N_yF_5(y)$ has a unique minimum on $y\ge2$. Its argument lies in $(2.64281618,2.64281620)$ and its value in $(0.183894,0.183896)$. For $y\ge4$ it exceeds $1/5$. Thus neither field has a negative start for this weight.
 
 ## The finite part
 

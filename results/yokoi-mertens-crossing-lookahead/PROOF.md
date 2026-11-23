@@ -23,7 +23,7 @@ $$
 In particular the finite certificate $A_\ast>0.4829182931$ permits $\kappa=1.965$. This improves the previous $O((\log d/\log\log d)^2)$ bound for fields admitting a decreasing average at 2.
 3. Conversely, for every $\kappa>2\sqrt{A_\ast}$, set $L=\log\log D$ and $N=(\log D)\exp(-\kappa\sqrt L)$. In each sufficiently large shell $D/2<d\le D$ there are at least $D^{1/2-o(1)}$ such fields with $N<S_d=N(1+O_\kappa(1/\log N))$ and $W_d<\infty$. Under field GRH, in these fields all power averages starting at 2 with $0<s\le\lambda_\kappa/L$ are strictly negative, for some $\lambda_\kappa>0$. Thus the earliest possible start works in a large set of examples with a first crossing this late. The exponents one and two on $\log d$ in the lower and upper statements are distinct.
 
-The first assertion, and the count with the stated $S_d$ and $W_d<\infty$ in the third, are unconditional. They use classical results on primes and residues in the family. The second assertion and the infinite tail of the simultaneous power averages in the third assume field GRH, through the bounds (2) below. Alpöge's announced Dirichlet GRH theorem supplies this input. [Announcement](https://alpo.ge/remark.pdf)
+The first assertion, and the count with the stated $S_d$ and $W_d<\infty$ in the third, are unconditional. They use classical results on primes and residues in the family. The second assertion and the infinite tail of the simultaneous power averages in the third assume field GRH, through the bounds (2) below.
 
 ## 1. A one-sided bound and its sharpness
 

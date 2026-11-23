@@ -35,7 +35,7 @@ $$
 
 converges in conditional probability to $-\min(w,\Lambda-w)$. Also $J_d(X)\to A_\ast$ in conditional probability. These limits hold first with $D$ tending to infinity and then $X$ tending to infinity, or along any of the growing ranges (2). [Concentration and its proof](SHAPE.md)
 
-Field GRH enters through the pointwise bound beyond $V$ in [MOMENTS.md](MOMENTS.md). Every statement above uses it, including the existence of $p(X)$ for each fixed $X$, through the tightness step in §1. Alpöge's announced Dirichlet GRH theorem supplies this input. [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/)
+Field GRH enters through the pointwise bound beyond $V$ in [MOMENTS.md](MOMENTS.md). Every statement above uses it, including the existence of $p(X)$ for each fixed $X$, through the tightness step in §1.
 
 ## 1. The limit over fields
 
