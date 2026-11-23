@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24410800.svg)](https://doi.org/10.5281/zenodo.24410800)
 
-Daniel R. Johnston asked how far a number field's prime-ideal product can run ahead of the curve predicted by Mertens' theorem. For each real quadratic field of discriminant $d$, the smaller deadline assumes that the nontrivial zeros of $\zeta(s)L(s,\chi_d)$ have real part $1/2$. Alpöge's announced Dirichlet GRH theorem supplies this hypothesis for both factors. [Announcement](https://alpo.ge/remark.pdf) [Formal verification](https://math.mit.edu/~drew/grh/)
+Daniel R. Johnston asked how far a number field's prime-ideal product can run ahead of the curve predicted by Mertens' theorem. For each real quadratic field of discriminant $d$, the smaller deadline assumes that the nontrivial zeros of $\zeta(s)L(s,\chi_d)$ have real part $1/2$.
 
 Let $d$ be the fundamental discriminant. Write $S_d$ for the first crossing, the infimum of the points $x\ge2$ at which the prime-ideal product falls strictly below $e^\gamma L(1,\chi_d)\log x$. There is a fully specified integer $U(d)$ with $S_d<U(d)$ and
 

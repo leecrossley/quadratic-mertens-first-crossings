@@ -26,7 +26,7 @@ The first calculation derives the residue from a complete character period, a ri
 
 ## Checking the result
 
-The family theorem has a written analytic proof. Its ordinary prime estimate uses Schoenfeld's estimate under ordinary RH. Alpöge's announced formal result includes RH. Dahl and Kala's moment estimate transfers the weighted calculation to genuine fields. The lower bound uses Granville and Soundararajan's unconditional character approximation with its exceptional fields counted. [Proof and references](PROOF.md) [Zero-location verification](https://math.mit.edu/~drew/grh/)
+The family theorem has a written analytic proof. Its ordinary prime estimate uses Schoenfeld's estimate under ordinary RH. Dahl and Kala's moment estimate transfers the weighted calculation to genuine fields. The lower bound uses Granville and Soundararajan's unconditional character approximation with its exceptional fields counted. [Proof and references](PROOF.md)
 
 ~~~sh
 python3 -m venv .venv

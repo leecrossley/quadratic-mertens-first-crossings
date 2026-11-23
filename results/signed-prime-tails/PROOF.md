@@ -7,7 +7,7 @@ B_d(t)=\sum_{q\le t}-\log(1-1/q)-\gamma_E-\log L(1,\chi)-\log\log t,\qquad
 F_d(y)=\int_y^\infty B_d(t)\frac{y\thinspace dt}{t^2}.
 $$
 
-Write $u=\log y$, $T_d(y)=\sum_{p>y}(1-y/p)\chi(p)/p$ in increasing prime order, and $N_y=\sqrt y\log y$. A split prime contributes positively and an inert prime negatively. Assume the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ for the quadratic discriminants concerned (field GRH). It is used throughout. Alpöge's announced Dirichlet GRH theorem supplies this input. [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/)
+Write $u=\log y$, $T_d(y)=\sum_{p>y}(1-y/p)\chi(p)/p$ in increasing prime order, and $N_y=\sqrt y\log y$. A split prime contributes positively and an inert prime negatively. Assume the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ for the quadratic discriminants concerned (field GRH). It is used throughout.
 
 **Signed prime window.** Assume field GRH for every $d$. Fix $0<b\le a$ and $\epsilon>0$. Uniformly for every $d$ and $d^b\le y\le d^a$, put $V=y(\log(3d))^{4+\epsilon}$. As $d\to\infty$,
 

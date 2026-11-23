@@ -24,7 +24,7 @@ Consequently $\log\log U(d)\ll (\log d)^3(\log\log d)^2$ as $d\to\infty$, with a
 
 ## 1. The zero sum and its real constant
 
-We use the zero-location theorem for Dirichlet characters announced by Levent Alpöge. The factors of $\zeta_K(s)=\zeta(s)L(s,\chi_d)$ are the Dirichlet functions for the modulus-one character and the primitive quadratic character $\chi_d$. All their zeros in the open critical strip have real part $1/2$. Write $\rho=1/2+i\lambda$ and include multiplicities and any central zero throughout. Andrew Sutherland's verification includes an independent comparison of the formal statement with the theorem proved. The analytic argument below requires just the critical-line property for these factors. [Theorem declarations](https://github.com/Deicyde/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Main.lean) · [Independent verification](https://math.mit.edu/~drew/grh/)
+Assume the critical-line property for the Dirichlet functions below. The factors of $\zeta_K(s)=\zeta(s)L(s,\chi_d)$ are the Dirichlet functions for the modulus-one character and the primitive quadratic character $\chi_d$. All their zeros in the open critical strip have real part $1/2$. Write $\rho=1/2+i\lambda$ and include multiplicities and any central zero throughout. The analytic argument below requires just the critical-line property for these factors.
 
 With $\psi_K(x)=\sum_{N\mathfrak p^j\le x}\log N\mathfrak p$, $j\ge1$, put $\Phi(u)=e^{-u/2}(\psi_K(e^u)-e^u)$. Write $V=\sum_\rho|\rho|^{-2}$ and
 

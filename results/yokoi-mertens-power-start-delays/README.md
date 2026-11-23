@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24412112.svg)](https://doi.org/10.5281/zenodo.24412112)
 
-Assume the critical-line property for the Riemann zeta function (RH). Alpöge's announced Dirichlet GRH theorem supplies this input. The theorem uses it only for the ordinary Mertens product, through the estimates of Cramér and Schoenfeld. It needs no critical-line hypothesis for $L(s,\chi_d)$. [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/)
+Assume the critical-line property for the Riemann zeta function (RH). The theorem uses it only for the ordinary Mertens product, through the estimates of Cramér and Schoenfeld. It needs no critical-line hypothesis for $L(s,\chi_d)$.
 
 Fix any interval of positive exponents, for example $1/2\le s\le20$. There are many Yokoi real quadratic fields in which every average with weight $(y/t)^s$ is positive at every real start from $2$ through $X$. Move the start to $4X$ and all those same averages are negative. The interval from $4X$ to $8X$ alone already gives a negative average for each exponent.
 

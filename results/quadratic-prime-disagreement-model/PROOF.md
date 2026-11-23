@@ -2,7 +2,7 @@
 
 Lee Crossley
 
-Take the real quadratic characters $`\chi_5,\chi_{13}`$, and $`\chi_{65}=\chi_5\chi_{13}`$. Assume the critical-line property for $`\zeta`$ and these three fixed Dirichlet functions. Use the real critical strip convention $`0<\Re s<1`$. Alpöge's announced Dirichlet GRH theorem supplies this input. [Announcement](https://alpo.ge/remark.pdf) · [Independent formal checks](https://math.mit.edu/~drew/grh/)
+Take the real quadratic characters $`\chi_5,\chi_{13}`$, and $`\chi_{65}=\chi_5\chi_{13}`$. Assume the critical-line property for $`\zeta`$ and these three fixed Dirichlet functions. Use the real critical strip convention $`0<\Re s<1`$.
 
 **Theorem.** Let $`P`$ be sufficiently large, $`D=13e^{2P},\ 0\le\theta<\pi/3,\ 0\le\beta\le\pi`$. There is a real completely multiplicative prime assignment $`\xi`$, ramified only at 13, for which the following hold.
 

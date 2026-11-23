@@ -6,7 +6,7 @@ In the quadratic field with discriminant **82,864,613**, the prime-ideal Mertens
 
 Write $S$ for the first dip and $W$ for the first endpoint where the accumulated error from 2 becomes negative. In Yokoi fields with $W$ finite and $S$ tending to infinity, the smallest possible limiting value of $\log(W/S)/\sqrt{\log S}$ is exactly $\sqrt{2A_\ast}$. The constant $A_\ast$ is the minimum amount of positive error a product can accumulate while it stays above its benchmark indefinitely. A family of finite splitting patterns approaches the sharp coefficient in genuine fields. [Proof of the sharp waiting time](PROOF.md) · [Definition of the constant](https://github.com/leecrossley/quadratic-mertens-first-crossings/blob/main/results/mertens-power-average-deadlines/SLOW-WEIGHTS.md)
 
-For the upper bound and the power averages below, assume the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ for the quadratic discriminants concerned (field GRH). Alpöge's announced Dirichlet GRH theorem supplies this input. [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/) The sharp constant above and the count of late fields below are unconditional.
+For the upper bound and the power averages below, assume the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ for the quadratic discriminants concerned (field GRH). The sharp constant above and the count of late fields below are unconditional.
 
 For every sufficiently large Yokoi discriminant $d$ for which some decreasing average from 2 is negative, the first crossing satisfies
 

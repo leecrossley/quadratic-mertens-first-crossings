@@ -1,6 +1,6 @@
 # Four signs from 51 real measurements
 
-For $d=2{,}380{,}853=1543^2+4$ write $f(u)=u e^{u/2}F_d(e^u)$ for the normalized future Mertens average. Assume RH and the critical-line property of $L(s,\chi_d)$. Alpöge's announced Dirichlet GRH theorem supplies this input. Each row gives a value attained at some real start in the indicated interval. [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/)
+For $d=2{,}380{,}853=1543^2+4$ write $f(u)=u e^{u/2}F_d(e^u)$ for the normalized future Mertens average. Assume RH and the critical-line property of $L(s,\chi_d)$. Each row gives a value attained at some real start in the indicated interval.
 
 | Range of $y$ | Certified value of $f(\log y)$ |
 |---|---:|

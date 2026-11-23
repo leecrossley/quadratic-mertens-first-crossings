@@ -4,7 +4,7 @@
 
 As more prime ideals enter a product, its value rises in jumps. Mertens' theorem predicts a smooth curve for its growth. Daniel R. Johnston asked how far you may have to go before that curve overtakes the product in a family of number fields. He posed the question during Ethan Lee's talk at the 2024 Comparative Prime Number Theory Symposium. [Problem 8, pp. 4–5](https://arxiv.org/pdf/2407.03530#page=4)
 
-The bound for a field of discriminant $d$ assumes GRH for its Dedekind zeta function $\zeta(s)L(s,\chi_d)$. Alpöge's announced Dirichlet GRH theorem supplies this hypothesis for both factors. [Announcement](https://alpo.ge/remark.pdf) [Formal verification](https://math.mit.edu/~drew/grh/)
+The bound for a field of discriminant $d$ assumes GRH for its Dedekind zeta function $\zeta(s)L(s,\chi_d)$.
 
 **For every real quadratic field of discriminant $d$, the product is strictly below the curve at some point before**
 
@@ -20,7 +20,7 @@ For one sense of scale, take $9413=97^2+4$. Its first crossing is between 525.47
 
 Start just above $x=1$, before even the first prime ideal could enter. In the prime ideal explicit formula, a known logarithmic term grows without bound there. The sum over zeta zeros has to cancel it. After smoothing, only finitely many frequencies matter to a prescribed accuracy. A counting argument gives a time by which those frequencies return close to their starting positions. By then the logarithmic term has decayed. This forces a deficit in the count of prime powers large enough to put the product below its curve. Tracking the number of frequencies and the error gives the deadline. [Full argument and sharper bound](PROOF.md)
 
-The proof uses the Dirichlet zero-location theorem announced by Levent Alpöge on 20 November 2026. Andrew Sutherland reports independent kernel checks and statement matching. The quadratic factorization reduces the zero-location input to exactly that statement. The rest is a written analytic proof, with the finite simultaneous approximation argument and exponent estimates also checked in Lean. Hathi and Lee had already proved fixed-field oscillation under a zero condition. The contribution here is the explicit discriminant-only deadline. [Upstream audit](https://math.mit.edu/~drew/grh/) · [Hathi and Lee](https://arxiv.org/pdf/2112.02166#page=3) · [Prior work and verification scope](PRIOR-WORK.md)
+The zero-location input is the critical-line property of the two Dirichlet factors. The quadratic factorization reduces GRH for the field to exactly that statement. The rest is a written analytic proof, with the finite simultaneous approximation argument and exponent estimates also checked in Lean. Hathi and Lee had already proved fixed-field oscillation under a zero condition. The contribution here is the explicit discriminant-only deadline. [Hathi and Lee](https://arxiv.org/pdf/2112.02166#page=3) · [Prior work and verification scope](PRIOR-WORK.md)
 
 The later conductor bound gives a smaller explicit deadline under the same field GRH hypothesis. For computed first crossings the census gives the values from 2 and identifies the largest field through discriminant 10,000. [Smaller deadline](https://github.com/leecrossley/quadratic-mertens-first-crossings/tree/main/results/quadratic-mertens-conductor-bound) [Finite census](https://github.com/leecrossley/quadratic-mertens-first-crossings/tree/main/results/yokoi-mertens-crossing-bounds)
 

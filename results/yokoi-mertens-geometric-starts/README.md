@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24412107.svg)](https://doi.org/10.5281/zenodo.24412107)
 
-Assume the critical-line property for the Riemann zeta function (RH). Alpöge's announced Dirichlet GRH theorem supplies this input. It is used only for the ordinary Mertens product, through Cramér's mean estimate. The quadratic factors $L(s,\chi_d)$ need no critical-line hypothesis. [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/)
+Assume the critical-line property for the Riemann zeta function (RH). It is used only for the ordinary Mertens product, through Cramér's mean estimate. The quadratic factors $L(s,\chi_d)$ need no critical-line hypothesis.
 
 Choose starting points in advance, each a fixed multiple of the last. For almost all fields in Yokoi's real quadratic family, a positive fraction of the first $J$ starts detect a dip in the prime-ideal Mertens product, for $J$ up to a constant times $\sqrt{\log D}$. At a successful start $y$, averaging with weight $y/t$ gives a negative result both over the full future and over the single window from $y$ to the next start.
 

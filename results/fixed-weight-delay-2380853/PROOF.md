@@ -16,7 +16,7 @@ $$
  222{,}663{,}129{,}634{,}336 < d^{9/4} < Y < d^{7/3}<756{,}907{,}294{,}748{,}218.
 $$
 
-Strict positivity on the first interval and strict negativity at the witness give the strict interior inequalities by continuity. The proof uses field GRH for the zero expansion (2), the bound for the total zero mass, the bounds $\delta$ below and the bound for $\theta_\chi$. Alpöge's announced Dirichlet GRH theorem supplies this input. Every numerical inequality below is an outward-rounded enclosure or an integer comparison. [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/) · [Numerical certificate](evidence/verification.txt) · [Second witness calculation](evidence/witness.txt)
+Strict positivity on the first interval and strict negativity at the witness give the strict interior inequalities by continuity. The proof uses field GRH for the zero expansion (2), the bound for the total zero mass, the bounds $\delta$ below and the bound for $\theta_\chi$. Every numerical inequality below is an outward-rounded enclosure or an integer comparison. [Numerical certificate](evidence/verification.txt) · [Second witness calculation](evidence/witness.txt)
 
 ## Small starts and the full infinite average
 

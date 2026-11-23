@@ -11,7 +11,7 @@ $$
 
 Use $\inf\varnothing=+\infty$. The product includes its jumps. A first crossing can be an infimum where the two sides are equal.
 
-Assume the nontrivial zeros of $\zeta(s)L(s,\chi_d)$ have real part $1/2$ (GRH for this field). Alpöge's announced Dirichlet GRH theorem supplies this hypothesis for both factors. [Announcement](https://alpo.ge/remark.pdf) [Formal verification](https://math.mit.edu/~drew/grh/)
+Assume the nontrivial zeros of $\zeta(s)L(s,\chi_d)$ have real part $1/2$ (GRH for this field).
 
 **There exists a real $x$ with $e^2<x<2^{2^{d^{30000}}}$ and $P_K(x)<e^{\gamma_E}\kappa_K\log x$.** In particular $S_d<2^{2^{d^{30000}}}$. This applies to every squarefree $d=m^2+4$ with $m$ positive and odd, the Yokoi family in the earlier prime-window calculation.
 
@@ -28,7 +28,7 @@ Only $d$ is needed to specify these integers $H,T,Q,N$ and the cutoff. Throughou
 
 Let $\chi_d$ be the primitive quadratic character of discriminant $d$. The quadratic Euler factors give $\zeta_K(s)=\zeta(s)L(s,\chi_d)$ on $\Re s>1$, and continuation gives the same identity in the open critical strip. For a split prime the two degree-one factors are equal, for an inert prime their product is the degree-two factor, and a ramified prime contributes one degree-one factor. Thus the identity includes primes dividing $2d$. Also $\kappa_K=L(1,\chi_d)>0$.
 
-Every zero of this product in the strip has real part $1/2$ by Levent Alpöge's Dirichlet zero-location theorem. The trivial character of modulus one gives the Riemann zeta factor. In Mathlib this last equality is literal, and the continued Dirichlet function agrees with its Dirichlet series for $\Re s>1$. The file FirstCrossing.lean checks the inference from the exact upstream statement to the product. The independent checks of its upstream proof are recorded by Andrew Sutherland. Without that input, the argument that follows proves the stated cutoff for every real quadratic field satisfying the critical-line hypothesis for its own zeta function. [Alpöge's announcement](https://alpo.ge/remark.pdf) · [Theorem declarations](https://github.com/Deicyde/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Main.lean) · [Mathlib, Dirichlet continuation](https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/NumberTheory/LSeries/DirichletContinuation.lean) · [Sutherland's audit](https://math.mit.edu/~drew/grh/)
+Under the hypothesis every zero of this product in the strip has real part $1/2$. The trivial character of modulus one gives the Riemann zeta factor. In Mathlib this last equality is literal, and the continued Dirichlet function agrees with its Dirichlet series for $\Re s>1$. The file FirstCrossing.lean checks the inference from the exact upstream statement to the product. The argument that follows proves the stated cutoff for every real quadratic field satisfying the critical-line hypothesis for its own zeta function. [Theorem declarations](https://github.com/Deicyde/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Main.lean) · [Mathlib, Dirichlet continuation](https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/NumberTheory/LSeries/DirichletContinuation.lean)
 
 Write $\rho=\tfrac12+i\lambda$ for every nontrivial zero, with multiplicity, including any central zero. Define $V=\sum_\rho|\rho|^{-2}$. The completed entire function of order one is
 

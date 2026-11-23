@@ -1,6 +1,6 @@
 # A prime average that stays positive past 222 trillion
 
-Assume the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ for $d=2{,}380{,}853$ (field GRH). Alpöge's announced Dirichlet GRH theorem supplies this input. The proof uses it for the zero expansion, the bound for the remaining zero sum and the explicit prime estimates. [Announcement](https://alpo.ge/remark.pdf) [Independent formal checks](https://math.mit.edu/~drew/grh/)
+Assume the critical-line property for the Riemann zeta function and $L(s,\chi_d)$ for $d=2{,}380{,}853$ (field GRH). The proof uses it for the zero expansion, the bound for the remaining zero sum and the explicit prime estimates.
 
 For $d=2{,}380{,}853=1543^2+4$, the Mertens product over prime ideals first falls below its main term at about 143,054. How long does that dip take to show up in a fixed weighted average? The average here starts at $y$ and gives the future log error weight $y\thinspace dt/t^2$.
 

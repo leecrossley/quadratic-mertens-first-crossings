@@ -8,7 +8,7 @@ $$
  F_d(y)=\int_y^\infty B_d(t)\frac{y}{t^2}\thinspace dt .
 $$
 
-A negative value means that the prime-ideal product falls below its Mertens prediction somewhere at or after $y$. We bound the starting point $y$ of the average. The first negative value of the unaveraged error is a different quantity. The number-theoretic input on zeros is RH for the ordinary zeta function and GRH for the primitive quadratic Dirichlet function. Alpöge's announced Dirichlet GRH theorem supplies this input. The completed functions count all nontrivial zeros with multiplicity. [Announcement](https://alpo.ge/remark.pdf) · [Critical-line statements and verification](https://math.mit.edu/~drew/grh/) · [Earlier explicit formula](PROOF.md)
+A negative value means that the prime-ideal product falls below its Mertens prediction somewhere at or after $y$. We bound the starting point $y$ of the average. The first negative value of the unaveraged error is a different quantity. The number-theoretic input on zeros is RH for the ordinary zeta function and GRH for the primitive quadratic Dirichlet function. The completed functions count all nontrivial zeros with multiplicity. [Earlier explicit formula](PROOF.md)
 
 **Theorem 1.** Assume the stated critical-line property for each field considered. Let $L=\log(3d)$ and let $g_d$ be the minimum of $|\Im\rho|$ over the nontrivial zeros of $L(s,\chi_d)$, including the centre. There is an absolute constant $C$ such that for every sufficiently large $d$ with $g_d>0$,
 
